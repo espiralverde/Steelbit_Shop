@@ -33,10 +33,16 @@ const HeaderComponent = () => {
             if (searchCategoryToogle === "Categorías") {
                 navigate (`/product-list/search/${searchQuery}`)
             } else {
-                navigate(`/product-list/category/${searchCategoryToogle.replaceAll("/", ",")}/search/${searchQuery}`)
+                //ORIGINAL
+                //navigate(`/product-list/category/${searchCategoryToogle.replaceAll("/", ",")}/search/${searchQuery}`)
+                //Para Render.com
+                navigate(`/product-list/category/${searchCategoryToogle.replace(/\//g, ",")}/search/${searchQuery}`)
             }
         } else if (searchCategoryToogle !== "Categorías") {
-            navigate(`/product-list/category/${searchCategoryToogle.replaceAll("/", ",")}`)
+            //ORIGINAL
+            //navigate(`/product-list/category/${searchCategoryToogle.replaceAll("/", ",")}`)
+            //PARA RENDER.COM
+            navigate(`/product-list/category/${searchCategoryToogle.replace(/\//g, ",")}`)
         } else {
             navigate("/product-list")
         }

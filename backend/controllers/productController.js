@@ -23,8 +23,9 @@ const getProducts = async (req, res, next) => {
         
         if (categoryName){
             queryCondition = true
-            let a = categoryName.replaceAll("," , "/")
-            //let regEx = new RegExp ("^" + a)
+            //let a = categoryName.replaceAll("," , "/") ORIGINAL
+            //Cambio este valor para que funcione en Render.com
+            let a = categoryName.replace(/, /g , "/")
             var regEx = new RegExp("^" +a)
             categoryQueryCondition = {category: regEx}
         }
