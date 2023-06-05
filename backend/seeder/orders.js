@@ -22,7 +22,7 @@ const orders = Array.from({length: 22}).map((_, idx) => {
             {
                 name: "Product name",
                 price: 34,
-                image: {path: "/images/tablets-category.png"},
+                image: {path: "/images/carousel_1.jpg"},
                 quantity: 3,
                 count: 12
             }
@@ -30,7 +30,7 @@ const orders = Array.from({length: 22}).map((_, idx) => {
         paymentMethod: "PayPal",
         isPaid: false,
         isDelivered: false,
-        createdAt: `2023-05-${day}T${hour}:00:36.490+00:00`
+        createdAt: `2023-06-${day}T${hour}:00:36.490+00:00`
     }
 })
 

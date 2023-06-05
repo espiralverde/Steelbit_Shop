@@ -25,4 +25,4 @@ export const removeFromCart = (productID, quantity, price) =>(dispatch, getState
         payload: {productID: productID, quantity: quantity, price: price}
     })
     localStorage.setItem("cart", JSON.stringify(getState().cart.cartItems))
-} 
+}

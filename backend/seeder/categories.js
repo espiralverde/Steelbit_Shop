@@ -1,81 +1,51 @@
 const categories = [
     {
-    name: "Computers",
+    name: "Eléctricas",
     description:
-    "Computers - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
+    "Eléctricas - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
     image: "/images/carousel_1.jpg",
     attrs: [
-    { key: "RAM", value: ["1 TB", "2 TB", "4 TB"] },
-    { key: "color", value: ["blue", "red", "green", "black"] },
+    { key: "Tipo", value: ["Corte", "Hidrolavadora", "Lijado", "Perforación"] },
+    { key: "Color", value: ["blue", "rojo", "verde", "black"] },
     ],
 },
 {
-    name: "Computers/Laptops",
+    name: "Eléctricas/Corte",
     description:
-    "Computers/Laptops - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
+    "Eléctricas/Corte - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
     image: "/images/carousel_1.jpg",
 },
 {
-    name: "Computers/Laptops/Lenovo",
+    name: "Eléctricas/Hidrolavadoras",
     description:
-    "Computers/Laptops/Lenovo - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
+    "Eléctricas/Hidrolavadoras - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
     image: "/images/carousel_1.jpg",
 },
 {
-    name: "Computers/Laptops/Dell",
+    name: "Eléctricas/Lijado",
     description:
-    "Computers/Laptops/Dell - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
+    "Eléctricas/Lijado - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
     image: "/images/carousel_1.jpg",
 },
 {
-    name: "Tablets",
+    name: "Eléctricas/Perforación",
     description:
-    "Tablets - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
+    "Eléctricas/Perforación - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
     image: "/images/carousel_1.jpg",
 },
 {
-    name: "Monitors",
+    name: "Inalámbricas",
     description:
-    "Monitors - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
+    "Inalámbricas - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
     image: "/images/carousel_1.jpg",
 },
 {
-    name: "Games",
+    name: "Neumáticas",
     description:
-    "Games - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
+    "Neumáticas - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
     image: "/images/carousel_1.jpg",
 },
-{
-    name: "Printers",
-    description:
-    "Printers - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
-    image: "/images/carousel_1.jpg",
-},
-{
-    name: "Software",
-    description:
-    "Software - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
-    image: "/images/carousel_1.jpg",
-},
-{
-    name: "Cameras",
-    description:
-    "Cameras - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
-    image: "/images/carousel_1.jpg",
-},
-{
-    name: "Books",
-    description:
-    "Books - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
-    image: "/images/carousel_1.jpg",
-    attrs: [{ key: "genre", value: ["movie", "comedy", "thriller"] }],
-},
-{
-    name: "Videos",
-    description:
-    "Videos - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
-    image: "/images/carousel_1.jpg",
-},
+
 ]
 
 module.exports = categories
