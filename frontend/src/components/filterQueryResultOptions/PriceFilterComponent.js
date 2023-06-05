@@ -7,7 +7,7 @@ const PriceFilterComponent = ({price, setPrice}) => {
         <span className="fw-bold">Precio no mayor a: </span> ${price}
       </Form.Label>
       {/* con esto manejo los valores del filtro de precios en productList */}
-      <Form.Range min={1000} max={30000} step={10} onChange={(e) => setPrice(e.target.value)} /> 
+      <Form.Range min={1000} max={200000} step={10} onChange={(e) => setPrice(e.target.value)} /> 
     </>
   );
 };

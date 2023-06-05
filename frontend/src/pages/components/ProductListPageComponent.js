@@ -19,7 +19,7 @@ const ProductListPageComponent = ({getProducts, categories}) => {
     const [attrsFromFilter, setAttrsFromFilter] = useState([]) //con esto traigo los user filters por categoría
     const [showResetFiltersButton, setShowResetFiltersButton] = useState(false)
     const [filters, setFilters] = useState({}) //con esto busco todos los filtros
-    const [price, setPrice] = useState(15000) // con esto le digo al filtro donde debe estar al inicio
+    const [price, setPrice] = useState(100000) // con esto le digo al filtro donde debe estar al inicio
     const [ratingsFromFilter, setRatingsFromFilter] = useState({})
     const [categoriesFromFilter, setCategoriesFromFilter] = useState ({})
     const [sortOption, setSortOption] = useState("")
