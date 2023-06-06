@@ -15,7 +15,7 @@ const AddedToCartMessageComponent = ({showCartMessage, setShowCartMessage}) => {
         <p>
         <Button variant="success" onClick={goBack} >Seguir comprando</Button>{" "}
             <Link to="/cart">
-                <Button variant="danger">Ir al Carrito</Button>                
+                <Button variant="primary">Ir al Carrito</Button>                
             </Link>            
         </p>
         </Alert>

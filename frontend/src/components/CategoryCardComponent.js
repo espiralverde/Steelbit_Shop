@@ -5,20 +5,24 @@ const CategoryCardComponent = ({category, idx}) => {
 
 
     return (
-        <Card>
-            <Card.Img 
-                crossOrigin='anonymous'
-                variant="top" 
-                src={category.image ?? null}
-                />
-            <Card.Body>
-                <Card.Title>{category.name}</Card.Title>
-                <Card.Text> {category.description}</Card.Text>
-                <LinkContainer to={`/product-list/category/${category.name}`}>
-                    <Button variant="primary">Ver Categoría</Button>
-                </LinkContainer>
-            </Card.Body>
-        </Card>
+        <div className="">
+            <div className="row g-0">
+                <Card>
+                    <Card.Img 
+                        crossOrigin='anonymous'
+                        variant="top" 
+                        src={category.image ?? null}
+                        />
+                    <Card.Body>
+                        <Card.Title>{category.name}</Card.Title>
+                        <Card.Text>{category.description}</Card.Text>
+                        <LinkContainer to={`/product-list/category/${category.name}`}>
+                            <Button variant="primary">Ver Categoría</Button>
+                        </LinkContainer>
+                    </Card.Body>
+                </Card>
+            </div>
+        </div>
     )
 }
 

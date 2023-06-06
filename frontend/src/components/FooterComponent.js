@@ -6,7 +6,12 @@ const FooterComponent = () => {
       <footer>
          <Container fluid>
             <Row className='mt-5'>
-               <Col className='bg-dark text-white text-center py-5'>Copyright &copy; SteelBit</Col>
+               <Col className='bg-dark text-white text-center py-3'>
+                  <a href="/">
+                     <img src="/images/Logo_Steelbit.png" alt="" width="150" height="75" />
+                  </a> 
+                  {/* Copyright &copy; SteelBit */}
+                  </Col>
             </Row>
          </Container>
       </footer>   

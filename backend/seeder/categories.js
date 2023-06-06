@@ -14,18 +14,30 @@ const categories = [
     description:
     "Inalámbricas - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
     image: "/images/banner-abateria-hamilton.jpg",
+    attrs: [
+        { key: "Tipo", value: ["Batería/Cargador", "Corte", "Perforación"] },
+        { key: "color", value: ["blue", "rojo", "verde", "black"] },
+        ],
 },
 {
     name: "Neumáticas",
     description:
     "Neumáticas - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
     image: "/images/banner-neumaticas-hamilton.jpg",
+    attrs: [
+        { key: "Tipo", value: ["Compresores", "Llaves N.", "Lubricado", "Pintura"] },
+        { key: "color", value: ["blue", "rojo", "verde", "black"] },
+        ],
 },
 {
     name: "Manuales",
     description:
     "Manuales - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
     image: "/images/banner-manuales-hamilton.jpg",
+    attrs: [
+        { key: "Tipo", value: ["Criques hidraúlicos", "Destornilladores", "Llaves", "Martillos", "Pinzas/Alicates", "Sujeción"] },
+        { key: "color", value: ["blue", "rojo", "verde", "black"] },
+        ],
 },
 
 ]

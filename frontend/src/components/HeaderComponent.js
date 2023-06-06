@@ -70,6 +70,12 @@ const HeaderComponent = () => {
     return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
+
+        {/* <a class="navbar-brand" href="/">
+            <img src="/images/Logo_Steelbit.png" alt="" width="80" height="40" />
+        </a> */}
+
+
             <LinkContainer to="/">
                 <Navbar.Brand href="/">SteelBit Shop</Navbar.Brand>            
             </LinkContainer>
@@ -86,8 +92,8 @@ const HeaderComponent = () => {
                         </DropdownButton>
 
                         <Form.Control onKeyUp={submitHandler} onChange={(e) => setSearchQuery(e.target.value)} type="text" placeholder="Buscar..." />
-                        <Button onClick={submitHandler} variant="warning">
-                            <i className="bi bi-search text-dark"></i>
+                        <Button onClick={submitHandler} variant="primary">
+                            <i className="bi bi-search"></i>
                         </Button>{' '}
                     </InputGroup>
                 </Nav>
@@ -102,20 +108,20 @@ const HeaderComponent = () => {
                         </LinkContainer>
                         ) : userInfo.name && !userInfo.isAdmin ? (
                                 <NavDropdown title={`${userInfo.name} ${userInfo.lastName}`} id="collasible-nav-dropdown">
-                                    <NavDropdown.Item eventKey="/user/my-orders" as={Link} to="/user/my-orders">My Orders</NavDropdown.Item>
-                                    <NavDropdown.Item eventKey="/user" as={Link} to="/user">My Profile</NavDropdown.Item>
-                                    <NavDropdown.Item onClick={() => dispatch(logout())}>Logout</NavDropdown.Item>
+                                    <NavDropdown.Item eventKey="/user/my-orders" as={Link} to="/user/my-orders">Mis Pedidos</NavDropdown.Item>
+                                    <NavDropdown.Item eventKey="/user" as={Link} to="/user">Perfil</NavDropdown.Item>
+                                    <NavDropdown.Item onClick={() => dispatch(logout())}>Salir</NavDropdown.Item>
                                 </NavDropdown>
                         ) : (
                                 <>
                                     <LinkContainer to="/login">
                                         <Nav.Link>
-                                            Login
+                                            Ingresar
                                         </Nav.Link>
                                     </LinkContainer>
                                     <LinkContainer to="/register">
                                         <Nav.Link>
-                                            Register
+                                            Registrarse
                                         </Nav.Link>
                                     </LinkContainer>
                                 </>
@@ -130,7 +136,7 @@ const HeaderComponent = () => {
                             </Badge>{' '}
                                 <i className="bi bi-cart-dash"></i>
                                 <span className="ms-1"></span>
-                                CART
+                                Carrito
                         </Nav.Link>
                     </LinkContainer>
                 </Nav>

@@ -126,7 +126,7 @@ import {
                         <Rating readonly size={20} initialValue={product.rating} /> ({product.reviewsNumber})
                       </ListGroupItem>
                       <ListGroupItem>
-                        <span className="fw-bold">${product.price}</span>
+                        <span className="fw-bold">ARS ${product.price}</span>
                       </ListGroupItem>
                       <ListGroupItem>{product.description}</ListGroupItem>
                     </ListGroup>
@@ -135,7 +135,7 @@ import {
                     <ListGroup>
                       <ListGroupItem>Estado: {product.count > 0 ? "Disponible" : "Sin stock"}</ListGroupItem>
                       <ListGroupItem>
-                        <span className="fw-bold">${product.price}</span>
+                        <span className="fw-bold">ARS ${product.price}</span>
                       </ListGroupItem>
                       <ListGroupItem>
                         Cantidad:
@@ -154,14 +154,14 @@ import {
                         </Form.Select>
                       </ListGroupItem>
                       <ListGroupItem>
-                        <Button onClick={addToCartHandler} variant="btn btn-outline-danger">Agregar al Carrito</Button>
+                        <Button onClick={addToCartHandler} variant="btn btn-outline-primary">Agregar al Carrito</Button>
                       </ListGroupItem>
                     </ListGroup>
                   </Col>
                 </Row>
                 <Row>
                   <Col className="mt-5">
-                    <h5> Opiniones del Producto </h5>
+                    <h5> Opiniones del producto </h5>
                     <ListGroup variant="flush">
                       {product.reviews && product.reviews.map((review, idx) => (
 
@@ -182,14 +182,14 @@ import {
                 <hr />
 
                 {/* con esto compruebo que si el usuario está logueado o no. Sino, le manda el mensaje de alerta */}
-                {!userInfo.name && <Alert variant="danger">Debe iniciar sesión para dejar una opinión/valoración</Alert> }
+                {!userInfo.name && <Alert variant="danger">Debe iniciar sesión para dejar una opinión</Alert> }
                 
                 <Form onSubmit={sendReviewHandler}>
                   <Form.Group
                     className="mb-3"
                     controlId="exampleForm.ControlTextarea1"
                   >
-                    <Form.Label>Escribe una Opinion</Form.Label>
+                    <Form.Label>Escribe una opinión</Form.Label>
                     <Form.Control name="comment" required as="textarea" disabled={!userInfo.name} rows={3} />
                   </Form.Group>
                   <Form.Select name="rating" required disabled={!userInfo.name} aria-label="Default select example">

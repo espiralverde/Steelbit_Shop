@@ -3,6 +3,8 @@ import CartItemComponent from "../../../components/CartItemComponent"
 import { useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom"
 
+import {useDispatch, useSelector} from "react-redux"
+
 
 const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalScript}) => {
 
@@ -16,12 +18,12 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
     const [buttonDisabled, setButtonDisabled] = useState(false)
 
     const paypalContainer = useRef()
-    console.log(paypalContainer)
+    //   console.log(paypalContainer)
     //
     const navigate = useNavigate()
-    //
-
     const {id} = useParams()
+
+
 
     useEffect(() => {
         getUser()
@@ -43,12 +45,20 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
             if (data.isPaid) {
                 setOrderButtonMessage("Compra finalizada")
                 setButtonDisabled(true)
+                //agregado un timeout para que redireccione a product-list
+                setTimeout(() => {
+                    navigate (`/product-list`)
+                    
+                }, 5000)
             } else {
                 if (data.paymentMethod === "pp") {
                     setOrderButtonMessage("Pagar")
                 } else if (data.paymentMethod === "cod"){
                     setButtonDisabled(true)
                     setOrderButtonMessage("Pago en efectivo contra entrega")
+                    setTimeout(() => {
+                        navigate (`/product-list`)
+                    }, 5000)
                 }
             }
         })
@@ -64,7 +74,6 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
             }
         } else {
             setOrderButtonMessage ("Orden completada. Muchas Gracias!")
-            
         }
     }
 
@@ -73,12 +82,9 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
         setIsPaid(paidAt)
         setButtonDisabled(true)
         paypalContainer.current.style = "display: none"
-        
-        
 
         setTimeout(() => {
             navigate (`/product-list`)
-            
         }, 5000)
 
 
@@ -94,14 +100,14 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
                         <Col md={6}>
                             <h2>Dirección de Entrega</h2>
                             <b>Nombre: </b> {userInfo.name} {userInfo.lastName} <br />
-                            <b>Dirección: </b>{userAddress.address} {userAddress.city} {userAddress.state} {userAddress.zipCode} <br />
+                            <b>Dirección: </b>{userAddress.address}, {userAddress.city}, {userAddress.state}, {userAddress.zipCode} <br />
                             <b>Teléfono: </b> {userAddress.phoneNumber} <br />
                         </Col>
                         <Col md={6}>
                             <h2>Forma de Pago</h2>
                             <Form.Select value={paymentMethod} disabled={true}>
                                 <option value="pp">PayPal</option>
-                                <option value="cod">Efectivo Contra Entrega</option>
+                                <option value="cod">Efectivo</option>
                             </Form.Select>
                         </Col>
                         <Row>
@@ -118,7 +124,7 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
                         </Row>
                     </Row>
                     <br />
-                    <h2>Items de compra</h2>
+                    <h2>Detalles de compra</h2>
                     <ListGroup variant="flush">
                         {cartItems.map((item, idx)=> (
                             <CartItemComponent item={item} key={idx} orderCreated={true} />
@@ -132,7 +138,7 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
                             <h3>Resumen</h3>
                         </ListGroupItem>
                         <ListGroupItem>
-                            Precio: <span className="fw-bold">${cartSubtotal}</span>
+                            Precio: <span className="fw-bold">ARS ${cartSubtotal}</span>
                         </ListGroupItem>
                         <ListGroupItem>
                             Envío: <span className="fw-bold">Incluido</span>
@@ -141,18 +147,22 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
                             Impuestos: <span className="fw-bold">Incluido</span>
                         </ListGroupItem>
                         <ListGroupItem className="text-danger">
-                            Precio Final: <span className="fw-bold">${cartSubtotal}</span>
+                            <h4>Precio Final: <span className="fw-bold">ARS ${cartSubtotal}</span></h4>
                         </ListGroupItem>
                         <ListGroupItem>
                             <div className="d-grid gap-2">
                                 <Button 
                                     size="lg" 
                                     onClick={orderHandler} 
-                                    variant="danger" 
+                                    variant="primary" 
                                     type="button" 
                                     disabled={buttonDisabled}
+                                    //lala//
+                                    //onChange={clearCartHandler}
+                                    //
                                 >
                                     {orderButtonMessage}
+                                    {}
                                 </Button>
                             </div>
                             {/* Estilos para los botones de pago */}

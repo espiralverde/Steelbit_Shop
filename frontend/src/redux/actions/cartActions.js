@@ -26,3 +26,10 @@ export const removeFromCart = (productID, quantity, price) =>(dispatch, getState
     })
     localStorage.setItem("cart", JSON.stringify(getState().cart.cartItems))
 }
+
+export const clearCart = () => (dispatch) => {
+    localStorage.removeItem("cart")
+    dispatch ({
+        type: actionTypes.CLEAR_CART
+        })
+}

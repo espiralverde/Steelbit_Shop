@@ -2,7 +2,7 @@ import { Row, Col, Container, Alert, ListGroup, Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import CartItemComponent from "../../components/CartItemComponent";
 
-const CartPageComponent = ({addToCart, removeFromCart,  cartItems, cartSubtotal, reduxDispatch}) => {
+const CartPageComponent = ({addToCart, removeFromCart, cartItems, cartSubtotal, reduxDispatch}) => {
     
     const changeCount = (productID, count) => {
         reduxDispatch(addToCart(productID, count))
@@ -12,7 +12,6 @@ const CartPageComponent = ({addToCart, removeFromCart,  cartItems, cartSubtotal,
             reduxDispatch(removeFromCart(productID, quantity, price))
         }
     }
-
 
     return (
         <Container fluid>
@@ -28,7 +27,7 @@ const CartPageComponent = ({addToCart, removeFromCart,  cartItems, cartSubtotal,
                         item={item} 
                         key={idx} 
                         changeCount={changeCount} 
-                        removeFromCartHandler={removeFromCartHandler} 
+                        removeFromCartHandler={removeFromCartHandler}
                     />
                 ))}
                 </ListGroup>
@@ -40,11 +39,11 @@ const CartPageComponent = ({addToCart, removeFromCart,  cartItems, cartSubtotal,
                 <h3>Subtotal ({cartItems.length} {cartItems.length === 1 ? "Producto" : "Productos"})</h3>
             </ListGroup.Item>
             <ListGroup.Item>
-                Precio: <span className="fw-bold">{cartSubtotal}</span>
+                Precio: <span className="fw-bold">ARS ${cartSubtotal}</span>
             </ListGroup.Item>
             <ListGroup.Item>
                 <LinkContainer to="/user/cart-details">
-                <Button disabled={cartSubtotal === 0} type="button"> Ordenar </Button>            
+                <Button disabled={cartSubtotal === 0} type="button"> Ordenar producto </Button>            
                 </LinkContainer>
             </ListGroup.Item>
             </ListGroup>

@@ -2,7 +2,6 @@ import { Row, Col, Container, Form, Alert, ListGroup, ListGroupItem, Button } fr
 import CartItemComponent from "../../../components/CartItemComponent"
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"
-
 const UserCartDetailsPageComponent = ({cartItems, itemsCount, cartSubtotal, userInfo, addToCart, removeFromCart, reduxDispatch, getUser, createOrder}) => {
 
     const [buttonDisabled, setButtonSetDisabled] = useState(false)
@@ -11,7 +10,6 @@ const UserCartDetailsPageComponent = ({cartItems, itemsCount, cartSubtotal, user
     const [paymentMethod, setPaymentMethod] = useState("pp")
 
     const navigate = useNavigate()
-
     const changeCount = (productID, count) => {
         reduxDispatch(addToCart(productID, count))
     }
@@ -21,6 +19,7 @@ const UserCartDetailsPageComponent = ({cartItems, itemsCount, cartSubtotal, user
             reduxDispatch(removeFromCart(productID, quantity, price))
         }
     }
+
     useEffect(() => {
         getUser()
         .then((data) => {
@@ -79,7 +78,7 @@ const UserCartDetailsPageComponent = ({cartItems, itemsCount, cartSubtotal, user
                         <Col md={6}>
                             <h2>Dirección de Entrega</h2>
                             <b>Nombre:</b> {userInfo.name} {userInfo.lastName} <br />
-                            <b>Dirección:</b> {userAddress.address} {userAddress.city} {userAddress.state} {userAddress.zipCode}  <br />
+                            <b>Dirección:</b> {userAddress.address}, {userAddress.city}, {userAddress.state}, {userAddress.zipCode}  <br />
                             <b>Teléfono: </b> {userAddress.phoneNumber} <br />
                         </Col>
                         <Col md={6}>
@@ -92,7 +91,7 @@ const UserCartDetailsPageComponent = ({cartItems, itemsCount, cartSubtotal, user
                         <Row>
                             <Col>
                                 <Alert className="mt-3" variant="danger">
-                                    No Entregado
+                                    No entregado
                                     {missingAddress}
                                 </Alert>
                             </Col>
@@ -104,7 +103,7 @@ const UserCartDetailsPageComponent = ({cartItems, itemsCount, cartSubtotal, user
                         </Row>
                     </Row>
                     <br />
-                    <h2>Order Items</h2>
+                    <h2>Detalles de compra</h2>
                     <ListGroup variant="flush">
                         {cartItems.map((item, idx) => (<CartItemComponent item={item} key={idx} removeFromCartHandler={removeFromCartHandler} changeCount={changeCount} />
                         ))}
@@ -116,7 +115,7 @@ const UserCartDetailsPageComponent = ({cartItems, itemsCount, cartSubtotal, user
                             <h3>Resumen</h3>
                         </ListGroupItem>
                         <ListGroupItem>
-                            Precio: <span className="fw-bold">${cartSubtotal}</span>
+                            Precio: <span className="fw-bold">ARS ${cartSubtotal}</span>
                         </ListGroupItem>
                         <ListGroupItem>
                             Envío: <span className="fw-bold">Incluido</span>
@@ -124,12 +123,12 @@ const UserCartDetailsPageComponent = ({cartItems, itemsCount, cartSubtotal, user
                         <ListGroupItem>
                             Impuestos: <span className="fw-bold">Incluido</span>
                         </ListGroupItem>
-                        <ListGroupItem className="text-danger">
-                            Precio Final: <span className="fw-bold">${cartSubtotal}</span>
+                        <ListGroupItem className="text">
+                            <h4>Precio Final: <span className="fw-bold">ARS ${cartSubtotal}</span></h4>
                         </ListGroupItem>
                         <ListGroupItem>
                             <div className="d-grid gap-2">
-                                <Button size="lg" onClick={orderHandler} variant="danger" type="button" disabled={buttonDisabled}>Ir a Pagar</Button>
+                                <Button size="lg" onClick={orderHandler} variant="primary" type="button" disabled={buttonDisabled}>Pagar</Button>
                             </div>
                         </ListGroupItem>
                     </ListGroup>

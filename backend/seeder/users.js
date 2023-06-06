@@ -16,6 +16,19 @@ const users = [
     email: 'usuario@regular.com',
     password: bcrypt.hashSync('usuario@regular.com', 10),
 },
+{
+    _id: ObjectId("647e4508f2801d19fdaa085f"),
+    name: 'Micaela',
+    lastName: 'Liborio',
+    email: 'micaelaliborio28@gmail.com',
+    password: bcrypt.hashSync('micaelaliborio28@gmail.com', 10),
+    address: 'Duarte Quirós 2055',
+    phoneNumber: 3516153745,
+    country: 'Argentina',
+    state: 'Córdoba',
+    zipCode: 5000,
+},
+
 ]
 
 module.exports = users

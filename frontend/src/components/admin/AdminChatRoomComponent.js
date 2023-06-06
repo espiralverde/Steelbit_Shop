@@ -64,7 +64,7 @@ const AdminChatRoomComponent =  ({chatRoom, roomIndex, socket, socketUser}) => {
                         {chatRoom[1].map((msg,idx) => (
                             <Fragment key={idx}>
                                 {msg.client && (
-                                    <p key={idx} className="bg-primary p-3 ms-4 text-light rounded-pill">
+                                    <p key={idx} className="bg-primary p-3 ms-4 text-light">
                                         <b>Usuario: </b> {msg.client}
                                     </p>
                                 )}

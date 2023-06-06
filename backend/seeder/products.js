@@ -268,7 +268,7 @@ description: "Tipo de Encastre: SDS Plus. Tensión: 220V 240V. Potencia: 1300W. 
 name: "TALADRO PERCUTOR 950W | HTP003",
 description: "Motor eléctrico brushed de alta performance. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Velocidad sin carga: 0-3000 RPM. Tasa de impactos: 0-48000 BPM. Mandril: 13 mm. Regulador de velocidad. Botón de bloqueo de interruptor. Mango antideslizante. Cable VDE: 2 m. Incluye: Medidor de profundidad,  Mango secundario Llave para mandril.",
     count: 20,
-    price: 23.855,
+    price: 23855,
     category: "Eléctricas",
     images: [
     { path: "/images/HTP003.jpg" },
@@ -287,7 +287,7 @@ description: "Motor eléctrico brushed de alta performance. Tensión nominal: 22
 name: "TALADRO PERCUTOR 1200W | HTP005",
 description:    "Motor eléctrico brushed de alta performance. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Velocidad sin carga: 0-1200/0-3200 RPM. Tasa de impactos: 0-20400/0-54400 BPM. Mandril: 13 mm. Regulador de velocidad. Botón de bloqueo de interruptor. Mango antideslizante. Cable VDE: 2 m. Incluye: Medidor de profundidad, Mango secundario.",
     count: 20,
-    price: 23.855,
+    price: 47163,
     category: "Eléctricas",
     images: [
     { path: "/images/HTP005.jpg" },
@@ -306,8 +306,8 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
     name: "BATERÍA DE 1,5A | PARA TALADRO ATORNILLADOR 12V | ULT105",
     description: "Ficha técnica: Tensión: 12V. Amperaje: 1,5 Ah. Tipo: Ion-Litio. Cacasa plástica ABS. Para ULT125",
         count: 20,
-        price: 10.685,
-        category: "Inalámbricas/BateriasyCargadores",
+        price: 10685,
+        category: "Inalámbricas",
         images: [
         { path: "/images/ULT105.jpg" },
         { path: "/images/ULT105-g1.jpg" },
@@ -315,14 +315,17 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
         rating: 5,
         reviewsNumber: 5,
         reviews: [],
-        attrs: [{ key: "color", value: "blue" }],
+        attrs: [
+            { key: "color", value: "black" },
+            { key: "Tipo", value: "BateriasyCargadores" },
+        ],
 },
 {
     name: "BATERÍA DE 2 AMPERES ULTIMATE | ULT101",
     description:     "Batería de Ion-Litio compatible con todas las herramientas inalámbricas Hamilton Ultimate. Amperaje: 2A. Tensión: 20V. Posee indicador LED de carga. Con la misma batería podrás utilizar todas las herramientas de 20V Ultimate. Además, todas las baterías se cargan con el mismo cargador",
         count: 20,
-        price: 16.447,
-        category: "Inalámbricas/BateriasyCargadores",
+        price: 16447,
+        category: "Inalámbricas",
         images: [
         { path: "/images/ULT101-g2.jpg" },
         { path: "/images/ULT101-g1-600x398.jpg" },
@@ -331,13 +334,16 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
         rating: 5,
         reviewsNumber: 5,
         reviews: [],
-        attrs: [{ key: "color", value: "blue" }],
+        attrs: [
+            { key: "color", value: "black" },
+            { key: "Tipo", value: "BateriasyCargadores" },
+        ],
 },
 {
     name: "CARGADOR DE BATERÍAS ULTIMATE | ULT109",
     description: "Cargador de Baterías Ultimate (ULT101 y ULT102). Compatible con todas las herramientas inalámbricas Hamilton Ultimate. Posee un sistema electrónico de carga rápida. Indicador LED de nivel de carga de la batería. Apto para baterías de Ion-litio de 2A y 4A. (ULT101 y ULT102). Ficha Técnica: Potencia de consumo: 60 W. • Entrada: 220 – 240 V ~ 50 Hz. Salida: 21 Vcc – 2.4 Ah",
         count: 20,
-        price: 12.918,
+        price: 12918,
         category: "Inalámbricas",
         images: [
         { path: "/images/ULT109.jpg" },
@@ -345,14 +351,17 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
         rating: 5,
         reviewsNumber: 5,
         reviews: [],
-        attrs: [{ key: "color", value: "blue" }],
+        attrs: [
+            { key: "color", value: "blue" },
+            { key: "Tipo", value: "BateriasyCargadores" },
+        ],
     },
     {
     name: "AMOLADORA ANGULAR ULTIMATE | ULT115",
     description: "Para discos 115 mm. (4-1/2”). Cabezal de aluminio reforzado. Rapido bloqueo del eje para un cambio rápido de disco. Motor Brushed. Cierre rapido. Tipo de batería: Ion-Litio. Tensión de batería: 20 V. es 20 voltios. El voltaje nominal es 18 V. Amperaje: 2.0/4.0 Ah. Tensión de cargador: 220 – 240 V ~ 50 Hz. Velocidad: 11.000 rpm. Eje: ø M14.",
         count: 20,
-        price: 65.674,
-        category: "Inalámbricas/Corte",
+        price: 65674,
+        category: "Inalámbricas",
         images: [
         { path: "/images/ULT115.jpg" },
         { path: "/images/ULT115-g3.jpg" },
@@ -361,14 +370,17 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
         rating: 5,
         reviewsNumber: 5,
         reviews: [],
-        attrs: [{ key: "color", value: "black" }],
+        attrs: [
+            { key: "color", value: "blue" },
+            { key: "Tipo", value: "Corte" },
+        ],
     },
 {
     name: "SIERRA CALADORA ULTIMATE | ULT114",
     description:  "Product Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsa ducimus architecto explicabo id accusantium nihil exercitationem autem porro esse.",
     count: 20,
-    price: 51.320,
-    category: "Inalámbricas/Corte",
+    price: 51320,
+    category: "Inalámbricas",
     images: [
     { path: "/images/ULT114.jpg" },
     { path: "/images/ULT114-g1.jpg" },
@@ -377,14 +389,17 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
     rating: 5,
     reviewsNumber: 5,
     reviews: [],
-    attrs: [{ key: "color", value: "black" }],
+    attrs: [
+        { key: "color", value: "blue" },
+        { key: "Tipo", value: "Corte" },
+    ],
 },
 {
     name: "SIERRA CIRCULAR ULTIMATE | ULT117",
     description: "Motor de alta performance. Diámetro máximo del disco 165 mm. Empuñaduras antideslizantes. Boton de bloqueo de gatillo. Regulación de profundidad. Incluye recla de corte paralelo. Incluye accesorio recolector de polvo. Incluye disco de sierra de 165 mm. de carburo tungsteno de 24 dientes. Quick change de batería. Tipo de batería: Ion-Litio. Tensión de batería: 20 V. Amperaje: 2.0/4.0 Ah. Tensión de cargador: 220 – 240 V ~ 50 Hz. Velocidad sin carga: 3800 rpm. Diametro del eje: ø M16. Capacidad de ángulo en bisel: 0 – 50º.",
         count: 20,
-        price: 85.990,
-        category: "Inalámbricas/Corte",
+        price: 85990,
+        category: "Inalámbricas",
         images: [
         { path: "/images/ULT117.jpg" },
         { path: "/images/ULT117-g3.jpg" },
@@ -393,14 +408,17 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
         rating: 5,
         reviewsNumber: 5,
         reviews: [],
-        attrs: [{ key: "color", value: "black" }],
+        attrs: [
+            { key: "color", value: "blue" },
+            { key: "Tipo", value: "Corte" },
+        ],
 },
 {
         name: "SIERRA SABLE ULTIMATE | ULT116",
         description: "Potente motor rápido y eficiente. Empuñadura antideslizante. Recubrimiento antishock. Motor Brushed. Acople rápido para sierra. Quick change de batería. Tipo de batería: Ion-Litio. Tensión de batería: 20 V. es 20 voltios. El voltaje nominal es 18 V. Amperaje: 2.0/4.0 Ah. Tensión de cargador: 220 – 240 V ~ 50 Hz. Longitud de la carrera: 25,4 mm. Velocidad variable: 0 – 3000 rpm.",
         count: 20,
-        price: 39.553,
-        category: "Inalámbricas/Corte",
+        price: 39553,
+        category: "Inalámbricas",
         images: [
         { path: "/images/ULT116.jpg" },
         { path: "/images/ULT116-g2.jpg" },
@@ -409,13 +427,16 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
         rating: 5,
         reviewsNumber: 5,
         reviews: [],
-        attrs: [{ key: "color", value: "rojo" }],
+        attrs: [
+            { key: "color", value: "verde" },
+            { key: "Tipo", value: "Corte" },
+        ],
 },
 {
     name: "ATORNILLADOR DE IMPACTO ULTIMATE | ULT112",
     description: "Motor de alta performance. Porta punta encastre ¼” rápido. Recubrimiento anti shock. Luz led automática. Motor brushed. Tipo de bateria: Ion-Litio. Tension de bateria: 20 V. Amperaje: 2.0/4.0 Ah. Tension de cargador: 220 – 240 V ~ 50 Hz. Velocidad sin carga: 0-3000 rpm. Tasa de impacto: 0-3000 bpm. Torque máximo: 158 N.m. Tamaño de mandril: ¼·” (6.35 mm). Accesorios Incluidos en el maletín: - Batería de 2A Ion-Litio | Código: ULT101 - Cargador Rápido para Baterías | Código: ULT109",
         count: 20,
-        price: 79.946,
+        price: 79946,
         category: "Inalámbricas",
         images: [
         { path: "/images/ULT112.jpg" },
@@ -425,13 +446,16 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
         rating: 5,
         reviewsNumber: 5,
         reviews: [],
-        attrs: [{ key: "color", value: "rojo" }],
+        attrs: [
+            { key: "color", value: "blue" },
+            { key: "Tipo", value: "Perforación" },
+        ],
 },
 {
     name: "LLAVE DE IMPACTO ULTIMATE | ULT113",
     description: "Motor de alta performance. Encastre de ½” (12,5 mm). Recubrimiento anti shock. Luz led automática. Motor brushed. Tipo de batería: Ion-Litio. Tensión de batería: 20 V. Amperaje: 2.0/4.0 Ah. Tensión de cargador: 220 – 240 V ~ 50 Hz. Velocidad sin carga: 0-2200 rpm. Impactos por minuto: 0-2700 bpm. Torque máximo: 400 N.m. Accesorios Incluidos en el maletín: • Batería de 2A Ion-Litio | Código: ULT101 • Cargador Rápido para Baterías | Código: ULT109",
         count: 20,
-        price: 81.082,
+        price: 81082,
         category: "Inalámbricas",
         images: [
         { path: "/images/ULT113-g2.jpg" },
@@ -441,13 +465,16 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
         rating: 5,
         reviewsNumber: 5,
         reviews: [],
-        attrs: [{ key: "color", value: "blue" }],
+        attrs: [
+            { key: "color", value: "rojo" },
+            { key: "Tipo", value: "Perforación" },
+        ],
 },
 {
         name: "PISTOLA DE PINTAR ULTIMATE | ULT126",
         description: "Motor de alta performance. Recubrimiento anti shock. Velocidad sin carga: 42.000 rpm. Entrega máx. de pintura: 600 ml/min. Capacidad de vaso: 1 litro. Peso: 1,2 Kg. Viscocidad máx.: 85-100 DIN-s. Posee regulador de caudal. Posee regulador de apertura de abanico. Este producto no incluye batería y cargador, es compatible con todas las baterías y cargadores de la línea Ultimate: • Batería de 2A Ion-Litio | Código: ULT101 • Batería de 4A Ion-Litio | Código: ULT102 • Cargador Rápido para Baterías | Código: ULT109",
         count: 20,
-        price: 21.538,
+        price: 21538,
         category: "Inalámbricas",
         images: [
         { path: "/images/ULT126.jpg" },
@@ -456,13 +483,16 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
         rating: 5,
         reviewsNumber: 5,
         reviews: [],
-        attrs: [{ key: "color", value: "blue" }],
+        attrs: [
+            { key: "color", value: "blue" },
+            { key: "Tipo", value: "Perforación" },
+        ],
 },
 {
     name: "TALADRO ATORNILLADOR ULTIMATE | ULT110",
     description: "Embrague de 16+2 posiciones. Recubrimiento antishock. Caja de dos velocidades mecánica. Luz led automática. Motor brushed. Tipo de batería: Ion-Litio. Tensión de batería: 20 V Amperaje: 2.0/4.0 Ah. Tensión de cargador: 220 – 240 V ~ 50 Hz. Velocidad variable en baja: 0-450 rpm. Velocidad variable en alta: 0- 1650 rpm. Configuración de torque: 16 + 2. Torque máximo: 45 N.m. Tamaño de mandril sin llave: 13 mm. Accesorios Incluidos en el maletín: • Batería de 2A Ion-Litio | Código: ULT101 • Cargador Rápido para Baterías | Código: ULT109",
         count: 20,
-        price: 79.999,
+        price: 79999,
         category: "Inalámbricas",
         images: [
         { path: "/images/ULT110.jpg" },
@@ -472,14 +502,17 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
         rating: 5,
         reviewsNumber: 5,
         reviews: [],
-        attrs: [{ key: "color", value: "verde" }],
+        attrs: [
+            { key: "color", value: "verde" },
+            { key: "Tipo", value: "Perforación" },
+        ],
 },
 {
     name: "TALADRO PERCUTOR ULTIMATE CON BATERÍA EXTRA | ULT111-K",
     description:
     "Embrague de 16+3 posiciones. Incluye 2 baterías de 2 Ah. Recubrimiento antishock. Caja de dos velocidades mecánica. Luz led automática. Motor brushed. Tipo de batería: Ion-Litio. Tensión de batería: 20 V. Amperaje: 2.0/4.0 Ah. Tensión de cargador: 220 – 240 V ~ 50 Hz. Velocidad variable en baja: 0-450 rpm. Velocidad variable en alta: 0- 1650 rpm. Golpes por minuto en baja: 0- 7920 bpm. Golpes por minuto en alta: 0 – 29700 bpm. Configuración de torque: 16 + 3. Torque máximo: 45 N.m. Tamaño de mandril sin llave: 13 mm. Accesorios Incluidos en el maletín: • 2 Baterías de 2A Ion-Litio | Código: ULT101 • Cargador Rápido para Baterías | Código: ULT109",
         count: 20,
-        price: 69.999,
+        price: 69999,
         category: "Inalámbricas",
         images: [
         { path: "/images/ULT111-K.jpg" },
@@ -488,7 +521,10 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
         rating: 5,
         reviewsNumber: 5,
         reviews: [],
-        attrs: [{ key: "color", value: "verde" }],
+        attrs: [
+            { key: "color", value: "blue" },
+            { key: "Tipo", value: "Perforación" },
+        ],
     }, 
 
 ]

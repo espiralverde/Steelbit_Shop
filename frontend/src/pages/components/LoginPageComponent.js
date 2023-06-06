@@ -44,10 +44,10 @@ const LoginPageComponent = ({loginUserApiRequest, reduxDispatch, setReduxUserSta
         <Container>
             <Row className="mt-5 justify-content-md-center">
                 <Col md={6}>
-                    <h1>Login</h1>
+                    <h1>Ingresar</h1>
                     <Form noValidate validated={validated} onSubmit={handleSubmit}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Correo electrónico</Form.Label>
+                            <Form.Label></Form.Label>
                             <Form.Control
                                 required
                                 type="email"
@@ -56,7 +56,7 @@ const LoginPageComponent = ({loginUserApiRequest, reduxDispatch, setReduxUserSta
                             />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Contraseña</Form.Label>
+                            <Form.Label></Form.Label>
                             <Form.Control
                                 required
                                 type="password"
