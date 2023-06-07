@@ -6,8 +6,6 @@ const fileUpload = require ("express-fileupload") // paquete que me permite subi
 const cookieParser = require ("cookie-parser")
 const app = express()
 
-
-
 const httpServer = createServer(app)
 global.io = new Server(httpServer)
 
@@ -103,6 +101,7 @@ app.use((error, req, res, next) => {
         })
     }
 })
+
 
 const PORT = process.env.PORT || 5000;
 

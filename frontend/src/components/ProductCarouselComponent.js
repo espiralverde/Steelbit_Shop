@@ -17,7 +17,7 @@ const ProductCarouselComponent = ({bestSellers}) => {
                 <img
                     crossOrigin="anonymous"
                     className="d-block w-100"
-                    style={ {height: "300px", objectFit: "cover" } } //objectFit arregla el ratio de la foto, para que salga centrada
+                    style={ {height: "300px", objectFit: "cover", opacity: 0.5 } } //objectFit arregla el ratio de la foto, para que salga centrada
                     src={item.images ? item.images [0].path : null}
                     alt="First slide"
                 />
@@ -26,6 +26,7 @@ const ProductCarouselComponent = ({bestSellers}) => {
                         <h3>El más vendido de {item.category}</h3> 
                         {/* acá tengo que corregir los nombres de como van a figurar las categorías */}
                     </LinkContainer>
+                {/* <p style={{color: "black", fontSize: 18}}>{item.description}</p> */}
                 <p>{item.description}</p>
                     
                 </Carousel.Caption>

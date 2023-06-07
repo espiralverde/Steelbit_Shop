@@ -2,7 +2,7 @@ import { Col, ListGroup, Row, Image, Form } from "react-bootstrap";
 import RemoveFromCartComponent from "./RemoveFromCartComponent"
 
 
-const CartItemComponent = ({item, removeFromCartHandler= false, orderCreated = false, changeCount = false}) => {
+const CartItemComponent = ({item, removeFromCartHandler = false, orderCreated = false, changeCount = false}) => {
 
 
     return (
@@ -16,7 +16,7 @@ const CartItemComponent = ({item, removeFromCartHandler= false, orderCreated = f
                         {item.name}
                     </Col>
                     <Col md={2}>
-                        <b>{item.price}</b>
+                        <b>ARS ${item.price}</b>
                     </Col>
                     <Col md={3}>
                         <Form.Select onChange={ changeCount ? (e) => changeCount(item.productID, e.target.value) : undefined } disabled={orderCreated} value={item.quantity}>

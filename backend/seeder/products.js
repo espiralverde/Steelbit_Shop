@@ -3,7 +3,7 @@ const products = [
     name: "AMOLADORA ANGULAR 115 MM. 820W | HAA001",
     description: "Motor eléctrico brushed de alta performance." + '\n' + "Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia: 820W. Velocidad sin carga: 12.000 RPM. Discos: 115 mm. Interruptor On-OFF con traba de seguridad. Cabezal de aluminio reforzado. Sistema de bloqueo rápido para cambio de discos. Mango antideslizante.\nAccesorios incluidos: Mango auxiliar. Llave extractora. Protector metálico con cierre rápido",
     count: 20,
-    price: 13.015,
+    price: 13015,
     category: "Eléctricas",
     images: [
     { path: "/images/HAA001.jpg" },
@@ -22,7 +22,7 @@ const products = [
     name: "INGLETADORA DUAL 2350W | HNG001",
     description: "Motor eléctrico brushed de alta performance. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia de entrada: 2100W (S1) 2350W (S6). Velocidad sin carga: 4000 RPM. Disco de corte: 255 mm. Corte máximo (a 90º): 340 mm. Corte máximo (a 45º): 240 mm. Rango de corte: -45º/+45º (vertical y horizontal). Base de aluminio de alta resistencia.Cable VDE: 2 metros. Incluye: Bolsa recolectora. Dispositivo de sujeción Nº8. 2 Soportes para piezas. Llave Allen.",
     count: 20,
-    price: 149.886,
+    price: 149886,
     category: "Eléctricas",
     images: [
     { path: "/images/HNG001.jpg" },
@@ -41,7 +41,7 @@ const products = [
     name: "SIERRA CALADORA ELÉCTRICA 710W | HCA003",
     description: "Motor eléctrico brushed de alta performance de velocidad variable. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia: 710W. Largo de carrera: 23 mm. Carreras por minuto: 1000-3100 RPM. Corte en ángulo: 0º a 45º. Interruptor On-OFF con sistema de bloqueo. Luz led. Base metálica. Protector de hoja de sierra. Guía de hoja de sierra. Sistema rápido de cambio de sierra son sistema manual de medio giro. Mango antideslizante. Cable VDE: 2 metros. Accesorios incluidos: Hoja de sierra. Llave hexagonal. Tubo-Adaptador para recolector",
     count: 20,
-    price: 30.627,
+    price: 30627,
     category: "Eléctricas",
     images: [
     { path: "/images/HCA003.jpg" },
@@ -60,7 +60,7 @@ const products = [
     name: "SIERRA CIRCULAR DE BANCO 2200W | HSCM01",
     description: "Motor eléctrico brushed de alta performance. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia: 2200W (S6) 1800W (S1). Velocidad sin carga: 4.800 RPM. Dimensión de la mesa armada: 640 x 485 x 829 mm. Diámetro máximo de disco: 255 mm. Rango de inclinación: -45º / + 45º. Corte a 90º: 85 mm. Corte a 45º: 60 mm. Accesorios Incluidos: Regla de corte paralelo. Barra de empuje. Llaves para disco (2). Llave de doble boca: 8/10 mm. Conector extractor de viruta. Llave Hexagonal Nº5. Regla para corte horizontal y en ángulo. Protector de disco/sierra. Manguera extractora de viruta",
     count: 20,
-    price: 129.999,
+    price: 129999,
     category: "Eléctricas",
     images: [
     { path: "/images/HSCM01.jpg" },
@@ -78,7 +78,7 @@ const products = [
     name: "SIERRA SABLE 900W | HRS001",
     description: "Motor eléctrico brushed de alta performance. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia: 900W. Velocidad sin carga: 0 2800 RPM. Longitud de carrera: 28 mm. Capacidad de corte en madera: 150 mm. Interruptor On-OFF con traba de seguridad. Sistema de liberación rápido para cambio de hojas (Quick change). Mango antideslizante. Accesorios incluídos: Llave hexagonal. 1 hoja de corte para metal. 1 hoja de corte para mader",
     count: 20,
-    price: 44.965,
+    price: 44965,
     category: "Eléctricas",
     images: [
     { path: "/images/HRS001.jpg" },
@@ -97,7 +97,7 @@ const products = [
     name: "HIDROLAVADORA ALTA PRESIÓN AUTOSTOP 1400W | HIL002",
     description: "Su presión de trabajo es de 80 Bar, aunque alcanza hasta 110 Bar de presión, siendo eficiente para Limpieza de Vehículos, Techos, Bicicletas, Máquinas, Piletas, y otros trabajos de limpieza en general. Fácil, rápido, y con el menor esfuerzo posible. Sistema Auto Stop: La Hamilton HIL002 sólo se accionará mientras tengas apretado el gatillo, facilitando un trabajo prolijo y seguro, además de ahorrar energía y agua. Porta cable y porta lanza. Manija en altura y ruedas grandes. Interruptor y purgador de agua de fácil acceso. Tiene distintos tipos de chorros: Regulá la forma de riego según tu necesidad. Ficha Técnica: Potencia: 1400W. Voltaje: 220V. Frecuencia: 50 Hz. Presión Máxima: 110 Bar (80 Bar la mínima). Presión máxima del suministro de agua: 4 Bar. Caudal de trabajo: 5,5 L/min hasta 7,1 L/min. Temperatura máxima del agua: 50 °C.",
     count: 20,
-    price: 43.913,
+    price: 43913,
     category: "Eléctricas",
     images: [
     { path: "/images/HIL002.jpg" },
@@ -116,7 +116,7 @@ const products = [
     name: "HIDROLAVADORA ALTA PRESIÓN AUTOSTOP 2200W | HIL006",
     description: "Se caracteriza por tener bajas vibraciones, y ser muy potente. y su estructura está diseñada para hacer más efectivos trabajos de gran tamaño, como limpieza de vehículos grandes, camiones, maquinaria agrícola, herramientas pesadas, etc. Rodillo superior con manija, que porta un cable de alta presión de 5 metros. Tanque de agua dosificador de destergente ¡Optimiza al máximo el uso de detergente! Además, posee mayor confort que los dosificadores convencionales. Porta lanza con cubrebocas. Manija en altura y ruedas grandes de excelente tracción. Interruptor y purgador de agua de fácil acceso. Tiene distintos tipos de chorros. Ficha Técnica: Potencia: 2200W. Voltaje: 220V. Frecuencia: 50 Hz. Presión de Trabajo: 120 Bar. Presión Máxima: 150 Bar. Caudal de trabajo: 6 L/min. Caudal de agua: 7,1 L/min. Capacidad del Tanque de Agua: 1000 ml. Máxima presión del suministro de agua: 4 Bar. Temperatura máxima del agua: 50 °C",
     count: 20,
-    price: 82.199,
+    price: 82199,
     category: "Eléctricas",
     images: [
     { path: "/images/HIL006.jpg" },
@@ -135,7 +135,7 @@ const products = [
     name: "CEPILLO ELÉCTRICO GARLOPA 900W | HCE001",
     description: "Motor eléctrico brushed de alta performance. Empuñaduras antideslizantes. Bloqueo de gatillo. Regulación de profundidad. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia: 900W. Velocidad sin carga: 16.000 RPM. Ancho máximo de cepillado: 82 mm. Profundidad máxima de cepillado: 3 mm. Profundidad de encaje: 15,5 mm.",
     count: 20,
-    price: 48.162,
+    price: 48162,
     category: "Eléctricas",
     images: [
     { path: "/images/HCE001.jpg" },
@@ -154,7 +154,7 @@ const products = [
 name: "LIJADORA ROTORBITAL 300W | HLR001",
 description: "Motor eléctrico brushed de alta performance. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia: 300W. Velocidad sin carga: 6.000 / 13.000 RPM. Diámetro de base: 125 mm. Oscilación: 2 mm. Mango antideslizante con recurimiento de goma.",
     count: 20,
-    price: 24.073,
+    price: 24073,
     category: "Eléctricas",
     images: [
     { path: "/images/HLR001.jpg" },
@@ -173,7 +173,7 @@ description: "Motor eléctrico brushed de alta performance. Tensión nominal: 22
 name: "LUSTRALIJADORA PULIDORA ROTORBITAL 800W | HPE002",
 description: "- Motor eléctrico brushed de alta performance con velocidad variable. Lija, Encera, Lustra, y Pule con un acabado profesional y de alta performance. 6 Velocidades desde 2.000 hasta 6.400 RPM. Motor Brushed de Alto Rendimiento. Mango Ergonómico Antideslizante. Almohadilla de lana ajustable. Ficha Técnica: Potencia: 800w. Diámetro del disco: 125 mm. Velocidad sin carga: 2.000-6.400 RPM. Tensión Nominal: 220 V. Frecuencia: 50 Hz. Peso: 2,2 Kg. Clase: 2.",
     count: 20,
-    price: 47.139,
+    price: 47139,
     category: "Eléctricas",
     images: [
     { path: "/images/HPE002.jpg" },
@@ -192,7 +192,7 @@ description: "- Motor eléctrico brushed de alta performance con velocidad varia
 name: "MINITORNO ELÉCTRICO 130W | KIT CON ACCESORIOS | HMT001",
 description: "Motor eléctrico brushed de alta performance. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia: 130W. Mandril: 0,8 3,2 mm. (sin llave). Velocidades: 6. Velocidad sin carga: 10000 35000 RPM. Sistema de bloqueo. Mango antideslizante. Cable VDE: 2 metros. Funciones: Perforado debaste corte grabado pulido",
     count: 20,
-    price: 19.257,
+    price: 19257,
     category: "Eléctricas",
     images: [
     { path: "/images/HMT001.jpg" },
@@ -211,7 +211,7 @@ description: "Motor eléctrico brushed de alta performance. Tensión nominal: 22
     name: "ADAPTADOR ANGULAR 90° | PARA TALADROS Y ATORNILLADORES | PAT90",
     description: "Acople Adaptador Angular para Taladros y Atornilladores. Un accesorio compacto para herramientas eléctricas que te permitirá llegar a espacios que antes no podías alcanzar. Podrás realizar tareas con tu taladro percutor o atornillador a 90° sin ningún inconveniente. Trabaja en ángulo de 90° para que puedas llegar a lugares difíciles de alcanzar para tu taladro percutor o atornillador de impacto. Posee un mecanismo endurecido para alcanzar un torque máximo de 55 Nm. Diseño ergonómico, liviano, y rápido para utilizar. Con el mango de plástico podrás manejarlo de manera segura, transmitiendo la fuerza necesaria. Incluye una punta PH. Largo: 14,5 cm. Trabaja con insumos con Encastre de 1/4 (Puntas Atornilladoras, Sierras Copa, Puntas Largas, Mechas Pala, Brocas)",
     count: 20,
-    price: 5.762,
+    price: 5762,
     category: "Eléctricas",
     images: [
     { path: "/images/PAT90-g1-100x100.jpg" },
@@ -230,7 +230,7 @@ description: "Motor eléctrico brushed de alta performance. Tensión nominal: 22
 name: "MARTILLO DEMOLEDOR 1700W | ENCASTRE HEXAGONAL | HMD001",
 description: "Tipo de Encastre: Hexagonal. Tensión: 220V 240V. Potencia: 1700W. Tasa de impacto: 1900 bpm. Energía de impacto: 60 J. Velocidad sin carga: 850 rpm. Cable VDE de 3,5 metros. Accesorios: Cincel punta 30 x 410 mm. Cincel plano 30 x 410 mm. Juego de carbones. Llave hexagonal fija. 2 Llave tipo Allen. Maletín plástico con ruedas",
     count: 20,
-    price: 126.607,
+    price: 126607,
     category: "Eléctricas",
     images: [
     { path: "/images/HMD001.jpg" },
@@ -249,7 +249,7 @@ description: "Tipo de Encastre: Hexagonal. Tensión: 220V 240V. Potencia: 1700W.
 name: "ROTOMARTILLO SDS PLUS 1300W | HRM004",
 description: "Tipo de Encastre: SDS Plus. Tensión: 220V 240V. Potencia: 1300W. Tasa de impacto: 4200 bpm. Energía de impacto: 5 J. Velocidad sin carga: 850 rpm. Cable VDE de 2 metros. Poseen sistema AVTecnology (antivibración). Accesorios: Mango auxiliar. Cincel punta 14 x 250 mm. Cincel plano 14 x 250 mm. Broca 8 x 150 mm. Broca 10 x 150 mm. Broca 12 x 150 mm. Juego de carbones. Protector. Medidor de profundidad. Tubo de grasa. Llave. Maletín plástico",
     count: 20,
-    price: 45.774,
+    price: 45774,
     category: "Eléctricas",
     images: [
     { path: "/images/HRM004.jpg" },
@@ -317,7 +317,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
         reviews: [],
         attrs: [
             { key: "color", value: "black" },
-            { key: "Tipo", value: "BateriasyCargadores" },
+            { key: "Tipo", value: "Batería/Cargador" },
         ],
 },
 {
@@ -336,7 +336,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
         reviews: [],
         attrs: [
             { key: "color", value: "black" },
-            { key: "Tipo", value: "BateriasyCargadores" },
+            { key: "Tipo", value: "Batería/Cargador" },
         ],
 },
 {
@@ -353,7 +353,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
         reviews: [],
         attrs: [
             { key: "color", value: "blue" },
-            { key: "Tipo", value: "BateriasyCargadores" },
+            { key: "Tipo", value: "Batería/Cargador" },
         ],
     },
     {

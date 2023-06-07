@@ -6,7 +6,7 @@ import { useNavigate, useParams } from "react-router-dom"
 import {useDispatch, useSelector} from "react-redux"
 
 
-const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalScript}) => {
+const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalScript, initMercadoPago}) => {
 
     const [userAddress, setUserAddress] = useState({})
     const [paymentMethod, setPaymentMethod] = useState("")
@@ -46,19 +46,16 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
                 setOrderButtonMessage("Compra finalizada")
                 setButtonDisabled(true)
                 //agregado un timeout para que redireccione a product-list
-                setTimeout(() => {
-                    navigate (`/product-list`)
+                // setTimeout(() => {
+                //     navigate (`/product-list`)
                     
-                }, 5000)
+                // }, 5000)
             } else {
                 if (data.paymentMethod === "pp") {
                     setOrderButtonMessage("Pagar")
                 } else if (data.paymentMethod === "cod"){
                     setButtonDisabled(true)
                     setOrderButtonMessage("Pago en efectivo contra entrega")
-                    setTimeout(() => {
-                        navigate (`/product-list`)
-                    }, 5000)
                 }
             }
         })
@@ -71,10 +68,11 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
             setOrderButtonMessage("Para finalizar, seleccione su opción abajo")
             if (!isPaid) {
                 loadPayPalScript(cartSubtotal, cartItems, id, updateStateAfterOrder)
-            }
+            }        
         } else {
             setOrderButtonMessage ("Orden completada. Muchas Gracias!")
         }
+
     }
 
     const updateStateAfterOrder = (paidAt) => {
@@ -82,10 +80,6 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
         setIsPaid(paidAt)
         setButtonDisabled(true)
         paypalContainer.current.style = "display: none"
-
-        setTimeout(() => {
-            navigate (`/product-list`)
-        }, 5000)
 
 
     }
@@ -108,6 +102,7 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
                             <Form.Select value={paymentMethod} disabled={true}>
                                 <option value="pp">PayPal</option>
                                 <option value="cod">Efectivo</option>
+                                <option value="mp">MercadoPago</option>
                             </Form.Select>
                         </Col>
                         <Row>

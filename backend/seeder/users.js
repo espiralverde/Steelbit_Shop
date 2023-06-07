@@ -15,6 +15,12 @@ const users = [
     lastName: 'Regular',
     email: 'usuario@regular.com',
     password: bcrypt.hashSync('usuario@regular.com', 10),
+    address: 'Colón 20',
+    phoneNumber: 351123456,
+    country: 'Argentina',
+    state: 'Córdoba',
+    city: 'Córdoba',
+    zipCode: 5000,
 },
 {
     _id: ObjectId("647e4508f2801d19fdaa085f"),
@@ -26,6 +32,7 @@ const users = [
     phoneNumber: 3516153745,
     country: 'Argentina',
     state: 'Córdoba',
+    city: 'Córdoba',
     zipCode: 5000,
 },
 
