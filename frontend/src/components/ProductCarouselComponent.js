@@ -17,17 +17,17 @@ const ProductCarouselComponent = ({bestSellers}) => {
                 <img
                     crossOrigin="anonymous"
                     className="d-block w-100"
-                    style={ {height: "300px", objectFit: "cover", opacity: 0.5 } } //objectFit arregla el ratio de la foto, para que salga centrada
-                    src={item.images ? item.images [0].path : null}
+                    style={ {height: "300px", objectFit: "cover", opacity: 0.7 } } //objectFit arregla el ratio de la foto, para que salga centrada
+                    src={item.images ? item.images[0].path : null}
                     alt="First slide"
                 />
                 <Carousel.Caption>
                     <LinkContainer style={cursorP} to={`/product-details/${item._id}`}>
-                        <h3>El más vendido de {item.category}</h3> 
+                        <h3>El más vendido en {item.category}: {item.name}</h3> 
                         {/* acá tengo que corregir los nombres de como van a figurar las categorías */}
                     </LinkContainer>
                 {/* <p style={{color: "black", fontSize: 18}}>{item.description}</p> */}
-                <p>{item.description}</p>
+                {/* <p>{item.description}</p> */}
                     
                 </Carousel.Caption>
                 </Carousel.Item>

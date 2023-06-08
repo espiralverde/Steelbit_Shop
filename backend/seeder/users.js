@@ -28,12 +28,13 @@ const users = [
     lastName: 'Liborio',
     email: 'micaelaliborio28@gmail.com',
     password: bcrypt.hashSync('micaelaliborio28@gmail.com', 10),
-    address: 'Duarte Quirós 2055',
     phoneNumber: 3516153745,
+    address: 'Duarte Quirós 2055',
     country: 'Argentina',
-    state: 'Córdoba',
-    city: 'Córdoba',
     zipCode: 5000,
+    city: 'Córdoba',
+    state: 'Córdoba',
+    
 },
 
 ]

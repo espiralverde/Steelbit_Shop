@@ -25,7 +25,7 @@ const categories = [
     "Neumáticas - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
     image: "/images/banner-neumaticas-hamilton.jpg",
     attrs: [
-        { key: "Tipo", value: ["Compresores", "Llaves N.", "Lubricado", "Pintura"] },
+        { key: "Tipo", value: ["Compresores", "Llaves Neumáticas", "Lubricado y Mecanizado", "Pistolas de pintar"] },
         { key: "color", value: ["blue", "rojo", "verde", "black"] },
         ],
 },
@@ -35,7 +35,7 @@ const categories = [
     "Manuales - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
     image: "/images/banner-manuales-hamilton.jpg",
     attrs: [
-        { key: "Tipo", value: ["Criques hidraúlicos", "Destornilladores", "Llaves", "Martillos", "Pinzas/Alicates", "Sujeción"] },
+        { key: "Tipo", value: ["Criques hidráulicos", "Destornilladores", "Llaves", "Martillos", "Pinzas y Alicates", "Sujeción"] },
         { key: "color", value: ["blue", "rojo", "verde", "black"] },
         ],
 },

@@ -12,6 +12,7 @@ const CategoryCardComponent = ({category, idx}) => {
                         crossOrigin='anonymous'
                         variant="top" 
                         src={category.image ?? null}
+                        
                         />
                     <Card.Body>
                         <Card.Title>{category.name}</Card.Title>

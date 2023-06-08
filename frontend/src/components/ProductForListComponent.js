@@ -4,18 +4,17 @@ import {LinkContainer} from "react-router-bootstrap";
 
 const ProductForListComponent = ({productId, name, description, price, images, rating, reviewsNumber}) => {
   return (
-    <Card style={{ marginTop: "30px", marginBottom: "50px" }}>
+    <Card style={{ marginTop: "30px", marginBottom: "30px" }}>
       <Row>
-        <Col lg={5}>
-          {/* <Card.Img variant="top" src={"/images/" + images[idx] + "-carousel_1.jpg"} /> */}
+        <Col lg={3}>
           <Card.Img crossOrigin="anonymous" variant="top" src={images[0] ? images[0].path : ''} />
         </Col>
-        <Col lg={7}>
+        <Col lg={9}>
           <Card.Body>
             <Card.Title>{name}</Card.Title>
             <Card.Text>{description}</Card.Text>
             <Card.Text>
-              <Rating readonly size={20} initialValue={rating} /> ({reviewsNumber})
+              <Rating readonly size={30} initialValue={rating} /> ({reviewsNumber})
             </Card.Text>
             <Card.Text className="h4">
               ${price}{" "}
