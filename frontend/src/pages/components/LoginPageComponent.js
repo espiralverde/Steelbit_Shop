@@ -32,7 +32,7 @@ const LoginPageComponent = ({loginUserApiRequest, reduxDispatch, setReduxUserSta
                 }
 
 
-            if (res.success === "Usuario logueado" && !res.userLoggedIn.isAdmin) window.location.assign("/user")
+            if (res.success === "Usuario logueado" && !res.userLoggedIn.isAdmin) window.location.assign("/")
             else window.location.assign("/admin/orders")
         })
             .catch((er) => setLoginUserResponseState ({error: er.response.data.message ? er.response.data.message : er.response.data}))

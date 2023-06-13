@@ -2,22 +2,9 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
 }
-
-/*  
-  html {
-    font-size: 62.5%;
-    line-height: 1.5;
-    height: 100%; }
-  
-  body {
-    font-family: "Fredericka the Great", cursive, sans-serif;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%; }
- */
-
 
 html {
     position: relative;
@@ -26,9 +13,7 @@ html {
     background-color: whitesmoke;
     /* font-size: 62.5%;
     line-height: 1.5; */
-    /* height: 100%; */
 }
-
 
 body {
     margin-bottom: 110px;
@@ -40,12 +25,10 @@ footer {
     bottom: 0;
     width: 100%;
     height: 100px;
-
 }
 
 /* h1 {
-    font-size: 5.6rem;
-    color: antiquewhite;
+    font-size: 5rem;
 }
 
 li,
@@ -53,7 +36,7 @@ button,
 label,
 input,
 p {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 h2 {
@@ -69,3 +52,29 @@ h4,
 h5 {
     font-size: 2.8rem;
 } */
+
+.imagen {
+    width: 150px;
+    height: 300px;
+    opacity: 0.7;
+    object-fit: cover;
+    object-position: 25% 25%;
+}
+
+/* .centered {
+
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: block;
+
+
+} */
+
+.texto {
+    background-color: orangered;
+    opacity: 0.6;
+    font-style: italic;
+    color: white;
+    display: inline;
+}

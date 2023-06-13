@@ -58,7 +58,7 @@ const OrderDetailsPageComponent = ({getOrder, markAsDelivered}) => {
                         <Row>
                             <Col>
                                 <Alert className="mt-3" variant={isDelivered ? "success" : "danger"}>
-                                    {isDelivered ? <>Entregado el {isDelivered.substring(0,10)}</> : <>No Entregado</>}
+                                    {isDelivered ? <>Entregado el {isDelivered}</> : <>No Entregado</>}
                                 </Alert>
                             </Col>
                             <Col>

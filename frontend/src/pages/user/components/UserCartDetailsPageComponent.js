@@ -96,7 +96,7 @@ const UserCartDetailsPageComponent = ({cartItems, itemsCount, cartSubtotal, user
                                 </Alert>
                             </Col>
                             <Col>
-                                <Alert className="mt-3" variant="success">
+                                <Alert className="mt-3" variant="danger">
                                     Pago no realizado
                                 </Alert>
                             </Col>
@@ -128,7 +128,7 @@ const UserCartDetailsPageComponent = ({cartItems, itemsCount, cartSubtotal, user
                         </ListGroupItem>
                         <ListGroupItem>
                             <div className="d-grid gap-2">
-                                <Button size="lg" onClick={orderHandler} variant="primary" type="button" disabled={buttonDisabled}>Pagar</Button>
+                                <Button size="lg" onClick={orderHandler} variant="primary" type="button" disabled={buttonDisabled}>Confirmar forma de pago</Button>
                             </div>
                         </ListGroupItem>
                     </ListGroup>

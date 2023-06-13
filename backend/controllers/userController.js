@@ -178,7 +178,7 @@ const writeReview = async (req, res, next) => {
         if (alreadyReviewed) {
             await session.abortTransaction()
             session.endSession()
-            return res.status(400).send("Review de producto ya realizada")
+            return res.status(400).send(" Review de producto ya realizada")
         }
 
         // Esto lo uso para calular el rating. Para ello tengo que calcular el total de todos los ratings que haya, y sacar un promedio (más abajo)

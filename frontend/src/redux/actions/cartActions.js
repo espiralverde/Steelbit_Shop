@@ -27,9 +27,15 @@ export const removeFromCart = (productID, quantity, price) =>(dispatch, getState
     localStorage.setItem("cart", JSON.stringify(getState().cart.cartItems))
 }
 
-export const clearCart = () => (dispatch, getState) => {
-    dispatch ({
-        type: actionTypes.CLEAR_CART
-        })
-    localStorage.setItem("cart", JSON.stringify(getState().cart.cartItems))
+// export const clearCart = () => (dispatch, getState) => {
+//     dispatch ({
+//         type: actionTypes.CLEAR_CART
+//         })
+//     localStorage.setItem("cart", JSON.stringify(getState().cart.cartItems))
+// }
+
+export const clearCart = () => (dispatch) => {
+    document.location.href = "/product-list"
+    localStorage.removeItem("cart")
+    dispatch ({type: actionTypes.CLEAR_CART})
 }

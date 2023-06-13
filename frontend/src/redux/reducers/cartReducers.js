@@ -17,10 +17,7 @@ export const cartReducer = (state = CART_INITIAL_STATE, action) => {
             const productAlreadyExistsInState = state.cartItems.find((x) => x.productID === productBeingAddedToCart.productID);
             //const productAlreadyExistsInState = state.cartItems
         //REEMPLAZO "STATE" POR SU VALOR, PORQUE SINO, NO FUNCIONA
-
             const currentState = { ...state };
-
-
             if (productAlreadyExistsInState) {
                 currentState.itemsCount = 0;
                 currentState.cartSubtotal = 0;
@@ -44,7 +41,6 @@ export const cartReducer = (state = CART_INITIAL_STATE, action) => {
                 //currentState.cartItems = [...CART_INITIAL_STATE.cartItems, productBeingAddedToCart];
                 currentState.cartItems = [...state.cartItems, productBeingAddedToCart];
             }
-
             return currentState
 
         case actionTypes.REMOVE_FROM_CART:
@@ -55,8 +51,10 @@ export const cartReducer = (state = CART_INITIAL_STATE, action) => {
                 cartSubtotal: state.cartSubtotal - action.payload.price * action.payload.quantity,
             }
 
-            case actionTypes.CLEAR_CART:
-                return state                   
+        case actionTypes.CLEAR_CART:
+            return {
+                state
+            } 
             
         default:
             return state 

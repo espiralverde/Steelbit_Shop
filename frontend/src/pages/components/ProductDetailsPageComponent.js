@@ -81,7 +81,7 @@ import {
         writeReviewApiRequest(product._id, formInputs)
         .then(data => {
           if (data === "Review creada") {
-            setProductReviewed("Review realizada con éxito!")
+            setProductReviewed(" Review realizada con éxito!")
           }
         })
         .catch((er) => setProductReviewed(er.response.data.message ? er.response.data.message : er.response.data))

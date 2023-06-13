@@ -88,7 +88,7 @@ const UserProfilePageComponent = ({updateUserApiRequest, fetchUser, userInfoFrom
                             <Form.Label>Correo electrónico</Form.Label>
                             <Form.Control
                                 disabled
-                                value={user.email + "   if you want to change email, remove account and create new one with new email address"}
+                                value={user.email}
                                 //type="email"
                                 //placeholder= "El correo no se puede modificar."
                                 //name="email"

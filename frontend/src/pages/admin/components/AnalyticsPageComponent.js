@@ -34,7 +34,7 @@ const AnalyticsPageComponent = ({
         const socket = socketIOClient();
         let today = new Date().toDateString();
         const handler = (newOrder) => {
-            var orderDate = new Date(newOrder.createdAt).toLocaleString("en-US", { hour: "numeric", hour12: true, timeZone: "UTC" });
+            var orderDate = new Date(newOrder.createdAt).toLocaleString("es-AR", { hour: "numeric", hour12: true, timeZone: "UTC" });
             if (new Date(newOrder.createdAt).toDateString() === today) {
                 if (today === new Date(firstDateToCompare).toDateString()) {
                     setDataForFirstSet((prev) => {
@@ -80,7 +80,7 @@ const AnalyticsPageComponent = ({
             let orderSum = 0;
             const orders = data.map((order) => {
             orderSum += order.orderTotal.cartSubtotal;
-            var date = new Date(order.createdAt).toLocaleString("en-US", {
+            var date = new Date(order.createdAt).toLocaleString("es-AR", {
                 hour: "numeric",
                 hour12: true,
                 timeZone: "UTC",
@@ -88,7 +88,7 @@ const AnalyticsPageComponent = ({
             return { name: date, [firstDateToCompare]: orderSum };
             });
             setDataForFirstSet(orders);
-            console.log(orders)
+            //console.log(orders)
         })
         .catch((er) =>
             console.log(
@@ -102,7 +102,7 @@ const AnalyticsPageComponent = ({
             let orderSum = 0;
             const orders = data.map((order) => {
             orderSum += order.orderTotal.cartSubtotal;
-            var date = new Date(order.createdAt).toLocaleString("en-US", {
+            var date = new Date(order.createdAt).toLocaleString("es-AR", {
                 hour: "numeric",
                 hour12: true,
                 timeZone: "UTC",
@@ -110,7 +110,7 @@ const AnalyticsPageComponent = ({
             return { name: date, [secondDateToCompare]: orderSum };
             });
             setDataForSecondSet(orders);
-            console.log(orders)
+            //console.log(orders)
         })
         .catch((er) =>
             console.log(
@@ -135,7 +135,7 @@ const AnalyticsPageComponent = ({
         </Col>
         <Col md={10}>
             <h1>
-                Comparativa de CyberMonday {firstDateToCompare} VS{" "} {secondDateToCompare}
+                Comparativa de Ventas {firstDateToCompare} VS{" "} {secondDateToCompare}
             </h1>
             <Form.Group controlId="firstDateToCompare">
             <Form.Label>Seleccionar primer fecha para comparar</Form.Label>
@@ -181,7 +181,7 @@ const AnalyticsPageComponent = ({
                 label={{ value: "Ganancia $", angle: -90, position: "insideLeft" }}
                 />
                 <Tooltip />
-                <Legend verticalAlign="top" height={36} />
+                <Legend verticalAlign="top" height={30} />
                 {dataForFirstSet.length > dataForSecondSet.length ? (
                 <>
                     <Line
@@ -189,7 +189,8 @@ const AnalyticsPageComponent = ({
                     type="monotone"
                     dataKey={firstDateToCompare} 
                     stroke="#8884d8"
-                    activeDot={{ r: 8 }}
+                    //activeDot={{ r: 4 }}
+                    dot={{ stroke: '#8884d8', strokeWidth: 1, r: 4,strokeDasharray:''}}
                     strokeWidth={4}
                     />
                     <Line
@@ -198,6 +199,8 @@ const AnalyticsPageComponent = ({
                     dataKey={secondDateToCompare} 
                     stroke="#82ca9d"
                     strokeWidth={4}
+                    //activeDot={{ r: 4 }}
+                    dot={{ stroke: '#82ca9d', strokeWidth: 1, r: 4,strokeDasharray:''}}
                     />
                 </>
                 ) : (
@@ -207,7 +210,8 @@ const AnalyticsPageComponent = ({
                     type="monotone"
                     dataKey={secondDateToCompare}
                     stroke="#8884d8"
-                    activeDot={{ r: 8 }}
+                    activeDot={{ r: 4 }}
+                    //dot={{ stroke: '#8884d8', strokeWidth: 1, r: 8,strokeDasharray:''}}
                     strokeWidth={4}
                     />
                     <Line
@@ -215,6 +219,8 @@ const AnalyticsPageComponent = ({
                     type="monotone"
                     dataKey={firstDateToCompare}
                     stroke="#82ca9d"
+                    activeDot={{ r: 4 }}
+                    //dot={{ stroke: '#8884d8', strokeWidth: 1, r: 8,strokeDasharray:''}}
                     strokeWidth={4}
                     />
                 </>

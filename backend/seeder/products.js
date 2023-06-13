@@ -102,8 +102,8 @@ const products = [
     category: "Eléctricas",
     images: [
     { path: "/images/HIL002.jpg" },
-    { path: "/images/HIL002.jpg" },
-    { path: "/images/HIL002.jpg" },
+    { path: "/images/HIL002-g1.jpg" },
+    { path: "/images/HIL002-g3.jpg" },
     ],
     rating: 0,
     reviewsNumber: 0,
@@ -254,8 +254,8 @@ description: "Tipo de Encastre: SDS Plus. Tensión: 220V 240V. Potencia: 1300W. 
     category: "Eléctricas",
     images: [
     { path: "/images/HRM004.jpg" },
-    { path: "/images/HRM004-g2-600x450.jpg" },
-    { path: "/images/HRM004-g5.jpg" },
+    { path: "/images/HRM004-g3.jpg" },
+    { path: "/images/HRM004-g4.jpg" },
     ],
     rating: 3,
     reviewsNumber: 5,
@@ -498,7 +498,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
         images: [
         { path: "/images/ULT110.jpg" },
         { path: "/images/ULT110-g3.jpg" },
-        { path: "/images/ULT110-g5.jpg" },
+        { path: "/images/ULT110-g2.jpg" },
         ],
         rating: 5,
         reviewsNumber: 5,
@@ -999,7 +999,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
                 ],
         },
         {
-        name: " KIT DE PUNTAS Y DESTORNILLADOR CON CRIQUE | 49 PIEZAS | JP49",
+        name: "KIT DE PUNTAS Y DESTORNILLADOR CON CRIQUE | 49 PIEZAS | JP49",
         description: " Fabricados en acero cromo-vanadio. 48 puntas de precisión: planas, phillips, torx, torx hembra, pozidriv, tri-wing, spanner.  Mango atornillador con criquet de 3 posiciones",
         count: 20,
         price: 6700,
@@ -1018,7 +1018,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
                 ],
         },
         {
-        name: " SET DE 6 DESTORNILLADORES AISLADOS PHILLIPS Y PLANOS | DJ06V",
+        name: "SET DE 6 DESTORNILLADORES AISLADOS PHILLIPS Y PLANOS | DJ06V",
         description: " Forjados en Acero Cromo-Vanadio. Diseño ergonómico. Mango ergonómico AISLADO 1000V. Cumplen Normas Internacionales DIN/VDE. Varilla recubierta. Incluye: 3 Phillips: 0x75 / 1×80 / 2×100  y 3 planos: 0,5×3,5×75 mm. / 1×5,5×125 mm. / 1,2×6,5×150 mm. ",
         count: 20,
         price: 7900,
@@ -1036,7 +1036,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
                 ],
         },
         {
-        name: " JUEGO DE 9 LLAVES HEXAGONALES | PULGADAS PLEGABLES | LH60E",
+        name: "JUEGO DE 9 LLAVES HEXAGONALES | PULGADAS PLEGABLES | LH60E",
         description: " Estructura mango-estuche plástico de dos componentes (ABS-goma). 9 Piezas: 1/16″ – 5/64″ – 3/32″ – 1/8″ – 5/32″ – 3/16″ – 1/4″ – 5/16″ – 3/8″. Forjadas en Acero Cr-V. Tratamiento anti-corrosión. ",
         count: 20,
         price: 3600,
@@ -1054,7 +1054,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
                 ],
         },
         {
-        name: " JUEGO DE 14 LLAVES TIPO “T” HEXAGONALES | LH14T",
+        name: "JUEGO DE 14 LLAVES TIPO “T” HEXAGONALES | LH14T",
         description: " Fabricadas en Acero S2. Llave larga con punta redonda. Mango bimaterial. Estuche plástico para transporte y almacenamiento. Métricas: 2, 3, 4, 5, 6, 8 y 10 mm. Pulgadas: 5/64″ – 1/8″ – 9/64″ – 5/32″ – 3/16″ – 1/4″ – 3/8″.",
         count: 20,
         price: 15310,
@@ -1073,7 +1073,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
                 ],
         },
         {
-        name: " JUEGO DE LLAVE ESTRIADA CON CRIQUE | 12 MEDIDAS EN 1 | JCC12",
+        name: "JUEGO DE LLAVE ESTRIADA CON CRIQUE | 12 MEDIDAS EN 1 | JCC12",
         description: " La llave posee 2 vías con crique, una de 14mm en un sentido y otra de 19mm en sentido contrario, a las cuales se les puede colocar los bocallaves del kit, que poseen las siguientes medidas: 1 Bocallave doble 6mm y 8mm, 1 Bocallave doble 9mm y 10mm, 1 Bocallave doble 11mm y 12mm, 1 Bocallave doble 13mm y 15mm, 1 Bocallave doble 16mm y 17mm, 1 Bocallave doble 14mm y 19mm ",
         count: 20,
         price: 24827,
@@ -1092,7 +1092,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
                 ],
         },
         {
-        name: " LLAVE AJUSTABLE",
+        name: "LLAVE AJUSTABLE",
         description: " Forjadas en Acero 40Cr-V. Diseñadas y fabricadas bajo normas DIN3117. Grilla milimetrada grabada en laser. Cabeza de gran apertura. Sector mecánico de gran robustez. ",
         count: 20,
         price: 24827,
@@ -1109,7 +1109,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
                 ],
         },
         {
-        name: " LLAVE PARA CAÑOS",
+        name: "LLAVE PARA CAÑOS",
         description: "Fabricadas en fundición de hierro. Mordazas especialmente endurecidas en Acero Cromo Molibdeno. Boca a 90º. Recubierta con pintura epoxi. ",
         count: 20,
         price: 18790,
@@ -1126,7 +1126,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
                 ],
         },
         {
-        name: " LLAVE PARA CAÑOS TIPO SUECA",
+        name: "LLAVE PARA CAÑOS TIPO SUECA",
         description: " Fabricada en fundición de hierro y chapa plegada. Mordazas especialmente endurecidas en Acero Cromo Molibdeno. Recubierta con pintura epoxi. Gran poder de sujeción.",
         count: 20,
         price: 12300,
@@ -1143,7 +1143,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
                 ],
         },
         {
-        name: " LLAVE TIPO CRUZ DE 14″ | WTC14",
+        name: "LLAVE TIPO CRUZ DE 14″ | WTC14",
         description: "Fabricada en Acero Cr-V. Bocas de: 17 – 19 – 21 – 23 mm. Forjada en Acero Cr-V. Apta para uso intensivo.",
         count: 20,
         price: 5800,
@@ -1160,7 +1160,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
                 ],
         },
         {
-        name: " SET DE 6 LLAVES COMBINADAS CON CRIQUE ARTICULADAS | JCCA6P",
+        name: "SET DE 6 LLAVES COMBINADAS CON CRIQUE ARTICULADAS | JCCA6P",
         description: "Forjadas en Acero Cromo-Vanadio. Medidas: 8, 10, 12, 13, 14, 17 mm. Diseño ergonómico. Sector mecánico de gran robustez resistente a altos torques. Diseñadas para acceder de modo más sencillo a espacio reducidos. Tratamiento superficial anti-corrosión.",
         count: 20,
         price: 24518,
@@ -1179,7 +1179,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
                 ],
         },
         {
-        name: " SET DE 12 LLAVES COMBINADAS – MILIMÉTRICAS",
+        name: "SET DE 12 LLAVES COMBINADAS – MILIMÉTRICAS",
         description: "Juego de 12 Llaves Combinadas en milímetros: Medidas: 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 y 19 mm. Forjadas en Acero Cromo Vanadio. Tratamiento anticorrosión. Diseño Acodado que permite mejorar su accesibilidad a espacios reducidos o complejos.",
         count: 20,
         price: 20599,
@@ -1198,7 +1198,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
                 ],
         },
         {
-        name: " MARTILLO DE DOBLE CARA | GOMA/PVC",
+        name: "MARTILLO DE DOBLE CARA | GOMA/PVC",
         description: "Peso: 1,2 Kg. Cabo de fibra. Alta resistencia. Diámetro 40 mm. Mango de engomado TPR. Diseño confortable.",
         count: 20,
         price: 3300,
@@ -1217,7 +1217,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
                 ],
         },
         {
-        name: " MARTILLO ENCOFRADOR",
+        name: "MARTILLO ENCOFRADOR",
         description: "Cabeza Acero al Carbono C45 de 450 Grs. Dureza: 48-50 HRC. Mango con estructura de fibra de vidrio y grip anti-deslizante. Cabeza con tratamiento térmico antioxidante.",
         count: 20,
         price: 3590,
@@ -1235,7 +1235,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
                 ],
         },
         {
-        name: " MARTILLOS BOLITA",
+        name: "MARTILLOS BOLITA",
         description: "Cabeza Acero al Carbono C45. Dureza: 48-50 HRC. Mango con estructura de fibra de vidrio y grip anti-deslizante. Cabeza con tratamiento térmico antioxidante y terminación pulida.",
         count: 20,
         price: 2700,
@@ -1253,7 +1253,7 @@ description:    "Motor eléctrico brushed de alta performance. Tensión nominal:
                 ],
         },
         {
-        name: " MARTILLOS DE CARPINTERO",
+        name: "MARTILLOS DE CARPINTERO",
         description: "Cabeza Acero al Carbono C45. Dureza: 48-50 HRC. Mango con estructura de fibra de vidrio y grip anti-deslizante. Cabeza con tratamiento térmico antioxidante y terminación pulida.",
         count: 20,
         price: 2830,

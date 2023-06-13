@@ -3,7 +3,8 @@ import CartItemComponent from "../../../components/CartItemComponent"
 import { useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom"
 
-import {useDispatch, useSelector} from "react-redux"
+import {useDispatch} from "react-redux"
+import { clearCart } from "../../../redux/actions/cartActions";
 
 
 const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalScript, initMercadoPago}) => {
@@ -22,7 +23,7 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
     //
     const navigate = useNavigate()
     const {id} = useParams()
-
+    const dispatch = useDispatch()
 
 
     useEffect(() => {
@@ -52,7 +53,7 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
                 // }, 5000)
             } else {
                 if (data.paymentMethod === "pp") {
-                    setOrderButtonMessage("Pagar")
+                    setOrderButtonMessage("Completar Pago")
                 } else if (data.paymentMethod === "cod"){
                     setButtonDisabled(true)
                     setOrderButtonMessage("Pago en efectivo contra entrega")
@@ -80,8 +81,6 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
         setIsPaid(paidAt)
         setButtonDisabled(true)
         paypalContainer.current.style = "display: none"
-
-
     }
 
     return (
@@ -152,13 +151,18 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
                                     variant="primary" 
                                     type="button" 
                                     disabled={buttonDisabled}
-                                    //lala//
-                                    //onChange={clearCartHandler}
-                                    //
                                 >
                                     {orderButtonMessage}
                                     {}
                                 </Button>
+                                <div className="d-grid gap-2">
+                                    <Button
+                                        size="lg" 
+                                        onClick={() => dispatch(clearCart())} 
+                                        variant="danger" 
+                                        type="button" 
+                                    >Test_Volver</Button>
+                                </div>
                             </div>
                             {/* Estilos para los botones de pago */}
                             <div style={{position: "relative", zIndex:1}}>
