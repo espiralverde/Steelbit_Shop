@@ -2,41 +2,37 @@ const categories = [
     {
     name: "Eléctricas",
     description:
-    "Eléctricas - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
+    "Herramientas hechas para vivir en el taller o en el espacio de trabajo que elijas, sumando calidad y precisión a tu día a día. Toda la potencia de una gama profesional, en tus manos.",
     image: "/images/banner-electricas-hamilton.jpg",
     attrs: [
     { key: "Tipo", value: ["Corte", "Hidrolavadora", "Lijado", "Perforación"] },
-    { key: "color", value: ["blue", "rojo", "verde", "black"] },
     ],
 },
 {
     name: "Inalámbricas",
     description:
-    "Inalámbricas - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
+    "Nuestras herramientas inalámbricas están equipadas con baterías de Ion-Litio para cumplir con los más altos estándares de calidad, atendiendo a los detalles de cada producto para proporcionar soluciones y brindar un alto nivel de confort al usuario.",
     image: "/images/banner-abateria-hamilton.jpg",
     attrs: [
         { key: "Tipo", value: ["Batería/Cargador", "Corte", "Perforación"] },
-        { key: "color", value: ["blue", "rojo", "verde", "black"] },
         ],
 },
 {
     name: "Neumáticas",
     description:
-    "Neumáticas - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
+    "Como todas nuestras herramientas, están ideadas para usuarios profesionales que buscan aprovechar al máximo las prestaciones de sus productos. Pensadas principalmente para entornos industriales y de construcción.",
     image: "/images/banner-neumaticas-hamilton.jpg",
     attrs: [
         { key: "Tipo", value: ["Compresores", "Llaves Neumáticas", "Lubricado y Mecanizado", "Pistolas de pintar"] },
-        { key: "color", value: ["blue", "rojo", "verde", "black"] },
         ],
 },
 {
     name: "Manuales",
     description:
-    "Manuales - Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, magnam qui. Accusamus similique placeat at nisi autem eaque molestiae velit.",
+    "La familia Hamilton está diseñada para que todos tus trabajos se destaquen, obteniendo terminaciones impecables, y transformando largas jornadas de trabajo en tareas simples y rápidas.",
     image: "/images/banner-manuales-hamilton.jpg",
     attrs: [
         { key: "Tipo", value: ["Criques hidráulicos", "Destornilladores", "Llaves", "Martillos", "Pinzas y Alicates", "Sujeción"] },
-        { key: "color", value: ["blue", "rojo", "verde", "black"] },
         ],
 },
 

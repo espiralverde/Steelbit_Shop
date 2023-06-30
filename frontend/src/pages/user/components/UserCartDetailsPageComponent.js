@@ -115,7 +115,7 @@ const UserCartDetailsPageComponent = ({cartItems, itemsCount, cartSubtotal, user
                             <h3>Resumen</h3>
                         </ListGroupItem>
                         <ListGroupItem>
-                            Precio: <span className="fw-bold">ARS ${cartSubtotal}</span>
+                            Precio: <span className="fw-bold">ARS ${parseFloat(cartSubtotal).toFixed(2)}</span>
                         </ListGroupItem>
                         <ListGroupItem>
                             Envío: <span className="fw-bold">Incluido</span>
@@ -124,7 +124,7 @@ const UserCartDetailsPageComponent = ({cartItems, itemsCount, cartSubtotal, user
                             Impuestos: <span className="fw-bold">Incluido</span>
                         </ListGroupItem>
                         <ListGroupItem className="text">
-                            <h4>Precio Final: <span className="fw-bold">ARS ${cartSubtotal}</span></h4>
+                            <h4>Precio Final: <span className="fw-bold">ARS ${parseFloat(cartSubtotal).toFixed(2)}</span></h4>
                         </ListGroupItem>
                         <ListGroupItem>
                             <div className="d-grid gap-2">

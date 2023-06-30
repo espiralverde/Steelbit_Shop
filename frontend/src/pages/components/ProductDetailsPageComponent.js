@@ -126,7 +126,7 @@ import {
                         <Rating readonly size={20} initialValue={product.rating} /> ({product.reviewsNumber})
                       </ListGroupItem>
                       <ListGroupItem>
-                        <span className="fw-bold">ARS ${product.price}</span>
+                        <span className="fw-bold">ARS ${parseFloat(product.price).toFixed(2)}</span>
                       </ListGroupItem>
                       <ListGroupItem>{product.description}</ListGroupItem>
                     </ListGroup>
@@ -135,7 +135,7 @@ import {
                     <ListGroup>
                       <ListGroupItem>Estado: {product.count > 0 ? "Disponible" : "Sin stock"}</ListGroupItem>
                       <ListGroupItem>
-                        <span className="fw-bold">ARS ${product.price}</span>
+                        <span className="fw-bold">ARS ${parseFloat(product.price).toFixed(2)}</span>
                       </ListGroupItem>
                       <ListGroupItem>
                         Cantidad:

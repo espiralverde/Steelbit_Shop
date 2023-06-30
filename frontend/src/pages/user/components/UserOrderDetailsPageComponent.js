@@ -132,7 +132,7 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
                             <h3>Resumen</h3>
                         </ListGroupItem>
                         <ListGroupItem>
-                            Precio: <span className="fw-bold">ARS ${cartSubtotal}</span>
+                            Precio: <span className="fw-bold">ARS ${parseFloat(cartSubtotal).toFixed(2)}</span>
                         </ListGroupItem>
                         <ListGroupItem>
                             Envío: <span className="fw-bold">Incluido</span>
@@ -141,10 +141,10 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
                             Impuestos: <span className="fw-bold">Incluido</span>
                         </ListGroupItem>
                         <ListGroupItem className="text-danger">
-                            <h4>Precio Final: <span className="fw-bold">ARS ${cartSubtotal}</span></h4>
+                            <h4>Precio Final: <span className="fw-bold">ARS ${parseFloat(cartSubtotal).toFixed(2)}</span></h4>
                         </ListGroupItem>
                         <ListGroupItem>
-                            <div className="d-grid gap-2">
+                            <div className="d-grid gap-2 mb-2">
                                 <Button 
                                     size="lg" 
                                     onClick={orderHandler} 
@@ -155,19 +155,19 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
                                     {orderButtonMessage}
                                     {}
                                 </Button>
-                                <div className="d-grid gap-2">
-                                    <Button
-                                        size="lg" 
-                                        onClick={() => dispatch(clearCart())} 
-                                        variant="danger" 
-                                        type="button" 
-                                    >Test_Volver</Button>
-                                </div>
                             </div>
                             {/* Estilos para los botones de pago */}
                             <div style={{position: "relative", zIndex:1}}>
                                 <div ref={paypalContainer} id="paypal-container-element"></div>
                             </div>
+                            <div className="d-grid gap-2">
+                                    <Button
+                                        size="lg" 
+                                        onClick={() => dispatch(clearCart())} 
+                                        variant="success" 
+                                        type="button" 
+                                    > Ir a la Tienda <span><i class="bi bi-shop"></i></span></Button> 
+                                </div>
                         </ListGroupItem>
                     </ListGroup>
                 </Col>

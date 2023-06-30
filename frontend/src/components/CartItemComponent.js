@@ -16,10 +16,10 @@ const CartItemComponent = ({item, removeFromCartHandler = false, orderCreated = 
                         {item.name}
                     </Col>
                     <Col md={2}>
-                        <b>ARS ${item.price}</b>
+                        <b>ARS ${parseFloat(item.price).toFixed(2)}</b>
                     </Col>
-                    <Col md={3}>
-                        <Form.Select onChange={ changeCount ? (e) => changeCount(item.productID, e.target.value) : undefined } disabled={orderCreated} value={item.quantity}>
+                    <Col md={1}>
+                        <Form.Select  onChange={ changeCount ? (e) => changeCount(item.productID, e.target.value) : undefined } disabled={orderCreated} value={item.quantity}>
                             {[...Array(item.count).keys()].map(x => (
                                 <option key={x+1} value={x+1}>{x+1}</option>
                             ))}

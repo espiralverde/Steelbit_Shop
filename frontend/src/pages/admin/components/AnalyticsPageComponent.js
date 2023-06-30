@@ -1,236 +1,60 @@
-import { Row, Col, Form } from "react-bootstrap";
+import { Row, Col, Form, Button } from "react-bootstrap";
 import AdminLinksComponent from "../../../components/admin/AdminLinksComponent";
-import {
-    LineChart,
-    Line,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    Legend,
-    ResponsiveContainer,
-} from "recharts";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import ChartsEmbedSDK from "@mongodb-js/charts-embed-dom";
 
-const AnalyticsPageComponent = ({
-    fetchOrdersForFirstDate,
-    fetchOrdersForSecondDate,
-    socketIOClient
-}) => {
-    const [firstDateToCompare, setFirstDateToCompare] = useState(
-        new Date().toISOString().substring(0, 10)
-    );
-    var previousDay = new Date();
-    previousDay.setDate(previousDay.getDate() - 1);
-    
-    const [secondDateToCompare, setSecondDateToCompare] = useState(
-        new Date(previousDay).toISOString().substring(0, 10)
-    );
+const sdk = new ChartsEmbedSDK({
+    baseUrl: "https://charts.mongodb.com/charts-proyectotesis-vzogd",
+    showAttribution: false
+});
 
-    const [dataForFirstSet, setDataForFirstSet] = useState([]);
-    const [dataForSecondSet, setDataForSecondSet] = useState([]);
+// const ventasMensualesChart = sdk.createChart({
+//     chartId: "64908e9a-7539-4a42-894b-fc3420a70ddf",
+// });
+
+
+// const ventasPorProductoChart = sdk.createChart({
+//     chartId: "6490918c-b257-4da3-8015-bc607136e84b"
+// });
+
+const dashboardPrincipal = sdk.createDashboard({
+    dashboardId: "64908225-f297-4cd7-8180-e7c19b40f57e"
+})
+
+
+const AnalyticsPageComponent = () => {
 
     useEffect(() => {
-        const socket = socketIOClient();
-        let today = new Date().toDateString();
-        const handler = (newOrder) => {
-            var orderDate = new Date(newOrder.createdAt).toLocaleString("es-AR", { hour: "numeric", hour12: true, timeZone: "UTC" });
-            if (new Date(newOrder.createdAt).toDateString() === today) {
-                if (today === new Date(firstDateToCompare).toDateString()) {
-                    setDataForFirstSet((prev) => {
-                        if (prev.length === 0) {
-                            return [{ name: orderDate, [firstDateToCompare]: newOrder.orderTotal.cartSubtotal }]; 
-                        }
-                        const length = prev.length;
-                        if (prev[length - 1].name === orderDate) {
-                            prev[length - 1][firstDateToCompare] += newOrder.orderTotal.cartSubtotal;
-                            return [...prev];
-                        } else {
-                            var lastElem = { name: orderDate, [firstDateToCompare]: prev[length - 1][firstDateToCompare] + newOrder.orderTotal.cartSubtotal }; 
-                            return [...prev, lastElem];
-                        }
-                    })
-                }
-                else if (today === new Date(secondDateToCompare).toDateString()) {
-                    setDataForSecondSet((prev) => {
-                        if (prev.length === 0) {
-                            return [{ name: orderDate, [secondDateToCompare]: newOrder.orderTotal.cartSubtotal }];
-                        }
-                        const length = prev.length;
-                        if (prev[length - 1].name === orderDate) {
-                            prev[length - 1][secondDateToCompare] += newOrder.orderTotal.cartSubtotal; 
-                            return [...prev];
-                        } else {
-                            var lastElem = { name: orderDate, [secondDateToCompare]: prev[length - 1][secondDateToCompare] + newOrder.orderTotal.cartSubtotal };
-                            return [...prev, lastElem];
-                        }
-                    })
-                }
-            }
-        }
-        socket.on("newOrder", handler);
-        return () => socket.off("newOrder", handler);
-    }, [setDataForFirstSet, setDataForSecondSet, firstDateToCompare, secondDateToCompare])
 
-    useEffect(() => {
-        const abctrl = new AbortController();
-        fetchOrdersForFirstDate(abctrl, firstDateToCompare)
-        .then((data) => {
-            //console.log(data)
-            let orderSum = 0;
-            const orders = data.map((order) => {
-            orderSum += order.orderTotal.cartSubtotal;
-            var date = new Date(order.createdAt).toLocaleString("es-AR", {
-                hour: "numeric",
-                hour12: true,
-                timeZone: "UTC",
-            });
-            return { name: date, [firstDateToCompare]: orderSum };
-            });
-            setDataForFirstSet(orders);
-            //console.log(orders)
-        })
-        .catch((er) =>
-            console.log(
-            er.response.data.message ? er.response.data.message : er.response.data
-            )
-        );
+        // ventasMensualesChart.render(document.getElementById("chart1"));
+        // ventasPorProductoChart.render(document.getElementById("chart2"));
+        dashboardPrincipal.render(document.getElementById("dashboard"))
+        //.catch(() => window.alert("Chart failed to initialise"));
+        }, []);
 
-        fetchOrdersForSecondDate(abctrl, secondDateToCompare)
-        .then((data) => {
-            //console.log(data)
-            let orderSum = 0;
-            const orders = data.map((order) => {
-            orderSum += order.orderTotal.cartSubtotal;
-            var date = new Date(order.createdAt).toLocaleString("es-AR", {
-                hour: "numeric",
-                hour12: true,
-                timeZone: "UTC",
-            });
-            return { name: date, [secondDateToCompare]: orderSum };
-            });
-            setDataForSecondSet(orders);
-            //console.log(orders)
-        })
-        .catch((er) =>
-            console.log(
-            er.response.data.message ? er.response.data.message : er.response.data
-            )
-        );
-        return () => abctrl.abort();
-    }, [firstDateToCompare, secondDateToCompare]);
-
-    const firstDateHandler = (e) => {
-        setFirstDateToCompare(e.target.value);
-    };
-
-    const secondDateHandler = (e) => {
-        setSecondDateToCompare(e.target.value);
-    };
 
     return (
         <Row className="m-5">
-        <Col md={2}>
-            <AdminLinksComponent />
-        </Col>
-        <Col md={10}>
-            <h1>
-                Comparativa de Ventas {firstDateToCompare} VS{" "} {secondDateToCompare}
-            </h1>
-            <Form.Group controlId="firstDateToCompare">
-            <Form.Label>Seleccionar primer fecha para comparar</Form.Label>
-            <Form.Control
-                onChange={firstDateHandler}
-                type="date"
-                name="firstDateToCompare"
-                placeholder="Primera fecha..."
-                defaultValue={firstDateToCompare}
-            />
-            </Form.Group>
-            <br />
-            <Form.Group controlId="secondDateToCompare">
-            <Form.Label>Seleccionar segunda fecha para comparar</Form.Label>
-            <Form.Control
-                onChange={secondDateHandler}
-                type="date"
-                name="secondDateToCompare"
-                placeholder="Segunda fecha..."
-                defaultValue={secondDateToCompare}
-            />
-            </Form.Group>
-            <ResponsiveContainer width="100%" height={500}>
-            <LineChart
-                margin={{
-                top: 5,
-                right: 30,
-                left: 20,
-                bottom: 5,
-                }}
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis
-                dataKey="name"
-                label={{
-                    value: "Hora",
-                    offset: 50,
-                    position: "insideBottomRight",
-                }}
-                allowDuplicatedCategory={false}
-                />
-                <YAxis
-                label={{ value: "Ganancia $", angle: -90, position: "insideLeft" }}
-                />
-                <Tooltip />
-                <Legend verticalAlign="top" height={30} />
-                {dataForFirstSet.length > dataForSecondSet.length ? (
-                <>
-                    <Line
-                    data={dataForFirstSet}
-                    type="monotone"
-                    dataKey={firstDateToCompare} 
-                    stroke="#8884d8"
-                    //activeDot={{ r: 4 }}
-                    dot={{ stroke: '#8884d8', strokeWidth: 1, r: 4,strokeDasharray:''}}
-                    strokeWidth={4}
-                    />
-                    <Line
-                    data={dataForSecondSet}
-                    type="monotone"
-                    dataKey={secondDateToCompare} 
-                    stroke="#82ca9d"
-                    strokeWidth={4}
-                    //activeDot={{ r: 4 }}
-                    dot={{ stroke: '#82ca9d', strokeWidth: 1, r: 4,strokeDasharray:''}}
-                    />
-                </>
-                ) : (
-                <>
-                    <Line
-                    data={dataForSecondSet}
-                    type="monotone"
-                    dataKey={secondDateToCompare}
-                    stroke="#8884d8"
-                    activeDot={{ r: 4 }}
-                    //dot={{ stroke: '#8884d8', strokeWidth: 1, r: 8,strokeDasharray:''}}
-                    strokeWidth={4}
-                    />
-                    <Line
-                    data={dataForFirstSet}
-                    type="monotone"
-                    dataKey={firstDateToCompare}
-                    stroke="#82ca9d"
-                    activeDot={{ r: 4 }}
-                    //dot={{ stroke: '#8884d8', strokeWidth: 1, r: 8,strokeDasharray:''}}
-                    strokeWidth={4}
-                    />
-                </>
-                )}
-            </LineChart>
-            </ResponsiveContainer>
-        </Col>
+            <Col md={2}>
+                <AdminLinksComponent />
+            </Col>
+            <Col md={10}>
+                <h1>Panel del Admin</h1>
+                <Button className="btn btn-primary" target="_blank" href="https://charts.mongodb.com/charts-proyectotesis-vzogd/public/dashboards/64908225-f297-4cd7-8180-e7c19b40f57e">
+                    Filtrar
+                </Button>
+                
+                {/* <div id="chart1" style={{width:640, height: 480 }}></div>
+                <br />
+                <div id="chart2" style={{width:640, height: 480 }}></div> */}
+                <div  id="dashboard" style={{height: "100vh", width:"100vw" }}></div>
+
+
+                
+
+
+            </Col>
         </Row>
     );
-    };
-
-    export default AnalyticsPageComponent;
-
+}
+export default AnalyticsPageComponent;

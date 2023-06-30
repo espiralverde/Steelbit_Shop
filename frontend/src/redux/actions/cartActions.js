@@ -35,7 +35,7 @@ export const removeFromCart = (productID, quantity, price) =>(dispatch, getState
 // }
 
 export const clearCart = () => (dispatch) => {
-    document.location.href = "/product-list"
+    document.location.href = "/"
     localStorage.removeItem("cart")
     dispatch ({type: actionTypes.CLEAR_CART})
 }

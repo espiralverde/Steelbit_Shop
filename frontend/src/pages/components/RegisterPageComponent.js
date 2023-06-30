@@ -112,8 +112,10 @@ const RegisterPageComponent = ({registerUserApiRequest, reduxDispatch, setReduxU
 
                         <Row className="pb-2">
                             <Col>
-                            Ya está registrado?
-                            <Link to={"/login"}> Login </Link>
+                            Ya está registrado? <span> 
+                                <Link to={"/login"}>Login</Link>
+                            </span>
+
 
                             </Col>
                         </Row>

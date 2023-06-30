@@ -9,6 +9,8 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from "./redux/store"
 
+import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 

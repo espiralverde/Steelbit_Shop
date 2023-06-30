@@ -63,7 +63,7 @@ const CategoryFilterComponent = ({setCategoriesFromFilter}) => {
             <Form.Check type="checkbox" id={`check-api2-${idx}`}>
               <Form.Check.Input ref={(el) => (myRefs.current[idx] = el)} type="checkbox" isValid onChange={(e) => selectCategory(e, category, idx)} />
               {/* como estoy dentro de la función MAP, puedo tomar los inputs con ref={(el) => (myRefs.current[idx] = el)} */}
-              <Form.Check.Label style={{cursor: "pointer"}}> {category.name} </Form.Check.Label>
+              <Form.Check.Label style={{cursor: "pointer", color: "black"}}> {category.name} </Form.Check.Label>
             </Form.Check>
           </div>
         ))}

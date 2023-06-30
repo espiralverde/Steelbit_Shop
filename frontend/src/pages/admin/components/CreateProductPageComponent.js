@@ -137,7 +137,7 @@ const CreateProductPageComponent = ({
         <Container>
             <Row className="mt-5 justify-content-md-center">
                 <Col md={1}>
-                    <Link to="/admin/products" className="btn btn-info my-3">Volver</Link>
+                    <Link to="/admin/products" className="btn btn-primary my-3">Volver</Link>
                 </Col>
                 
                 <Col md={6}>
@@ -157,7 +157,7 @@ const CreateProductPageComponent = ({
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicPrice">
                                 <Form.Label>Precio</Form.Label>
-                                <Form.Control type="text" name="price" required />
+                                <Form.Control type="text" step="0.01" min="0" max="10" name="price" required />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicCategory">
                                 <Form.Label>

@@ -82,7 +82,7 @@ const OrderDetailsPageComponent = ({getOrder, markAsDelivered}) => {
                             <h3>Resumen</h3>
                         </ListGroupItem>
                         <ListGroupItem>
-                            Precio: <span className="fw-bold">${cartSubtotal}</span>
+                            Precio: <span className="fw-bold">${parseFloat(cartSubtotal).toFixed(2)}</span>
                         </ListGroupItem>
                         <ListGroupItem>
                             Envío: <span className="fw-bold">Incluido</span>
@@ -91,7 +91,7 @@ const OrderDetailsPageComponent = ({getOrder, markAsDelivered}) => {
                             Impuestos: <span className="fw-bold">Incluido</span>
                         </ListGroupItem>
                         <ListGroupItem className="text-danger">
-                            Precio Final: <span className="fw-bold">${cartSubtotal}</span>
+                            Precio Final: <span className="fw-bold">ARS ${parseFloat(cartSubtotal).toFixed(2)}</span>
                         </ListGroupItem>
                         <ListGroupItem>
                             <div className="d-grid gap-2">

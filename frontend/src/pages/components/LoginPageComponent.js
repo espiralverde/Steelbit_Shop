@@ -73,8 +73,9 @@ const LoginPageComponent = ({loginUserApiRequest, reduxDispatch, setReduxUserSta
                         </Form.Group>
                         <Row className="pb-2">
                             <Col>
-                                No está registrado?
-                                <Link to={"/register"}> Registrar Usuario </Link>
+                                No está registrado? <span>
+                                    <Link to={"/register"}> Registrar Usuario </Link>
+                                </span>
                             </Col>
                         </Row>
                         <Button variant="primary" type="submit">

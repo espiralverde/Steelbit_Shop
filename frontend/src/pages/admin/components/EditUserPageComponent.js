@@ -49,7 +49,7 @@ const EditUserPageComponent = ({updateUserApiRequest, fetchUser}) => {
         <Container>
             <Row className="mt-5 justify-content-md-center">
                 <Col md={1}>
-                    <Link to="/admin/users" className="btn btn-info my-3">Volver</Link>
+                    <Link to="/admin/users" className="btn btn-primary my-3">Volver</Link>
                 </Col>
                 
                 <Col md={6}>

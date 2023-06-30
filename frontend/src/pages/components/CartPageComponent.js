@@ -39,7 +39,7 @@ const CartPageComponent = ({addToCart, removeFromCart, cartItems, cartSubtotal, 
                 <h3>Subtotal ({cartItems.length} {cartItems.length === 1 ? "Producto" : "Productos"})</h3>
             </ListGroup.Item>
             <ListGroup.Item>
-                Precio: <span className="fw-bold">ARS ${cartSubtotal}</span>
+                Precio: <span className="fw-bold">ARS ${parseFloat(cartSubtotal).toFixed(2)}</span>
             </ListGroup.Item>
             <ListGroup.Item>
                 <LinkContainer to="/user/cart-details">

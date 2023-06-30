@@ -73,7 +73,8 @@ const EditProductPageComponent = ({
                 if (data.message === "Producto actualizado") navigate("/admin/products")
             })
             .catch((er) => 
-                setUpdateProductResponseState({error: er.response.data.message ? er.response.data.message : er.response.data}))
+                setUpdateProductResponseState({error: " Error en la carga. Por favor, compruebe los datos ingresados."}))
+                //setUpdateProductResponseState({error: er.response.data.message ? er.response.data.message : er.response.data}))
     }
         setValidated(true);
     };
@@ -137,7 +138,7 @@ const EditProductPageComponent = ({
         <Container>
             <Row className="mt-5 justify-content-md-center">
                 <Col md={1}>
-                    <Link to="/admin/products" className="btn btn-info my-3">Volver</Link>
+                    <Link to="/admin/products" className="btn btn-primary my-3">Volver</Link>
                 </Col>
                 
                 <Col md={6}>
