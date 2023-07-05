@@ -23,7 +23,7 @@ const UserChatComponent = () => {
             const socket = socketIOClient()
             socket.on("no admin", (msg) => {
                 setChat((chat) => {
-                    return[...chat, {admin: "Hola! Nuestro horario de atención es de Lunes a Viernes de 9 a 18 hs."}]
+                    return[...chat, {admin: " Hola! Somos SteelBit :) Nuestro horario de atención personalizada es de 9:30 a 17:30 hs. Escribinos en ese horario para que podamos ayudarte."}]
                 })
             })
             socket.on("mensaje servidor del admin a cliente", (msg) => {

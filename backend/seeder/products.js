@@ -2,7 +2,7 @@ const products = [
     {
         name: "AMOLADORA ANGULAR 115 MM. 820W | HAA001",
         description: "Motor eléctrico brushed de alta performance. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia: 820W. Velocidad sin carga: 12.000 RPM. Discos: 115 mm. Interruptor On-OFF con traba de seguridad. Cabezal de aluminio reforzado. Sistema de bloqueo rápido para cambio de discos. Mango antideslizante.\nAccesorios incluidos: Mango auxiliar. Llave extractora. Protector metálico con cierre rápido",
-        count: 20,
+        count: 6,
         price: 13015,
         category: "Eléctricas",
         images: [
@@ -20,7 +20,7 @@ const products = [
     {
         name: "INGLETADORA DUAL 2350W | HNG001",
         description: "Motor eléctrico brushed de alta performance. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia de entrada: 2100W (S1) 2350W (S6). Velocidad sin carga: 4000 RPM. Disco de corte: 255 mm. Corte máximo (a 90º): 340 mm. Corte máximo (a 45º): 240 mm. Rango de corte: -45º/+45º (vertical y horizontal). Base de aluminio de alta resistencia.Cable VDE: 2 metros. Incluye: Bolsa recolectora. Dispositivo de sujeción Nº8. 2 Soportes para piezas. Llave Allen.",
-        count: 20,
+        count: 6,
         price: 149886,
         category: "Eléctricas",
         images: [
@@ -38,7 +38,7 @@ const products = [
     {
         name: "SIERRA CALADORA ELÉCTRICA 710W | HCA003",
         description: "Motor eléctrico brushed de alta performance de velocidad variable. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia: 710W. Largo de carrera: 23 mm. Carreras por minuto: 1000-3100 RPM. Corte en ángulo: 0º a 45º. Interruptor On-OFF con sistema de bloqueo. Luz led. Base metálica. Protector de hoja de sierra. Guía de hoja de sierra. Sistema rápido de cambio de sierra son sistema manual de medio giro. Mango antideslizante. Cable VDE: 2 metros. Accesorios incluidos: Hoja de sierra. Llave hexagonal. Tubo-Adaptador para recolector",
-        count: 20,
+        count: 6,
         price: 30627,
         category: "Eléctricas",
         images: [
@@ -56,7 +56,7 @@ const products = [
     {
         name: "SIERRA CIRCULAR DE BANCO 2200W | HSCM01",
         description: "Motor eléctrico brushed de alta performance. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia: 2200W (S6) 1800W (S1). Velocidad sin carga: 4.800 RPM. Dimensión de la mesa armada: 640 x 485 x 829 mm. Diámetro máximo de disco: 255 mm. Rango de inclinación: -45º / + 45º. Corte a 90º: 85 mm. Corte a 45º: 60 mm. Accesorios Incluidos: Regla de corte paralelo. Barra de empuje. Llaves para disco (2). Llave de doble boca: 8/10 mm. Conector extractor de viruta. Llave Hexagonal Nº5. Regla para corte horizontal y en ángulo. Protector de disco/sierra. Manguera extractora de viruta",
-        count: 20,
+        count: 6,
         price: 129999,
         category: "Eléctricas",
         images: [
@@ -74,7 +74,7 @@ const products = [
     {
         name: "SIERRA SABLE 900W | HRS001",
         description: "Motor eléctrico brushed de alta performance. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia: 900W. Velocidad sin carga: 0 2800 RPM. Longitud de carrera: 28 mm. Capacidad de corte en madera: 150 mm. Interruptor On-OFF con traba de seguridad. Sistema de liberación rápido para cambio de hojas (Quick change). Mango antideslizante. Accesorios incluídos: Llave hexagonal. 1 hoja de corte para metal. 1 hoja de corte para mader",
-        count: 20,
+        count: 6,
         price: 44965,
         category: "Eléctricas",
         images: [
@@ -92,7 +92,7 @@ const products = [
     {
         name: "HIDROLAVADORA ALTA PRESIÓN AUTOSTOP 1400W | HIL002",
         description: "Su presión de trabajo es de 80 Bar, aunque alcanza hasta 110 Bar de presión, siendo eficiente para Limpieza de Vehículos, Techos, Bicicletas, Máquinas, Piletas, y otros trabajos de limpieza en general. Fácil, rápido, y con el menor esfuerzo posible. Sistema Auto Stop: La Hamilton HIL002 sólo se accionará mientras tengas apretado el gatillo, facilitando un trabajo prolijo y seguro, además de ahorrar energía y agua. Porta cable y porta lanza. Manija en altura y ruedas grandes. Interruptor y purgador de agua de fácil acceso. Tiene distintos tipos de chorros: Regulá la forma de riego según tu necesidad. Ficha Técnica: Potencia: 1400W. Voltaje: 220V. Frecuencia: 50 Hz. Presión Máxima: 110 Bar (80 Bar la mínima). Presión máxima del suministro de agua: 4 Bar. Caudal de trabajo: 5,5 L/min hasta 7,1 L/min. Temperatura máxima del agua: 50 °C.",
-        count: 20,
+        count: 6,
         price: 43913,
         category: "Eléctricas",
         images: [
@@ -110,7 +110,7 @@ const products = [
     {
         name: "HIDROLAVADORA ALTA PRESIÓN AUTOSTOP 2200W | HIL006",
         description: "Se caracteriza por tener bajas vibraciones, y ser muy potente. y su estructura está diseñada para hacer más efectivos trabajos de gran tamaño, como limpieza de vehículos grandes, camiones, maquinaria agrícola, herramientas pesadas, etc. Rodillo superior con manija, que porta un cable de alta presión de 5 metros. Tanque de agua dosificador de destergente ¡Optimiza al máximo el uso de detergente! Además, posee mayor confort que los dosificadores convencionales. Porta lanza con cubrebocas. Manija en altura y ruedas grandes de excelente tracción. Interruptor y purgador de agua de fácil acceso. Tiene distintos tipos de chorros. Ficha Técnica: Potencia: 2200W. Voltaje: 220V. Frecuencia: 50 Hz. Presión de Trabajo: 120 Bar. Presión Máxima: 150 Bar. Caudal de trabajo: 6 L/min. Caudal de agua: 7,1 L/min. Capacidad del Tanque de Agua: 1000 ml. Máxima presión del suministro de agua: 4 Bar. Temperatura máxima del agua: 50 °C",
-        count: 20,
+        count: 6,
         price: 82199,
         category: "Eléctricas",
         images: [
@@ -128,7 +128,7 @@ const products = [
     {
         name: "CEPILLO ELÉCTRICO GARLOPA 900W | HCE001",
         description: "Motor eléctrico brushed de alta performance. Empuñaduras antideslizantes. Bloqueo de gatillo. Regulación de profundidad. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia: 900W. Velocidad sin carga: 16.000 RPM. Ancho máximo de cepillado: 82 mm. Profundidad máxima de cepillado: 3 mm. Profundidad de encaje: 15,5 mm.",
-        count: 20,
+        count: 6,
         price: 48162,
         category: "Eléctricas",
         images: [
@@ -146,7 +146,7 @@ const products = [
     {
     name: "LIJADORA ROTORBITAL 300W | HLR001",
     description: "Motor eléctrico brushed de alta performance. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia: 300W. Velocidad sin carga: 6.000 / 13.000 RPM. Diámetro de base: 125 mm. Oscilación: 2 mm. Mango antideslizante con recurimiento de goma.",
-        count: 20,
+        count: 6,
         price: 24073,
         category: "Eléctricas",
         images: [
@@ -164,7 +164,7 @@ const products = [
     {
     name: "LUSTRALIJADORA PULIDORA ROTORBITAL 800W | HPE002",
     description: "- Motor eléctrico brushed de alta performance con velocidad variable. Lija, Encera, Lustra, y Pule con un acabado profesional y de alta performance. 6 Velocidades desde 2.000 hasta 6.400 RPM. Motor Brushed de Alto Rendimiento. Mango Ergonómico Antideslizante. Almohadilla de lana ajustable. Ficha Técnica: Potencia: 800w. Diámetro del disco: 125 mm. Velocidad sin carga: 2.000-6.400 RPM. Tensión Nominal: 220 V. Frecuencia: 50 Hz. Peso: 2,2 Kg. Clase: 2.",
-        count: 20,
+        count: 6,
         price: 47139,
         category: "Eléctricas",
         images: [
@@ -182,7 +182,7 @@ const products = [
     {
     name: "MINITORNO ELÉCTRICO 130W | KIT CON ACCESORIOS | HMT001",
     description: "Motor eléctrico brushed de alta performance. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Potencia: 130W. Mandril: 0,8 3,2 mm. (sin llave). Velocidades: 6. Velocidad sin carga: 10000 35000 RPM. Sistema de bloqueo. Mango antideslizante. Cable VDE: 2 metros. Funciones: Perforado debaste corte grabado pulido",
-        count: 20,
+        count: 6,
         price: 19257,
         category: "Eléctricas",
         images: [
@@ -200,13 +200,12 @@ const products = [
     {
         name: "ADAPTADOR ANGULAR 90° | PARA TALADROS Y ATORNILLADORES | PAT90",
         description: "Acople Adaptador Angular para Taladros y Atornilladores. Un accesorio compacto para herramientas eléctricas que te permitirá llegar a espacios que antes no podías alcanzar. Podrás realizar tareas con tu taladro percutor o atornillador a 90° sin ningún inconveniente. Trabaja en ángulo de 90° para que puedas llegar a lugares difíciles de alcanzar para tu taladro percutor o atornillador de impacto. Posee un mecanismo endurecido para alcanzar un torque máximo de 55 Nm. Diseño ergonómico, liviano, y rápido para utilizar. Con el mango de plástico podrás manejarlo de manera segura, transmitiendo la fuerza necesaria. Incluye una punta PH. Largo: 14,5 cm. Trabaja con insumos con Encastre de 1/4 (Puntas Atornilladoras, Sierras Copa, Puntas Largas, Mechas Pala, Brocas)",
-        count: 20,
+        count: 6,
         price: 5762,
         category: "Eléctricas",
         images: [
         { path: "/images/PAT90-g1.jpg" },
         { path: "/images/PAT90.jpg" },
-        { path: "/images/PAT90-g2.jpg" },
         ],
         rating: 5,
         reviewsNumber: 5,
@@ -218,7 +217,7 @@ const products = [
     {
     name: "MARTILLO DEMOLEDOR 1700W | ENCASTRE HEXAGONAL | HMD001",
     description: "Tipo de Encastre: Hexagonal. Tensión: 220V 240V. Potencia: 1700W. Tasa de impacto: 1900 bpm. Energía de impacto: 60 J. Velocidad sin carga: 850 rpm. Cable VDE de 3,5 metros. Accesorios: Cincel punta 30 x 410 mm. Cincel plano 30 x 410 mm. Juego de carbones. Llave hexagonal fija. 2 Llave tipo Allen. Maletín plástico con ruedas",
-        count: 20,
+        count: 6,
         price: 126607,
         category: "Eléctricas",
         images: [
@@ -236,7 +235,7 @@ const products = [
     {
     name: "ROTOMARTILLO SDS PLUS 1300W | HRM004",
     description: "Tipo de Encastre: SDS Plus. Tensión: 220V 240V. Potencia: 1300W. Tasa de impacto: 4200 bpm. Energía de impacto: 5 J. Velocidad sin carga: 850 rpm. Cable VDE de 2 metros. Poseen sistema AVTecnology (antivibración). Accesorios: Mango auxiliar. Cincel punta 14 x 250 mm. Cincel plano 14 x 250 mm. Broca 8 x 150 mm. Broca 10 x 150 mm. Broca 12 x 150 mm. Juego de carbones. Protector. Medidor de profundidad. Tubo de grasa. Llave. Maletín plástico",
-        count: 20,
+        count: 6,
         price: 45774,
         category: "Eléctricas",
         images: [
@@ -254,7 +253,7 @@ const products = [
     {
     name: "TALADRO PERCUTOR 950W | HTP003",
     description: "Motor eléctrico brushed de alta performance. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Velocidad sin carga: 0-3000 RPM. Tasa de impactos: 0-48000 BPM. Mandril: 13 mm. Regulador de velocidad. Botón de bloqueo de interruptor. Mango antideslizante. Cable VDE: 2 m. Incluye: Medidor de profundidad,  Mango secundario Llave para mandril.",
-        count: 20,
+        count: 6,
         price: 23855,
         category: "Eléctricas",
         images: [
@@ -272,7 +271,7 @@ const products = [
     {
     name: "TALADRO PERCUTOR 1200W | HTP005",
     description:    "Motor eléctrico brushed de alta performance. Tensión nominal: 220V 240V. Frecuencia: 50/60 Hz. Velocidad sin carga: 0-1200/0-3200 RPM. Tasa de impactos: 0-20400/0-54400 BPM. Mandril: 13 mm. Regulador de velocidad. Botón de bloqueo de interruptor. Mango antideslizante. Cable VDE: 2 m. Incluye: Medidor de profundidad, Mango secundario.",
-        count: 20,
+        count: 6,
         price: 47163,
         category: "Eléctricas",
         images: [
@@ -290,7 +289,7 @@ const products = [
     {
         name: "BATERÍA DE 1,5A | PARA TALADRO ATORNILLADOR 12V | ULT105",
         description: "Ficha técnica: Tensión: 12V. Amperaje: 1,5 Ah. Tipo: Ion-Litio. Cacasa plástica ABS. Para ULT125",
-            count: 20,
+            count: 6,
             price: 10685,
             category: "Inalámbricas",
             images: [
@@ -307,7 +306,7 @@ const products = [
     {
         name: "BATERÍA DE 2 AMPERES ULTIMATE | ULT101",
         description:     "Batería de Ion-Litio compatible con todas las herramientas inalámbricas Hamilton Ultimate. Amperaje: 2A. Tensión: 20V. Posee indicador LED de carga. Con la misma batería podrás utilizar todas las herramientas de 20V Ultimate. Además, todas las baterías se cargan con el mismo cargador",
-            count: 20,
+            count: 6,
             price: 16447,
             category: "Inalámbricas",
             images: [
@@ -325,7 +324,7 @@ const products = [
     {
         name: "CARGADOR DE BATERÍAS ULTIMATE | ULT109",
         description: "Cargador de Baterías Ultimate (ULT101 y ULT102). Compatible con todas las herramientas inalámbricas Hamilton Ultimate. Posee un sistema electrónico de carga rápida. Indicador LED de nivel de carga de la batería. Apto para baterías de Ion-litio de 2A y 4A. (ULT101 y ULT102). Ficha Técnica: Potencia de consumo: 60 W. • Entrada: 220 – 240 V ~ 50 Hz. Salida: 21 Vcc – 2.4 Ah",
-            count: 20,
+            count: 6,
             price: 12918,
             category: "Inalámbricas",
             images: [
@@ -341,7 +340,7 @@ const products = [
         {
         name: "AMOLADORA ANGULAR ULTIMATE | ULT115",
         description: "Para discos 115 mm. (4-1/2”). Cabezal de aluminio reforzado. Rapido bloqueo del eje para un cambio rápido de disco. Motor Brushed. Cierre rapido. Tipo de batería: Ion-Litio. Tensión de batería: 20 V. es 20 voltios. El voltaje nominal es 18 V. Amperaje: 2.0/4.0 Ah. Tensión de cargador: 220 – 240 V ~ 50 Hz. Velocidad: 11.000 rpm. Eje: ø M14.",
-            count: 20,
+            count: 6,
             price: 65674,
             category: "Inalámbricas",
             images: [
@@ -359,7 +358,7 @@ const products = [
     {
         name: "SIERRA CALADORA ULTIMATE | ULT114",
         description: "Motor de alta performance. Mango antideslizante. Velocidad variable permite al usuario regular la velocidad según la aplicación. Luz led automática. Motor brushed. Cooler. Tipo de bateria: Ion-Litio. Tension de bateria: 20 V. Amperaje: 2.0/4.0 Ah. Tension de cargador: 220 – 240 V ~ 50 Hz. Velocidad variable: 0-2500 rpm. Posiciones pendulares: 3.",
-        count: 20,
+        count: 6,
         price: 51320,
         category: "Inalámbricas",
         images: [
@@ -377,7 +376,7 @@ const products = [
     {
         name: "SIERRA CIRCULAR ULTIMATE | ULT117",
         description: "Motor de alta performance. Diámetro máximo del disco 165 mm. Empuñaduras antideslizantes. Boton de bloqueo de gatillo. Regulación de profundidad. Incluye recla de corte paralelo. Incluye accesorio recolector de polvo. Incluye disco de sierra de 165 mm. de carburo tungsteno de 24 dientes. Quick change de batería. Tipo de batería: Ion-Litio. Tensión de batería: 20 V. Amperaje: 2.0/4.0 Ah. Tensión de cargador: 220 – 240 V ~ 50 Hz. Velocidad sin carga: 3800 rpm. Diametro del eje: ø M16. Capacidad de ángulo en bisel: 0 – 50º.",
-            count: 20,
+            count: 6,
             price: 85990,
             category: "Inalámbricas",
             images: [
@@ -395,7 +394,7 @@ const products = [
     {
             name: "SIERRA SABLE ULTIMATE | ULT116",
             description: "Potente motor rápido y eficiente. Empuñadura antideslizante. Recubrimiento antishock. Motor Brushed. Acople rápido para sierra. Quick change de batería. Tipo de batería: Ion-Litio. Tensión de batería: 20 V. es 20 voltios. El voltaje nominal es 18 V. Amperaje: 2.0/4.0 Ah. Tensión de cargador: 220 – 240 V ~ 50 Hz. Longitud de la carrera: 25,4 mm. Velocidad variable: 0 – 3000 rpm.",
-            count: 20,
+            count: 6,
             price: 39553,
             category: "Inalámbricas",
             images: [
@@ -413,7 +412,7 @@ const products = [
     {
         name: "ATORNILLADOR DE IMPACTO ULTIMATE | ULT112",
         description: "Motor de alta performance. Porta punta encastre ¼” rápido. Recubrimiento anti shock. Luz led automática. Motor brushed. Tipo de bateria: Ion-Litio. Tension de bateria: 20 V. Amperaje: 2.0/4.0 Ah. Tension de cargador: 220 – 240 V ~ 50 Hz. Velocidad sin carga: 0-3000 rpm. Tasa de impacto: 0-3000 bpm. Torque máximo: 158 N.m. Tamaño de mandril: ¼·” (6.35 mm). Accesorios Incluidos en el maletín: - Batería de 2A Ion-Litio | Código: ULT101 - Cargador Rápido para Baterías | Código: ULT109",
-            count: 20,
+            count: 6,
             price: 79946,
             category: "Inalámbricas",
             images: [
@@ -431,7 +430,7 @@ const products = [
     {
         name: "LLAVE DE IMPACTO ULTIMATE | ULT113",
         description: "Motor de alta performance. Encastre de ½” (12,5 mm). Recubrimiento anti shock. Luz led automática. Motor brushed. Tipo de batería: Ion-Litio. Tensión de batería: 20 V. Amperaje: 2.0/4.0 Ah. Tensión de cargador: 220 – 240 V ~ 50 Hz. Velocidad sin carga: 0-2200 rpm. Impactos por minuto: 0-2700 bpm. Torque máximo: 400 N.m. Accesorios Incluidos en el maletín: • Batería de 2A Ion-Litio | Código: ULT101 • Cargador Rápido para Baterías | Código: ULT109",
-            count: 20,
+            count: 6,
             price: 81082,
             category: "Inalámbricas",
             images: [
@@ -449,7 +448,7 @@ const products = [
     {
             name: "PISTOLA DE PINTAR ULTIMATE | ULT126",
             description: "Motor de alta performance. Recubrimiento anti shock. Velocidad sin carga: 42.000 rpm. Entrega máx. de pintura: 600 ml/min. Capacidad de vaso: 1 litro. Peso: 1,2 Kg. Viscocidad máx.: 85-100 DIN-s. Posee regulador de caudal. Posee regulador de apertura de abanico. Este producto no incluye batería y cargador, es compatible con todas las baterías y cargadores de la línea Ultimate: • Batería de 2A Ion-Litio | Código: ULT101 • Batería de 4A Ion-Litio | Código: ULT102 • Cargador Rápido para Baterías | Código: ULT109",
-            count: 20,
+            count: 6,
             price: 21538,
             category: "Inalámbricas",
             images: [
@@ -466,7 +465,7 @@ const products = [
     {
         name: "TALADRO ATORNILLADOR ULTIMATE | ULT110",
         description: "Embrague de 16+2 posiciones. Recubrimiento antishock. Caja de dos velocidades mecánica. Luz led automática. Motor brushed. Tipo de batería: Ion-Litio. Tensión de batería: 20 V Amperaje: 2.0/4.0 Ah. Tensión de cargador: 220 – 240 V ~ 50 Hz. Velocidad variable en baja: 0-450 rpm. Velocidad variable en alta: 0- 1650 rpm. Configuración de torque: 16 + 2. Torque máximo: 45 N.m. Tamaño de mandril sin llave: 13 mm. Accesorios Incluidos en el maletín: • Batería de 2A Ion-Litio | Código: ULT101 • Cargador Rápido para Baterías | Código: ULT109",
-            count: 20,
+            count: 6,
             price: 79999,
             category: "Inalámbricas",
             images: [
@@ -485,7 +484,7 @@ const products = [
         name: "TALADRO PERCUTOR ULTIMATE CON BATERÍA EXTRA | ULT111-K",
         description:
         "Embrague de 16+3 posiciones. Incluye 2 baterías de 2 Ah. Recubrimiento antishock. Caja de dos velocidades mecánica. Luz led automática. Motor brushed. Tipo de batería: Ion-Litio. Tensión de batería: 20 V. Amperaje: 2.0/4.0 Ah. Tensión de cargador: 220 – 240 V ~ 50 Hz. Velocidad variable en baja: 0-450 rpm. Velocidad variable en alta: 0- 1650 rpm. Golpes por minuto en baja: 0- 7920 bpm. Golpes por minuto en alta: 0 – 29700 bpm. Configuración de torque: 16 + 3. Torque máximo: 45 N.m. Tamaño de mandril sin llave: 13 mm. Accesorios Incluidos en el maletín: • 2 Baterías de 2A Ion-Litio | Código: ULT101 • Cargador Rápido para Baterías | Código: ULT109",
-            count: 20,
+            count: 6,
             price: 69999,
             category: "Inalámbricas",
             images: [
@@ -502,7 +501,7 @@ const products = [
         {
             name: "FILTRO REGULADOR Y LUBRICADOR PARA LÍNEAS DE AIRE | RYL",
             description: "Filtro reductor de presión. Lubricador de línea con acople. Trampa de agua. Acople 3/8”. Rosca entrada y salida: 1/4 ”. Presión de trabajo: 0- 150 Psi.",
-            count: 20,
+            count: 6,
             price: 17100,
             category: "Neumáticas",
             images: [
@@ -520,7 +519,7 @@ const products = [
             {
             name: "KIT DE ACOPLES, RACOR Y CONECTORES PARA AIRE | KR5",
             description: "Fabricados en cobre, 1 acople rápido hembra, 3 conectores rápido macho, 1 conector rápido hembra, salida ¼”. ",
-            count: 20,
+            count: 6,
             price: 4750,
             category: "Neumáticas",
             images: [
@@ -536,7 +535,7 @@ const products = [
             {
             name: "PISTOLA DE INFLAR CON MANÓMETRO",
             description: "Fabricada en aluminio de alta resistencia con terminación en pintura epoxi. Entrada de aire de ¼”. Consumo de aire: 150/250 L/m. Presión de trabajo 0 a 12 Bar/0 a 170 PSI. Manómetro de cuádruple escala: Bar-PSI-Kg/cm2 y kPa recubierto en goma anti-shock. Doble válvula de ajuste de presión. Posee válvula de escape de aire para desinflado. Posee pico de acople rápido para válvula de inflado. ",
-            count: 20,
+            count: 6,
             price: 13000,
             category: "Neumáticas",
             images: [
@@ -554,7 +553,7 @@ const products = [
             {
             name: "PISTOLA DE SOPLETEAR PICO LARGO| PSL",
             description: "Fabricada en aluminio de alta resistencia con terminación en pintura epoxi.  Entrada de aire ¼”. Consumo de aire: 150-250 L/m. Presión de trabajo: 3,5 Bar/50 PSI. ",
-            count: 20,
+            count: 6,
             price: 2900,
             category: "Neumáticas",
             images: [
@@ -571,7 +570,7 @@ const products = [
             {
             name: "COMPRESOR DE AIRE A 12V | PARA AUTOMOTORES | CMP12V",
             description: "Amperaje máximo 18 A. Velocidad de flujo 35 l/min. Doble pistón. Manómetro incluido. Manguera de alta presión con racor tipo resorte de 3,4m. Adaptador de válvula universal. Luz Led. Cable de alimentación a la batería del auto de 3,1m. Boquilla corta cónica estándar. Boquilla cónica estándar. Incluye: Pinzas para batería y bolso de transporte. ",
-            count: 20,
+            count: 6,
             price: 32500,
             category: "Neumáticas",
             images: [
@@ -589,7 +588,7 @@ const products = [
             {
             name: "LLAVE CRIQUET NEUMÁTICA 1/2 | 68NM. | HN40",
             description: "68 NM. Encastre 1/2. 160 RPM Libre. Entrada de aire de 1/4. Salida de escape delantera. Giro izquierda/derecha. Consumo de aire: 77 l/min. Presión 6,3 Bar. ",
-            count: 20,
+            count: 6,
             price: 15600,
             category: "Neumáticas",
             images: [
@@ -605,7 +604,7 @@ const products = [
             {
             name: "LLAVE DE IMPACTO NEUMÁTICA INDUSTRIAL 1 | 2700NM. | HN60",
             description: "– Entrada de aire 1/2” NPT. Encastre 1”.  Velocidad libre 4 000 RPM. El mecanismo del martillo tratado térmicamente en Alemania. Rodamiento industrial P6. Yunque, rotor y martillo de acero aleado de alta calidad. Palanca del rotor de POM, que soporta el uso y el desgaste. Bulones hasta: 45 mm. Torque de trabajo: 2700 N.m. Longitud total 584 mm. Manguera de aire (DI): 5/8. Consumo promedio de aire: 35 cfm. Peso neto: 15.5 kg. ",
-            count: 20,
+            count: 6,
             price: 140000,
             category: "Neumáticas",
             images: [
@@ -623,7 +622,7 @@ const products = [
             {
             name: "LLAVE DE IMPACTO NEUMÁTICA 1/2 | 310NM. | KIT CON ACCESORIOS | HN10K",
             description: "Encastre 1/2 . 7000 RPM Libre. Entrada de aire de 1/4. Filtro anti polvo y partículas metálicas. Consumo de aire: 114 l/min. Presión: 6,3 Bar. Potencia de impacto regulable. Cuerpo sólido de aluminio fundido a presión. KIT 17 PIEZAS: Llave de impacto ½, 10 Tubos de impacto: 9, 10, 11, 13, 14, 17, 19, 22, 24, 27 mm, barra de extensión de 5. aceite lubricante, llave hexagonal, lubricador, niple. Maletín plástico para guardado y transporte." ,
-            count: 20,
+            count: 6,
             price: 24000,
             category: "Neumáticas",
             images: [
@@ -639,7 +638,7 @@ const products = [
             {
             name: "ENGRASADORA NEUMÁTICA | HN80",
             description: "Consumo de aire: 6 SCFM.C702. Presión máx: 90 PSI. Entrada de aire 1/4″. Capacidad máx: 400 cc. Recarga: mediante cartucho, manual o máquina engrasadora auxiliar vía alemite de admisión. Uso industrial.",
-            count: 20,
+            count: 6,
             price: 15300,
             category: "Neumáticas",
             images: [
@@ -656,7 +655,7 @@ const products = [
             {
             name: "PISTOLA ARENADORA NEUMÁTICA | PAR",
             description: "Cuerpo de aluminio, apto para trabajo pesado. Pico de Carburo tungsteno. Tanque plástico de PP de 600 cc. Consumo de aire 7 SCFM o 198 lts/min. Selector de caudal: alta / baja. Alimentación por gravedad. Presión máx. de trabajo: 90 PSI. Entrada de aire: 1/4″ NPT18. Boquilla: 1-7/8″ x 1/4″.",
-            count: 20,
+            count: 6,
             price: 19000,
             category: "Neumáticas",
             images: [
@@ -675,7 +674,7 @@ const products = [
             {
             name: "PISTOLA ROCIADORA CON TANQUE | PRT",
             description: "Fabricada en aluminio de alta resistencia con terminación en pintura epoxi. Caja por 2 Unidades.  Presión de trabajo de 3,5 Bar/50 PSI. Entrada de aire 1/4″. Consumo de aire: 150-250 l/min. Tanque de 900 cc.",
-            count: 20,
+            count: 6,
             price: 16000,
             category: "Neumáticas",
             images: [
@@ -692,7 +691,7 @@ const products = [
             {
             name: "AERÓGRAFO PROFESIONAL | PICO 0,3MM. | PG23",
             description: "Gran precisión y calidad. Cuerpo metálico. Presión de trabajo: 15/50 PSI. Depósito metálico para pintura de 7 cc. con tapa. Pico: 0,3 mm. Gatillo de doble acción (aire y pintura). Regulador de caudal.",
-            count: 20,
+            count: 6,
             price: 19000,
             category: "Neumáticas",
             images: [
@@ -709,7 +708,7 @@ const products = [
             {
             name: "KIT PISTOLA DE PINTAR POR GRAVEDAD HVLP CON ACCESORIOS | PG200MA",
             description: "Características Técnicas:  Soplete con sistema HVLP (Alto volumen, baja presión). Alimentación por Gravedad. Pico de 1.4 mm. Entrada de aire de 1/4″. Consumo de aire 150/250 L/m. Presión de trabajo: 3 Bar / 43PSI. Alimentación por Gravedad. Contenido del Maletín: Pistola de pintar profesional HVLP PG200, manómetro medidor y regulador de presión, con doble escala (PSI y Kg/cm²), depósito plástico de 600 cc. graduado con tapa (Código Hamilton DP200), filtro plástico, kit de desarme y limpieza, manual con despiece e instructivo de uso, porta depósito descartable y 5 depósitos descartables de 260 cc. ",
-            count: 20,
+            count: 6,
             price: 46380,
             category: "Neumáticas",
             images: [
@@ -728,7 +727,7 @@ const products = [
             {
             name: "PISTOLA DE PINTAR POR GRAVEDAD | HVLP CON REGULADOR | PG200R",
             description: "Fabricada en aluminio de alta resistencia con terminación anodizada. Entrada de aire ¼”. Consumo de aire: 150/250 lts/min. Presión de trabajo: 3 Bar /43PSI. Depósito plástico graduado: 600 cc. Picos: 1.4 mm. Aguja: acero inoxidable. Incluye Kit de Herramientas para limpieza y mantenimiento. ",
-            count: 20,
+            count: 6,
             price: 22300,
             category: "Neumáticas",
             images: [
@@ -747,7 +746,7 @@ const products = [
             {
             name: "PISTOLA DE PINTAR POR GRAVEDAD | PARA LÁTEX | PG250",
             description: "Fabricada en aluminio de alta resistencia con terminación en pintura epoxi. 3 Picos: 4/6/8 mm.170/240 L/m. Presión de trabajo: 3.5 Bar/50 PSI. Depósito metálico de 6 lts. Aguja de acero Inoxidable. ",
-            count: 20,
+            count: 6,
             price: 33800,
             category: "Neumáticas",
             images: [
@@ -763,7 +762,7 @@ const products = [
             {
             name: "PISTOLA DE PINTAR POR SUCCIÓN | PICO 1,7MM. | PS200",
             description: "Fabricada en aluminio de alta resistencia con terminación anodizada. Pico de 1.7 mm. Ingreso de aire de 1/4″. Consumo de aire 150/250 L/m. Presión de trabajo: 3.5 Bar/50 PSI. Depósito metálico 1000 cc. Aguja de Acero Inox. ",
-            count: 20,
+            count: 6,
             price: 30500,
             category: "Neumáticas",
             images: [
@@ -782,7 +781,7 @@ const products = [
         {
             name: "BASE FIJA CABALLETE | 3 TONELADAS | BF300",
             description: "Caja con 2 unidades. Cuerpo de acero plegado y soldado. Vástago de fundición extra-resistente, una sola pieza. Mecanismo de ajuste rápido con seguro. Altura max. 430 mm. Altura min. 230 mm.",
-            count: 20,
+            count: 6,
             price: 20739,
             category: "Manuales",
             images: [
@@ -799,7 +798,7 @@ const products = [
             {
             name: "CRIQUE TIPO BOTELLA | 20 TONELADAS | GB200",
             description: "Cuerpo de fundición extra-resistente. Vástago de acero rectificado. Tornillo purgador. Altura mín. 244 mm. Altura máx. 449 mm. Peso Máx: 20 Toneladas",
-            count: 20,
+            count: 6,
             price: 51782,
             category: "Manuales",
             images: [
@@ -815,7 +814,7 @@ const products = [
             {
             name: "CRIQUE TIPO CARRITO | EXTRA CHATO 3 TONELADAS DOBLE PISTÓN | GPE300",
             description: "Estructura principal fabricada con planchuelas de acero. Capacidad: 3 Toneladas. Ruedas de acero macizo, las traseras giratorias. Base con diseño anti-deslizante. Altura mín. 70 mm. Altura máx. 508 mm.",
-            count: 20,
+            count: 6,
             price: 179999,
             category: "Manuales",
             images: [
@@ -833,7 +832,7 @@ const products = [
             {
             name: "CRIQUE TIPO CARRITO | PESADO 3 TONELADAS | GP300",
             description: "Cuerpo y ruedas principales fabricadas en acero macizo. Ruedas traseras giratorias. Base con diseño anti-deslizante. Altura mín. 155 mm. Altura máx. 495 mm.",
-            count: 20,
+            count: 6,
             price: 153800,
             category: "Manuales",
             images: [
@@ -849,7 +848,7 @@ const products = [
             {
             name: "DESTORNILLADOR DE IMPACTO PROFESIONAL CON ESTUCHE | DMP",
             description: "Fabricado en Acero Cromo Vanadio. Encastre 1/2″. Adaptador 1/2″ a 5/16″. Puntas de Acero S2 de 35 y 75 mm. Terminación: fosfatizado negro. Estuche plástico rígido.",
-            count: 20,
+            count: 6,
             price: 14300,
             category: "Manuales",
             images: [
@@ -865,7 +864,7 @@ const products = [
             {
             name: "DESTORNILLADOR PORTA PUNTAS CON CRIQUET | ENCASTRE 1/4″ | DWR14",
             description: "Varilla de Acero Cromo-Vanadio templada y cementada. Diseño ergonómico. Mango de goma y plástico. Encastre 1/4″ magnético. 12 Puntas: 8 Phillips / 4 Planas. Podrás guardar todas tus puntas en el mango. Posee inversor de giro.",
-            count: 20,
+            count: 6,
             price: 7960,
             category: "Manuales",
             images: [
@@ -881,7 +880,7 @@ const products = [
             {
             name: "DESTORNILLADORES PHILLIPS",
             description: "Varilla forjada en Acero Cr-V Molibdeno. Diseño ergonómico. Mango soft inyectado bimaterial (TPR-Goma Antideslizante). Varilla niquelada. Punta magnética. Tratamiento superficial anti-corrosión.",
-            count: 20,
+            count: 6,
             price: 1250,
             category: "Manuales",
             images: [
@@ -897,7 +896,7 @@ const products = [
             {
             name: "DESTORNILLADORES PHILLIPS CORTOS",
             description: "Varilla forjada en Acero Cr-V Molibdeno. Diseño ergonómico. Mango soft inyectado bimaterial (TPR-Goma Antideslizante). Varilla niquelada. Punta magnética. Tratamiento superficial anti-corrosión.",
-            count: 20,
+            count: 6,
             price: 1250,
             category: "Manuales",
             images: [
@@ -913,7 +912,7 @@ const products = [
             {
             name: "DESTORNILLADORES PLANOS",
             description: "Varilla forjada en Acero Cr-V Molibdeno. Diseño ergonómico. Mango soft inyectado bimaterial (TPR-Goma Antideslizante). Varilla niquelada. Punta magnética. Tratamiento superficial anti-corrosión.",
-            count: 20,
+            count: 6,
             price: 976,
             category: "Manuales",
             images: [
@@ -929,7 +928,7 @@ const products = [
             {
             name: "KIT DE PUNTAS DE PRECISIÓN PARA CELULARES Y ELECTRÓNICA | 32 PIEZAS | JP32",
             description: "32 Piezas de alta precisión y resistencia. INCLUYE:  1 Barra de extensión. 1 Destornillador de precisión de aluminio. 2 Mini palancas. 1 Pinza de precisión. 1 Ventosa. 1 Selector de apertura trigonal. 1 Abre bandeja de tarjeta SIM. 1 Mini Bocallaves: 2,5 mm. (Iphone 6 y 6s Plus). 1 Punta x-point: 2,5 mm. (Iphone 6s Plus). PUNTAS: 2 Puntas hexagonales: H1,5-H2. 1 Punta plana: SL1 (Iphone, MI 5s y MI 5s Plus). 4 Puntas phillips: PH000 – PH00 – PH0 – PH1. 3 Puntas tres alas: Y000 – Y00 – Y0 (iphone 7-8-X-Apple Watch). 5 Puntas torx: T2-T3-T4-T5-T6. 1 Punta triángulo: TA27. 2 Puntas tamper torx: TT8-TT10. 4 Puntas pentalobe: 0,8 (Iphone 4-5-6-6s Plus-7-7s Plus-8-8s Plus-X) 1,2 – 1,5.",
-            count: 20,
+            count: 6,
             price: 8499,
             category: "Manuales",
             images: [
@@ -947,7 +946,7 @@ const products = [
             {
             name: "KIT DE PUNTAS Y DESTORNILLADOR CON CRIQUE | 49 PIEZAS | JP49",
             description: " Fabricados en acero cromo-vanadio. 48 puntas de precisión: planas, phillips, torx, torx hembra, pozidriv, tri-wing, spanner.  Mango atornillador con criquet de 3 posiciones",
-            count: 20,
+            count: 6,
             price: 6700,
             category: "Manuales",
             images: [
@@ -965,7 +964,7 @@ const products = [
             {
             name: "SET DE 6 DESTORNILLADORES AISLADOS PHILLIPS Y PLANOS | DJ06V",
             description: " Forjados en Acero Cromo-Vanadio. Diseño ergonómico. Mango ergonómico AISLADO 1000V. Cumplen Normas Internacionales DIN/VDE. Varilla recubierta. Incluye: 3 Phillips: 0x75 / 1×80 / 2×100  y 3 planos: 0,5×3,5×75 mm. / 1×5,5×125 mm. / 1,2×6,5×150 mm. ",
-            count: 20,
+            count: 6,
             price: 7900,
             category: "Manuales",
             images: [
@@ -982,7 +981,7 @@ const products = [
             {
             name: "JUEGO DE 9 LLAVES HEXAGONALES | PULGADAS PLEGABLES | LH60E",
             description: " Estructura mango-estuche plástico de dos componentes (ABS-goma). 9 Piezas: 1/16″ – 5/64″ – 3/32″ – 1/8″ – 5/32″ – 3/16″ – 1/4″ – 5/16″ – 3/8″. Forjadas en Acero Cr-V. Tratamiento anti-corrosión. ",
-            count: 20,
+            count: 6,
             price: 3600,
             category: "Manuales",
             images: [
@@ -999,7 +998,7 @@ const products = [
             {
             name: "JUEGO DE 14 LLAVES TIPO “T” HEXAGONALES | LH14T",
             description: " Fabricadas en Acero S2. Llave larga con punta redonda. Mango bimaterial. Estuche plástico para transporte y almacenamiento. Métricas: 2, 3, 4, 5, 6, 8 y 10 mm. Pulgadas: 5/64″ – 1/8″ – 9/64″ – 5/32″ – 3/16″ – 1/4″ – 3/8″.",
-            count: 20,
+            count: 6,
             price: 15310,
             category: "Manuales",
             images: [
@@ -1017,7 +1016,7 @@ const products = [
             {
             name: "JUEGO DE LLAVE ESTRIADA CON CRIQUE | 12 MEDIDAS EN 1 | JCC12",
             description: " La llave posee 2 vías con crique, una de 14mm en un sentido y otra de 19mm en sentido contrario, a las cuales se les puede colocar los bocallaves del kit, que poseen las siguientes medidas: 1 Bocallave doble 6mm y 8mm, 1 Bocallave doble 9mm y 10mm, 1 Bocallave doble 11mm y 12mm, 1 Bocallave doble 13mm y 15mm, 1 Bocallave doble 16mm y 17mm, 1 Bocallave doble 14mm y 19mm ",
-            count: 20,
+            count: 6,
             price: 24827,
             category: "Manuales",
             images: [
@@ -1035,7 +1034,7 @@ const products = [
             {
             name: "LLAVE AJUSTABLE",
             description: " Forjadas en Acero 40Cr-V. Diseñadas y fabricadas bajo normas DIN3117. Grilla milimetrada grabada en laser. Cabeza de gran apertura. Sector mecánico de gran robustez. ",
-            count: 20,
+            count: 6,
             price: 24827,
             category: "Manuales",
             images: [
@@ -1051,7 +1050,7 @@ const products = [
             {
             name: "LLAVE PARA CAÑOS",
             description: "Fabricadas en fundición de hierro. Mordazas especialmente endurecidas en Acero Cromo Molibdeno. Boca a 90º. Recubierta con pintura epoxi. ",
-            count: 20,
+            count: 6,
             price: 18790,
             category: "Manuales",
             images: [
@@ -1067,7 +1066,7 @@ const products = [
             {
             name: "LLAVE PARA CAÑOS TIPO SUECA",
             description: " Fabricada en fundición de hierro y chapa plegada. Mordazas especialmente endurecidas en Acero Cromo Molibdeno. Recubierta con pintura epoxi. Gran poder de sujeción.",
-            count: 20,
+            count: 6,
             price: 12300,
             category: "Manuales",
             images: [
@@ -1083,7 +1082,7 @@ const products = [
             {
             name: "LLAVE TIPO CRUZ DE 14″ | WTC14",
             description: "Fabricada en Acero Cr-V. Bocas de: 17 – 19 – 21 – 23 mm. Forjada en Acero Cr-V. Apta para uso intensivo.",
-            count: 20,
+            count: 6,
             price: 5800,
             category: "Manuales",
             images: [
@@ -1099,7 +1098,7 @@ const products = [
             {
             name: "SET DE 6 LLAVES COMBINADAS CON CRIQUE ARTICULADAS | JCCA6P",
             description: "Forjadas en Acero Cromo-Vanadio. Medidas: 8, 10, 12, 13, 14, 17 mm. Diseño ergonómico. Sector mecánico de gran robustez resistente a altos torques. Diseñadas para acceder de modo más sencillo a espacio reducidos. Tratamiento superficial anti-corrosión.",
-            count: 20,
+            count: 6,
             price: 24518,
             category: "Manuales",
             images: [
@@ -1117,7 +1116,7 @@ const products = [
             {
             name: "SET DE 12 LLAVES COMBINADAS – MILIMÉTRICAS",
             description: "Juego de 12 Llaves Combinadas en milímetros: Medidas: 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 y 19 mm. Forjadas en Acero Cromo Vanadio. Tratamiento anticorrosión. Diseño Acodado que permite mejorar su accesibilidad a espacios reducidos o complejos.",
-            count: 20,
+            count: 6,
             price: 20599,
             category: "Manuales",
             images: [
@@ -1135,7 +1134,7 @@ const products = [
             {
             name: "MARTILLO DE DOBLE CARA | GOMA/PVC",
             description: "Peso: 1,2 Kg. Cabo de fibra. Alta resistencia. Diámetro 40 mm. Mango de engomado TPR. Diseño confortable.",
-            count: 20,
+            count: 6,
             price: 3300,
             category: "Manuales",
             images: [
@@ -1153,7 +1152,7 @@ const products = [
             {
             name: "MARTILLO ENCOFRADOR",
             description: "Cabeza Acero al Carbono C45 de 450 Grs. Dureza: 48-50 HRC. Mango con estructura de fibra de vidrio y grip anti-deslizante. Cabeza con tratamiento térmico antioxidante.",
-            count: 20,
+            count: 6,
             price: 3590,
             category: "Manuales",
             images: [
@@ -1170,7 +1169,7 @@ const products = [
             {
             name: "MARTILLOS BOLITA",
             description: "Cabeza Acero al Carbono C45. Dureza: 48-50 HRC. Mango con estructura de fibra de vidrio y grip anti-deslizante. Cabeza con tratamiento térmico antioxidante y terminación pulida.",
-            count: 20,
+            count: 6,
             price: 2700,
             category: "Manuales",
             images: [
@@ -1187,7 +1186,7 @@ const products = [
             {
             name: "MARTILLOS DE CARPINTERO",
             description: "Cabeza Acero al Carbono C45. Dureza: 48-50 HRC. Mango con estructura de fibra de vidrio y grip anti-deslizante. Cabeza con tratamiento térmico antioxidante y terminación pulida.",
-            count: 20,
+            count: 6,
             price: 2830,
             category: "Manuales",
             images: [
@@ -1204,7 +1203,7 @@ const products = [
             {
             name: "MAZA DE GOMA | 670GRS. | HAG670",
             description: "Cabeza de goma vulcanizada de 670 grs. (94 x 56 x 56 mm.). Dureza: 85-95 HRC. Mango con estructura de fibra de vidrio y grip anti-deslizante de 250 mm.",
-            count: 20,
+            count: 6,
             price: 5100,
             category: "Manuales",
             images: [
@@ -1221,7 +1220,7 @@ const products = [
             {
             name: "MAZAS CON CABO DE FIBRA",
             description: "Cabeza Acero al Carbono C45. Dureza: 48-50 HRC. Mango con estructura de fibra de vidrio y grip anti-deslizante. Cabeza con tratamiento térmico antioxidante.",
-            count: 20,
+            count: 6,
             price: 8100,
             category: "Manuales",
             images: [
@@ -1237,7 +1236,7 @@ const products = [
             {
             name: "ALICATE 8″ CORTA CABLES",
             description: "Forjado en Acero Cr-V. Mango ergonómico. Tratamiento superficial anticorrosión. Gran Precisión de corte.",
-            count: 20,
+            count: 6,
             price: 6449,
             category: "Manuales",
             images: [
@@ -1253,7 +1252,7 @@ const products = [
             {
             name: "ALICATE DE CORTE OBLICUO | AISLADO 1000V | ACO60V",
             description: "Forjado en Acero Cr-V. Mango ergonómico AISLADO 1000V. Cumplen Normas Internacionales DIN/VDE. Tratamiento superficial anticorrosión. Gran Precisión de corte.",
-            count: 20,
+            count: 6,
             price: 9000,
             category: "Manuales",
             images: [
@@ -1271,7 +1270,7 @@ const products = [
             {
             name: "MINI PINZA DE PUNTA MEDIA CAÑA | AM05",
             description: "Forjado en Acero Cromo-Vanadio. Mango ergonómico de dos componentes (PVC-TPR). Sistema de apertura con resorte. Gran poder de sujeción. Tratamiento superficial anti-corrosión. Terminación niquelada.",
-            count: 20,
+            count: 6,
             price: 3200,
             category: "Manuales",
             images: [
@@ -1288,7 +1287,7 @@ const products = [
             {
             name: "PINZA CRIMPEADORA PELACABLES 3 EN 1 | PCR3",
             description: "Fabricada en Acero S45C. Uso profesional. Mango TPR-PP.",
-            count: 20,
+            count: 6,
             price: 9300,
             category: "Manuales",
             images: [
@@ -1304,7 +1303,7 @@ const products = [
             {
             name: "PINZA DE PRESIÓN",
             description: "Forjada en Acero Cromo-Vanadio. Mango ergonómico. Gran poder de sujeción. Tratamiento superficial anti-corrosión.",
-            count: 20,
+            count: 6,
             price: 9300,
             category: "Manuales",
             images: [
@@ -1320,7 +1319,7 @@ const products = [
             {
             name: "PINZA DE PUNTA MEDIA CAÑA | AISLADA 1000V | APM60V",
             description: "Forjado en Acero Cr-V. Mango ergonómico AISLADO 1000V. Cumplen Normas Internacionales DIN/VDE. Tratamiento superficial anticorrosión. Gran poder de sujeción.",
-            count: 20,
+            count: 6,
             price: 7400,
             category: "Manuales",
             images: [
@@ -1336,7 +1335,7 @@ const products = [
             {
             name: "PINZA MULTIHERRAMIENTAS | 12 EN 1 | PMH10",
             description: "Fabricada en Acero S45C. Forjada en Acero Inoxidable 2cr13. Cuerpo de aluminio. Robusto sistema mecánico. 12 Funciones: Pinza universal, pinza de punta, alicate corta alambre, destapador, destornillador plano, destornillador plano pequeño, destornillador Phillips, abrelatas, cuchillo, sierra, cuchillo serrucho, lima.",
-            count: 20,
+            count: 6,
             price: 15000,
             category: "Manuales",
             images: [
@@ -1352,7 +1351,7 @@ const products = [
             {
             name: "PINZA PICO DE LORO AUTOMÁTICA 10″",
             description: "Forjada en Acero Cromo-Vanadio. Gran poder de sujeción con ajuste automático. Mango ergonómico antideslizante de PVC – TPR. Tratamiento superficial anti-corrosión.",
-            count: 20,
+            count: 6,
             price: 9700,
             category: "Manuales",
             images: [
@@ -1368,7 +1367,7 @@ const products = [
             {
             name: "PINZA PICO DE LORO SIMPLE 10″", 
             description: "Forjada en Acero Cromo-Vanadio. Mango ergonómico antideslizante de PVC – TPR. Gran poder de sujeción. Tratamiento superficial anti-corrosión.",
-            count: 20,
+            count: 6,
             price: 5700,
             category: "Manuales",
             images: [
@@ -1384,7 +1383,7 @@ const products = [
             {
             name: "PINZA SEEGER 7″ | MÚLTIPLE | AS70M", 
             description: "Forjada en Acero Cromo-Vanadio. Mordazas de precisión. Mango ergonómico inyectado. Tratamiento superficial anti-corrosión.",
-            count: 20,
+            count: 6,
             price: 4700,
             category: "Manuales",
             images: [
@@ -1400,7 +1399,7 @@ const products = [
             {
             name: "PINZA UNIVERSAL | AISLADA 1000V | APU80V", 
             description: "Forjado en Acero Cr-V. Mango ergonómico AISLADO 1000V. Cumplen Normas Internacionales DIN/VDE. Tratamiento superficial anticorrosión. Gran poder de sujeción.",
-            count: 20,
+            count: 6,
             price: 9000,
             category: "Manuales",
             images: [
@@ -1416,7 +1415,7 @@ const products = [
             {
             name: "MORSAS DE BANCO FIJAS | CON YUNQUE", 
             description: "Fabricada en hierro fundido con terminación hammertone y acero endurecido.",
-            count: 20,
+            count: 6,
             price: 41907,
             category: "Manuales",
             images: [
@@ -1432,7 +1431,7 @@ const products = [
             {
             name: "MORSAS DE BANCO PLANAS | PARA AGUJEREADORA", 
             description: "Fabricada en hierro fundido con terminación hammertone y acero endurecido.",
-            count: 20,
+            count: 6,
             price: 17000,
             category: "Manuales",
             images: [
@@ -1448,7 +1447,7 @@ const products = [
             {
             name: "PRENSAS TIPO F | LIBERACIÓN RÁPIDA | LÍNEA PERFORMANCE", 
             description: "Fabricadas en plástico de alta resistencia. Varilla-Guía de acero. Pulsador de liberación rápida de puntera. Sistema de liberación rápida ONE-HAND. Presión máx. de trabajo: 136 Kg.",
-            count: 20,
+            count: 6,
             price: 4000,
             category: "Manuales",
             images: [
@@ -1464,7 +1463,7 @@ const products = [
             {
             name: "PRENSAS TIPO G", 
             description: "Forjada en hierro fundido. Tornillo roscado de acero al carbono. Tope giratorio. Garganta: 54 mm.",
-            count: 20,
+            count: 6,
             price: 4970,
             category: "Manuales",
             images: [
@@ -1480,7 +1479,7 @@ const products = [
             {
             name: "VENTOSA VIDRIERO TRIPLE | VH3", 
             description: "Succión a Leva. Cuerpo de aluminio. Potentes ventosas de goma, capacidad máx. de carga: 120 Kg. 3 placas de succión de vidrio.",
-            count: 20,
+            count: 6,
             price: 13000,
             category: "Manuales",
             images: [

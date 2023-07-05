@@ -1,6 +1,7 @@
 import { Col, Row, Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import AdminLinksComponent from "../../../components/admin/AdminLinksComponent";
+//import AdminBulkUpdate from "../AdminBulkUpdate"
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min.css';
@@ -115,6 +116,7 @@ const ProductsPageComponent = ({fetchProducts, deleteProduct}) => {
     ]
 
     return (
+        <>
         <Row className="m-5">
             <Col md={2}>
                 <AdminLinksComponent />
@@ -127,6 +129,10 @@ const ProductsPageComponent = ({fetchProducts, deleteProduct}) => {
                             Agregar
                         </Button>
                     </LinkContainer>
+                    {/* <Button variant="primary" size="sm">
+                        <AdminBulkUpdate />
+                            Actualizar
+                    </Button> */}
                 </h1>
                 
 
@@ -182,6 +188,7 @@ const ProductsPageComponent = ({fetchProducts, deleteProduct}) => {
                 </Table> */}
             </Col>
         </Row>
+        </>
     )
 }
 
