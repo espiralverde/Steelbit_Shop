@@ -22,6 +22,9 @@ const AdminLinksComponent = () => {
                 <LinkContainer to="/admin/analytics">
                     <Nav.Link>Analytics</Nav.Link>
                 </LinkContainer>
+                <LinkContainer to="/admin/price">
+                    <Nav.Link>Precios</Nav.Link>
+                </LinkContainer>
                 <LinkContainer to="/admin/users">
                     <Nav.Link>Usuarios</Nav.Link>
                 </LinkContainer>

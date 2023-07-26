@@ -14,7 +14,9 @@ const deleteProduct = async (productId) => {
 }
 
 const AdminProductsPage = () => {
-    return <ProductsPageComponent fetchProducts={fetchProducts} deleteProduct={deleteProduct}/>
+    return <>
+            <ProductsPageComponent fetchProducts={fetchProducts} deleteProduct={deleteProduct}/>
+        </>
 }
 
 export default AdminProductsPage;

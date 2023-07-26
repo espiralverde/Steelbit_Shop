@@ -1,10 +1,9 @@
 import { Col, Row, Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import AdminLinksComponent from "../../../components/admin/AdminLinksComponent";
-//import AdminBulkUpdate from "../AdminBulkUpdate"
+import BulkUpdateComponent from "./BulkUpdateComponent";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import 'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min.css';
+
 import BootstrapTable from 'react-bootstrap-table-next';
 import paginationFactory from "react-bootstrap-table2-paginator"
 import filterFactory, {textFilter, selectFilter} from "react-bootstrap-table2-filter"
@@ -12,6 +11,7 @@ import filterFactory, {textFilter, selectFilter} from "react-bootstrap-table2-fi
 import { useState, useEffect } from "react";
 import { logout } from "../../../redux/actions/userActions";
 import { useDispatch } from "react-redux";
+
 
 const ProductsPageComponent = ({fetchProducts, deleteProduct}) => {
     
@@ -27,7 +27,6 @@ const ProductsPageComponent = ({fetchProducts, deleteProduct}) => {
             }
         }
     }
-
     useEffect(() => {
         const abctrl = new AbortController();
         fetchProducts(abctrl)
@@ -66,6 +65,12 @@ const ProductsPageComponent = ({fetchProducts, deleteProduct}) => {
         caseSensitive: false,
     });
 
+    function priceFormatter(column, colIndex) {
+        return (
+            <h5><strong>$$ { column.text } $$</strong></h5>
+        );
+    }
+
     const columns = [
         {   
             dataField: '_id',
@@ -92,6 +97,16 @@ const ProductsPageComponent = ({fetchProducts, deleteProduct}) => {
             filter: textFilter(),
             headerFormatter: headerFormatter
         },
+        {
+            dataField: 'price',
+            text: 'Precio',
+            headerAlign: 'center',
+            align: 'center',
+            sort: true,
+            filter: textFilter(),
+            headerFormatter: headerFormatter,
+            formatter: (cell) => parseFloat(cell).toFixed(2),
+        },
         {   
             dataField: '_id' ,
             text: 'Editar',
@@ -116,12 +131,11 @@ const ProductsPageComponent = ({fetchProducts, deleteProduct}) => {
     ]
 
     return (
-        <>
         <Row className="m-5">
             <Col md={2}>
                 <AdminLinksComponent />
             </Col>
-            
+
             <Col md={10}>
                 <h1>Productos{" "}
                     <LinkContainer to="/admin/create-new-product">
@@ -129,14 +143,8 @@ const ProductsPageComponent = ({fetchProducts, deleteProduct}) => {
                             Agregar
                         </Button>
                     </LinkContainer>
-                    {/* <Button variant="primary" size="sm">
-                        <AdminBulkUpdate />
-                            Actualizar
-                    </Button> */}
                 </h1>
                 
-
-
                 <BootstrapTable
                 keyField='_id' 
                 data={ products } 
@@ -149,46 +157,9 @@ const ProductsPageComponent = ({fetchProducts, deleteProduct}) => {
                 pagination={pagination}
                 filter={filterFactory()}
                 sort={ { dataField: 'name', order: 'asc' } }
-                
                 />
-
-
-                
-                {/* <Table striped bordered hover responsive>
-                    <thead>
-                        <tr>
-                        <th>#</th>
-                        <th>Nombre del Producto</th>
-                        <th>Precio</th>
-                        <th>Categoría</th>
-                        <th>Editar/Borrar</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {products.map((item, idx)=> (
-                            <tr key={idx}>
-                                <td>{idx + 1}</td>
-                                <td>{item.name}</td>
-                                <td>{item.price}</td>
-                                <td>{item.category}</td>
-                                <td>
-                                    <LinkContainer to={`/admin/edit-product/${item._id}`}>
-                                        <Button className="btn-sm">
-                                            <i className="bi bi-pencil-square"></i>
-                                        </Button>
-                                    </LinkContainer>                                    
-                                    {" / "}
-                                    <Button variant="danger" className="btn-sm" onClick={() => deleteHandler(item._id)}>
-                                        <i className="bi bi-x-circle"></i>
-                                    </Button>       
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </Table> */}
             </Col>
         </Row>
-        </>
     )
 }
 

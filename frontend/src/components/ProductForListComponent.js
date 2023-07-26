@@ -4,7 +4,7 @@ import {LinkContainer} from "react-router-bootstrap";
 
 const ProductForListComponent = ({productId, name, description, price, images, rating, reviewsNumber}) => {
   return (
-    <Card style={{ marginTop: "30px", marginBottom: "30px" }}>
+    <Card style={{ marginTop: "30px", marginBottom: "30px"}}>
       <Row>
         <Col lg={3}>
           <Card.Img crossOrigin="anonymous" variant="top" src={images[0] ? images[0].path : ''} />

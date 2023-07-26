@@ -8,7 +8,7 @@ const UserOrdersPageComponent = ({getOrders}) => {
 
     useEffect (() => {
         getOrders()
-        .then(orders => setOrders(orders))
+        .then(orders => setOrders( orders ))
         .catch((er) => console.log(er))
     }, [])
 
@@ -20,8 +20,8 @@ const UserOrdersPageComponent = ({getOrders}) => {
                 <Table striped bordered hover responsive>
                     <thead>
                         <tr align="center">
-                        {/* <th>#</th>
-                        <th>Usuario</th> */}
+                        {/* <th>#</th>*/}
+                        {/* <th>Usuario</th>  */}
                         <th >Fecha</th>
                         <th >Total</th>
                         <th >Entregado</th>
@@ -31,8 +31,8 @@ const UserOrdersPageComponent = ({getOrders}) => {
                     <tbody>
                         {orders.map((order, idx)=> (
                             <tr key={idx}>
-                                {/* <td>{idx + 1}</td>
-                                <td>Tú</td> */}
+                                {/* <td>{idx + 1}</td> */}
+                                {/* <td> {order.cartItems[0].image.path}</td> */}
                                 <td align="center">{order.createdAt.substring(0,10)}</td>
                                 <td align="right">{parseFloat(order.orderTotal.cartSubtotal).toFixed(2)}</td>
                                 <td align="center">

@@ -7,8 +7,6 @@ const imageSchema = mongoose.Schema({
     path: {type: String, required: true}
 })
 
-
-
 const productSchema = mongoose.Schema({
     name: {
         type: String,
@@ -56,6 +54,7 @@ const productSchema = mongoose.Schema({
 }, {
     timestamps: true, //esto me genera un timestamp directamente en MongoDB
 })
+
 
 const Product = mongoose.model("Product", productSchema)
 productSchema.index({name: "text", description: "text"}, {name: "TextIndex"}) //con esto el buscador de la página hace las búsquedas de los productos POR LOR NOMBRES "compound Index"

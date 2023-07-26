@@ -1,6 +1,6 @@
 const express = require ("express")
 const router = express.Router()
-const {getProducts, getProductById, getBestsellers, adminGetProducts, adminDeleteProduct, adminCreateProduct, adminUpdateProduct, adminUpload, adminDeleteProductImage} = require ("../controllers/productController")
+const {getProducts, getProductById, getBestsellers, adminGetProducts, adminDeleteProduct, adminCreateProduct, adminUpdateProduct, adminUpload, adminDeleteProductImage, adminUpdatePriceFromExcel} = require ("../controllers/productController")
 const { verifyIsLoggedIn, verifyIsAdmin } = require ("../middleware/verifyAuthToken")
 
 router.get("/category/:categoryName/search/:searchQuery", getProducts)
@@ -19,5 +19,7 @@ router.delete("/admin/image/:imagePath/:productId", adminDeleteProductImage)
 router.put("/admin/:id", adminUpdateProduct)
 router.post("/admin/upload", adminUpload)
 router.post("/admin", adminCreateProduct)
+router.patch("/admin/:id", adminUpdatePriceFromExcel)
+
 
 module.exports = router

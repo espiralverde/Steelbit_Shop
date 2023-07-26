@@ -4,6 +4,8 @@ const { Server } = require("socket.io")
 const express = require ("express")
 const fileUpload = require ("express-fileupload") // paquete que me permite subir y manejar archivos en express (backend)
 const cookieParser = require ("cookie-parser")
+
+
 const app = express()
 
 const httpServer = createServer(app)

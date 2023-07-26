@@ -1,6 +1,8 @@
 const Product = require("../models/ProductModel")
 const recordsPerPage = require("../config/pagination")
 const imageValidate = require("../utils/imageValidate")
+const ObjectId = require("mongodb").ObjectId
+
 
 const getProducts = async (req, res, next) => {
     try{
@@ -203,7 +205,6 @@ const adminUpdateProduct = async (req, res, next) =>{
         next(err)
     }
 }
-
 const adminUpload = async (req, res, next) =>{
     if (req.query.cloudinary === "true") {
         try{
@@ -213,11 +214,8 @@ const adminUpload = async (req, res, next) =>{
         } catch (err) {
             next(err)
         }
-
-
         return
     }
-
     try{
         if (!req.files || !!req.files.images === false){
             return res.status(400).send("No hay archivos subidos")
@@ -237,7 +235,6 @@ const adminUpload = async (req, res, next) =>{
             "products")
 
         let product = await Product.findById(req.query.productId).orFail()
-        
         let imagesTable = []
         if (Array.isArray(req.files.images)){
             imagesTable = req.files.images
@@ -245,7 +242,6 @@ const adminUpload = async (req, res, next) =>{
         else{
             imagesTable.push(req.files.images)
         }
-
         for (let image of imagesTable){
             var fileName = uuidv4() + path.extname(image.name)
             var uploadPath = uploadDirectory + "/" + fileName
@@ -262,9 +258,7 @@ const adminUpload = async (req, res, next) =>{
         next(err)
     }
 }
-
 const adminDeleteProductImage = async (req, res, next) => {
-
     const imagePath = decodeURIComponent(req.params.imagePath)
     if (req.query.cloudinary === "true") {
         try{
@@ -275,7 +269,6 @@ const adminDeleteProductImage = async (req, res, next) => {
         }
         return // con esto no se ejecuta el código que está abajo, que es para borrar las imágenes LOCALMENTE
     }
-
     try{
         const path = require ("path")
         const finalPath = path.resolve("../frontend/public") + imagePath
@@ -294,7 +287,26 @@ const adminDeleteProductImage = async (req, res, next) => {
     } catch (err){
         next (err)
     }
+
 }
+///////////////////////////////////////////////////////////////
+const adminUpdatePriceFromExcel = async (req, res, next) => {
+    
+    const updates = req.body
+    if(ObjectId.isValid(req.params.id)) {
+        const product = await Product.findById(req.params.id)
+        .orFail()
+        .updateOne({_id: req.params.id}, {$set: updates})
+        .then(result => {
+            res.status(200).json(result)
+        })
+        .catch(err => {
+            res.status(500).json({error: "No se pudo actualizar"})
+        })
+    } else {
+        res.status(500).json({error: "ERROR"})
+    }
+};
+///////////////////////////////////////////////////////////////
 
-
-module.exports = {getProducts, getProductById, getBestsellers, adminGetProducts, adminDeleteProduct, adminCreateProduct, adminUpdateProduct, adminUpload, adminDeleteProductImage}
+module.exports = {getProducts, getProductById, getBestsellers, adminGetProducts, adminDeleteProduct, adminCreateProduct, adminUpdateProduct, adminUpload, adminDeleteProductImage, adminUpdatePriceFromExcel}

@@ -53,7 +53,7 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
                 // }, 5000)
             } else {
                 if (data.paymentMethod === "pp") {
-                    setOrderButtonMessage("Completar Pago")
+                    setOrderButtonMessage("Ir a Completar Pago")
                 } else if (data.paymentMethod === "cod"){
                     setButtonDisabled(true)
                     setOrderButtonMessage("Pago en efectivo contra entrega")

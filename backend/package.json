@@ -24,7 +24,8 @@
     "mercadopago": "^1.5.16",
     "mongoose": "^6.9.1",
     "socket.io": "^4.6.1",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "concurrently": "^8.0.1",
