@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as XLSX from "xlsx";
 import AdminLinksComponent from "../../../components/admin/AdminLinksComponent";
 import { Row, Col, Button, Container, Navbar, Nav } from "react-bootstrap";
-import "../../../../src/style.css"
+//import "../../../../src/style.css"
 
 const BulkUpdateComponent = ({ fetchProducts, updatePrice }) => {
     const [file, setFile] = useState(null);
@@ -23,7 +23,7 @@ const BulkUpdateComponent = ({ fetchProducts, updatePrice }) => {
 
         if (!file) {
             alert("Por favor seleccionar un archivo Excel válido...");
-            // setUploading(false);
+            setUploading(false);
             return;
         }
 
@@ -73,8 +73,8 @@ const BulkUpdateComponent = ({ fetchProducts, updatePrice }) => {
     return (
 
         <div>
-            <Row className="m-5">
-                <Col md={2}>
+            <Row className="mt-5">
+                <Col md={2} >
                     <AdminLinksComponent />
                 </Col>
                 <Col md={4}>
@@ -83,7 +83,8 @@ const BulkUpdateComponent = ({ fetchProducts, updatePrice }) => {
                         <div className="parent">
                             <div className="file-upload">
                             {/* <img src={uploadImg} alt="upload" /> */}
-                            <h3>{selectedName || "Click aquí para seleccionar archivo"} </h3>
+                            <h3>{selectedName || "Click aquí para seleccionar archivo"}</h3>
+                            <h2><i class="bi bi-upload"></i></h2>
                             {/* <p>Maximun file size 10mb</p> */}
                             <input type="file" onChange={handleFileChange}/>
                             </div>

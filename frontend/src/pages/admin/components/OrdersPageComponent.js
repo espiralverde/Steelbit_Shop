@@ -1,11 +1,13 @@
 import { Col, Row, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import 'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min.css';
+import AdminLinksComponent from "../../../components/admin/AdminLinksComponent";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import 'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min.css';
+
 import BootstrapTable from 'react-bootstrap-table-next';
 import paginationFactory from "react-bootstrap-table2-paginator"
 import filterFactory, {textFilter, selectFilter, dateFilter} from "react-bootstrap-table2-filter"
-import AdminLinksComponent from "../../../components/admin/AdminLinksComponent";
+
 
 
 import { useEffect, useState } from "react";
@@ -27,14 +29,13 @@ const OrdersPageComponent = ({getOrders}) => {
     }, [])
 
     const  pagination = paginationFactory({
-        sizePerPage: 10,
+        sizePerPage: 20,
         //acá agrego todas las características que quiero de la paginación
     })
 
     const selectOptions = {
-        pp: 'pp',
         PayPal: 'PayPal',
-        cod: 'Efectivo'
+        Efectivo: 'Efectivo'
     };
 
     const qualityFilter = selectFilter({
@@ -104,13 +105,13 @@ const columns = [
         formatter: (cellContent, _row) => {
             if (cellContent !== false)
                 return (
-                <p className="text-success">
-                    <span >Si</span>
+                <p style={{justifyContent: "center", margin: "auto"}} className="bg-success text-white rounded-pill">
+                    <span style={{justifyContent: "center"}}>Entregado</span>
                 </p>
                 );
             return (
-                <p className="bg-danger text-white rounded-pill">
-                <span> Sin entregar </span>
+                <p style={{justifyContent: "center", margin: "auto"}} className="bg-danger text-white rounded-pill">
+                <span style={{justifyContent: "center"}}> Sin entregar </span>
                 </p>
             );
         }
@@ -138,19 +139,22 @@ const columns = [
         headerAlign: 'center',
         align: 'center',
         accessor: 'link',
-        formatter: (cell) => <a target="_blank" href={`/admin/order-details/${cell}`}> Ver Detalle</a>
+        // formatter: (cell) => <a target="_blank" href={`/admin/order-details/${cell}`}> Ver Detalle</a>
+        formatter: (cell) => <a href={`/admin/order-details/${cell}`}> Ver Detalle</a>
         
     },
 ]
 
 
     return (
-    <div>
-        <Row className="m-5">
+    <>
+        <Row className="mt-5" >
             <Col md={2}>
                 <AdminLinksComponent />
             </Col>
-            <Col>
+
+            <Col md={10} className="tableColumn">
+            <h1>Pedidos</h1>
                 <BootstrapTable
                 keyField='_id' 
                 data={ orders } 
@@ -166,7 +170,7 @@ const columns = [
                 />
             </Col>
         </Row>
-    </div>
+    </>
     )
 
 }

@@ -94,7 +94,7 @@ const ProductsPageComponent = ({fetchProducts, deleteProduct}) => {
             headerAlign: 'center',
             align: 'center',
             sort: true,
-            filter: textFilter(),
+            filter: textFilter({placeholder: "Buscar..."}),
             headerFormatter: headerFormatter
         },
         {
@@ -103,7 +103,7 @@ const ProductsPageComponent = ({fetchProducts, deleteProduct}) => {
             headerAlign: 'center',
             align: 'center',
             sort: true,
-            filter: textFilter(),
+            filter: textFilter({placeholder: "Buscar..."}),
             headerFormatter: headerFormatter,
             formatter: (cell) => parseFloat(cell).toFixed(2),
         },
@@ -131,7 +131,7 @@ const ProductsPageComponent = ({fetchProducts, deleteProduct}) => {
     ]
 
     return (
-        <Row className="m-5">
+        <Row className="mt-5">
             <Col md={2}>
                 <AdminLinksComponent />
             </Col>

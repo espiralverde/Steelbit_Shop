@@ -52,9 +52,9 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
                     
                 // }, 5000)
             } else {
-                if (data.paymentMethod === "pp") {
+                if (data.paymentMethod === "PayPal") {
                     setOrderButtonMessage("Ir a Completar Pago")
-                } else if (data.paymentMethod === "cod"){
+                } else if (data.paymentMethod === "Efectivo"){
                     setButtonDisabled(true)
                     setOrderButtonMessage("Pago en efectivo contra entrega")
                 }
@@ -65,7 +65,7 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
 
     const orderHandler = () => {
         setButtonDisabled(true)
-        if (paymentMethod === "pp") {
+        if (paymentMethod === "PayPal") {
             setOrderButtonMessage("Para finalizar, seleccione su opción abajo")
             if (!isPaid) {
                 loadPayPalScript(cartSubtotal, cartItems, id, updateStateAfterOrder)
@@ -99,8 +99,8 @@ const UserOrderDetailsPageComponent = ({userInfo, getUser, getOrder, loadPayPalS
                         <Col md={6}>
                             <h2>Forma de Pago</h2>
                             <Form.Select value={paymentMethod} disabled={true}>
-                                <option value="pp">PayPal</option>
-                                <option value="cod">Efectivo</option>
+                                <option value="PayPal">PayPal</option>
+                                <option value="Efectivo">Efectivo</option>
                                 <option value="mp">MercadoPago</option>
                             </Form.Select>
                         </Col>

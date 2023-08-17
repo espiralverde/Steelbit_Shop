@@ -118,8 +118,8 @@ const products = [
         { path: "/images/HIL006-g2.jpg" },
         { path: "/images/HIL006-g5.jpg" },
         ],
-        rating: 5,
-        reviewsNumber: 5,
+        rating: 0,
+        reviewsNumber: 0,
         reviews: [],
         attrs: [
             { key: "Tipo", value: "Hidrolavadora" },
@@ -207,8 +207,8 @@ const products = [
         { path: "/images/PAT90-g1.jpg" },
         { path: "/images/PAT90.jpg" },
         ],
-        rating: 5,
-        reviewsNumber: 5,
+        rating: 0,
+        reviewsNumber: 0,
         reviews: [],
         attrs: [
             { key: "Tipo", value: "Perforación" },
@@ -222,11 +222,11 @@ const products = [
         category: "Eléctricas",
         images: [
         { path: "/images/HMD001.jpg" },
-        { path: "/images/HMD001g3100x100.jpg" },
-        { path: "/images/HMD001g5100x100.jpg" },
+        { path: "/images/HMD001-g3.jpg" },
+        { path: "/images/HMD001-g5.jpg" },
         ],
-        rating: 5,
-        reviewsNumber: 5,
+        rating: 0,
+        reviewsNumber: 0,
         reviews: [],
         attrs: [
             { key: "Tipo", value: "Perforación" },
@@ -243,8 +243,8 @@ const products = [
         { path: "/images/HRM004-g3.jpg" },
         { path: "/images/HRM004-g4.jpg" },
         ],
-        rating: 3,
-        reviewsNumber: 5,
+        rating: 0,
+        reviewsNumber: 0,
         reviews: [],
         attrs: [
             { key: "Tipo", value: "Perforación" },
@@ -261,8 +261,8 @@ const products = [
         { path: "/images/HTP003-g2.jpg" },
         { path: "/images/HTP003-g4.jpg" },
         ],
-        rating: 5,
-        reviewsNumber: 5,
+        rating: 0,
+        reviewsNumber: 0,
         reviews: [],
         attrs: [
             { key: "Tipo", value: "Perforación" },
@@ -279,8 +279,8 @@ const products = [
         { path: "/images/HTP005-g3.jpg" },
         { path: "/images/HTP005-g5.jpg" },
         ],
-        rating: 5,
-        reviewsNumber: 5,
+        rating: 0,
+        reviewsNumber: 0,
         reviews: [],
         attrs: [
             { key: "Tipo", value: "Perforación" },
@@ -296,8 +296,8 @@ const products = [
             { path: "/images/ULT105.jpg" },
             { path: "/images/ULT105-g1.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                 { key: "Tipo", value: "Batería/Cargador" },
@@ -314,8 +314,8 @@ const products = [
             { path: "/images/ULT101-g1.jpg" },
             { path: "/images/ULT101.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                 { key: "Tipo", value: "Batería/Cargador" },
@@ -330,8 +330,8 @@ const products = [
             images: [
             { path: "/images/ULT109.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                 { key: "Tipo", value: "Batería/Cargador" },
@@ -348,8 +348,8 @@ const products = [
             { path: "/images/ULT115-g3.jpg" },
             { path: "/images/ULT115-g4.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                 { key: "Tipo", value: "Corte" },
@@ -366,8 +366,8 @@ const products = [
         { path: "/images/ULT114-g1.jpg" },
         { path: "/images/ULT114-g3.jpg" },
         ],
-        rating: 5,
-        reviewsNumber: 5,
+        rating: 0,
+        reviewsNumber: 0,
         reviews: [],
         attrs: [
             { key: "Tipo", value: "Corte" },
@@ -384,8 +384,8 @@ const products = [
             { path: "/images/ULT117-g3.jpg" },
             { path: "/images/ULT117-g5.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                 { key: "Tipo", value: "Corte" },
@@ -402,8 +402,8 @@ const products = [
             { path: "/images/ULT116-g2.jpg" },
             { path: "/images/ULT116-g3.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                 { key: "Tipo", value: "Corte" },
@@ -420,8 +420,8 @@ const products = [
             { path: "/images/ULT112-g2.jpg" },
             { path: "/images/ULT112-g3.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                 { key: "Tipo", value: "Perforación" },
@@ -438,8 +438,8 @@ const products = [
             { path: "/images/ULT113-g3.jpg" },
             { path: "/images/ULT113-g4.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                 { key: "Tipo", value: "Perforación" },
@@ -455,8 +455,8 @@ const products = [
             { path: "/images/ULT126.jpg" },
             { path: "/images/ULT126-g5.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                 { key: "Tipo", value: "Perforación" },
@@ -473,8 +473,8 @@ const products = [
             { path: "/images/ULT110-g3.jpg" },
             { path: "/images/ULT110-g2.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                 { key: "Tipo", value: "Perforación" },
@@ -491,8 +491,8 @@ const products = [
             { path: "/images/ULT111-K.jpg" },
             { path: "/images/ULT111-K-g5.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                 { key: "Tipo", value: "Perforación" },
@@ -509,8 +509,8 @@ const products = [
                 {path: "/images/RYL-g5.jpg"},
             
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     {key: "Tipo", value: "Compresores"},
@@ -525,8 +525,8 @@ const products = [
             images: [
                 {path: "/images/KR5.jpg"},
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     {key: "Tipo", value: "Compresores"},
@@ -543,8 +543,8 @@ const products = [
             {path: "/images/PIM-g1.jpg"},
             {path: "/images/PIM-g2.jpg"},
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Compresores" },
@@ -560,8 +560,8 @@ const products = [
             {path: "/images/PSL.jpg"},
             {path: "/images/PSL-g3.jpg"},
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     {key: "Tipo", value: "Compresores"},
@@ -578,8 +578,8 @@ const products = [
             {path: "/images/CMP12V-g1.jpg"},
             {path: "/images/CMP12V-g3.jpg"},
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                       {key: "Tipo", value: "Compresores"},
@@ -594,8 +594,8 @@ const products = [
             images: [
             {path: "/images/HN40.jpg"},
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     {key: "Tipo", value: "Llaves Neumáticas"},
@@ -612,8 +612,8 @@ const products = [
             {path: "/images/HN60-G4.jpg"},
             {path: "/images/HN60-G5.jpg"},
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                       {key: "Tipo", value: "Llaves Neumáticas"},
@@ -628,8 +628,8 @@ const products = [
             images: [
             {path: "/images/HN10K.jpg"},
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     {key: "Tipo", value: "Llaves Neumáticas"},
@@ -645,8 +645,8 @@ const products = [
             {path: "/images/HN80.jpg"},
             {path: "/images/HN80-g2.jpg"},
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     {key: "Tipo", value: "Lubricado y Mecanizado"},
@@ -664,8 +664,8 @@ const products = [
             {path: "/images/PAR-g5.jpg"},
             
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     {key: "Tipo", value: "Lubricado y Mecanizado"},
@@ -681,8 +681,8 @@ const products = [
             {path: "/images/PRT.jpg"},
             {path: "/images/PRT-g2.jpg"},
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     {key: "Tipo", value: "Lubricado y Mecanizado"},
@@ -698,8 +698,8 @@ const products = [
             {path: "/images/PG23.jpg"},
             {path: "/images/PG23-g2.jpg"},
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     {key: "Tipo", value: "Pistolas de pintar"},
@@ -717,8 +717,8 @@ const products = [
             {path: "/images/PG200MA-g3.jpg"},
             
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                      {key: "Tipo", value: "Pistolas de pintar"},
@@ -736,8 +736,8 @@ const products = [
             {path: "/images/PG200R-g5.jpg"},
             
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Pistolas de pintar" },
@@ -752,8 +752,8 @@ const products = [
             images: [
             {path: "/images/PG250.jpg"},
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Pistolas de pintar" },
@@ -771,8 +771,8 @@ const products = [
             {path: "/images/PS200-g3.jpg"},
             
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Pistolas de pintar" },
@@ -788,8 +788,8 @@ const products = [
             { path: "/images/BF300.jpg" },
             { path: "/images/BF300-G4.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Criques hidráulicos" },
@@ -804,8 +804,8 @@ const products = [
             images: [
             { path: "/images/GB200.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Criques hidráulicos" },
@@ -822,8 +822,8 @@ const products = [
             { path: "/images/GPE300-G1.jpg" },
             { path: "/images/GPE300-G5.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Criques hidráulicos" },
@@ -838,8 +838,8 @@ const products = [
             images: [
             { path: "/images/GP300.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Criques hidráulicos" },
@@ -854,8 +854,8 @@ const products = [
             images: [
             { path: "/images/DMP.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Destornilladores" },
@@ -870,8 +870,8 @@ const products = [
             images: [
             { path: "/images/DWR14.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Destornilladores" },
@@ -886,8 +886,8 @@ const products = [
             images: [
             { path: "/images/DPH075.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Destornilladores" },
@@ -902,8 +902,8 @@ const products = [
             images: [
             { path: "/images/DPH125.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Destornilladores" },
@@ -918,8 +918,8 @@ const products = [
             images: [
             { path: "/images/DPL375.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Destornilladores" },
@@ -936,8 +936,8 @@ const products = [
             { path: "/images/JP32-G1.jpg" },
             { path: "/images/JP32-G2.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Destornilladores" },
@@ -954,8 +954,8 @@ const products = [
             { path: "/images/JP49-G1.jpg" },
             { path: "/images/JP49-G2.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Destornilladores" },
@@ -971,8 +971,8 @@ const products = [
             { path: "/images/DJ06V.jpg" },
             { path: "/images/DJ06V-G2.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Destornilladores" },
@@ -988,8 +988,8 @@ const products = [
             { path: "/images/LH60E.jpg" },
             { path: "/images/LH60E-g1.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Llaves" },
@@ -1006,8 +1006,8 @@ const products = [
             { path: "/images/LH14T-G1.jpg" },
             { path: "/images/LH14T-G2.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Llaves" },
@@ -1024,8 +1024,8 @@ const products = [
             { path: "/images/JCC12-g3.jpg" },
             { path: "/images/JCC12-g4.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Llaves" },
@@ -1040,8 +1040,8 @@ const products = [
             images: [
             { path: "/images/LAN100.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Llaves" },
@@ -1056,8 +1056,8 @@ const products = [
             images: [
             { path: "/images/LCP10.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Llaves" },
@@ -1072,8 +1072,8 @@ const products = [
             images: [
             { path: "/images/LCS1.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Llaves" },
@@ -1088,8 +1088,8 @@ const products = [
             images: [
             { path: "/images/WTC14.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Llaves" },
@@ -1106,8 +1106,8 @@ const products = [
             { path: "/images/JCCA6P-g2.jpg" },
             { path: "/images/JCCA6P-g3.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Llaves" },
@@ -1124,8 +1124,8 @@ const products = [
             { path: "/images/JCM12G-G2.jpg" },
             { path: "/images/JCM12G-G3.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Llaves" },
@@ -1142,8 +1142,8 @@ const products = [
             { path: "/images/MGP400-g2.jpg" },
             { path: "/images/MGP400-g4.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Martillos" },
@@ -1159,8 +1159,8 @@ const products = [
             { path: "/images/MGF450.jpg" },
             { path: "/images/ MGF450-g2.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Martillos" },
@@ -1176,8 +1176,8 @@ const products = [
             { path: "/images/MBF350.jpg" },
             { path: "/images/MBF350-g2.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Martillos" },
@@ -1192,8 +1192,8 @@ const products = [
             images: [
             { path: "/images/MCF200.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Martillos" },
@@ -1210,8 +1210,8 @@ const products = [
             { path: "/images/MAG670.jpg" },
             { path: "/images/MAG670-g2.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Martillos" },
@@ -1226,8 +1226,8 @@ const products = [
             images: [
             { path: "/images/MAF100.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Martillos" },
@@ -1242,8 +1242,8 @@ const products = [
             images: [
             { path: "/images/ACC80.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Pinzas y Alicates" },
@@ -1258,8 +1258,8 @@ const products = [
             images: [
             { path: "/images/ACO60V.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Pinzas y Alicates" },
@@ -1276,8 +1276,8 @@ const products = [
             images: [
             { path: "/images/AM05.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Pinzas y Alicates" },
@@ -1293,8 +1293,8 @@ const products = [
             images: [
             { path: "/images/PCR3.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Pinzas y Alicates" },
@@ -1309,8 +1309,8 @@ const products = [
             images: [
             { path: "/images/APP100.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Pinzas y Alicates" },
@@ -1325,8 +1325,8 @@ const products = [
             images: [
             { path: "/images/APM60V.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Pinzas y Alicates" },
@@ -1341,8 +1341,8 @@ const products = [
             images: [
             { path: "/images/PMH10.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Pinzas y Alicates" },
@@ -1357,8 +1357,8 @@ const products = [
             images: [
             { path: "/images/APL100A.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Pinzas y Alicates" },
@@ -1373,8 +1373,8 @@ const products = [
             images: [
             { path: "/images/APL100S.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Pinzas y Alicates" },
@@ -1389,8 +1389,8 @@ const products = [
             images: [
             { path: "/images/AS70M.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Pinzas y Alicates" },
@@ -1405,8 +1405,8 @@ const products = [
             images: [
             { path: "/images/APU80V.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Pinzas y Alicates" },
@@ -1421,8 +1421,8 @@ const products = [
             images: [
             { path: "/images/MH3.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Sujeción" },
@@ -1437,8 +1437,8 @@ const products = [
             images: [
             { path: "/images/MBH3.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Sujeción" },
@@ -1453,8 +1453,8 @@ const products = [
             images: [
             { path: "/images/PFR120Q.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Sujeción" },
@@ -1469,8 +1469,8 @@ const products = [
             images: [
             { path: "/images/PGL20.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Sujeción" },
@@ -1485,8 +1485,8 @@ const products = [
             images: [
             { path: "/images/VH3.jpg" },
             ],
-            rating: 5,
-            reviewsNumber: 5,
+            rating: 0,
+            reviewsNumber: 0,
             reviews: [],
             attrs: [
                     { key: "Tipo", value: "Sujeción" },

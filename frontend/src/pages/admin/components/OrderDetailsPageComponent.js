@@ -51,8 +51,8 @@ const OrderDetailsPageComponent = ({getOrder, markAsDelivered}) => {
                         <Col md={6}>
                             <h2>Forma de Pago</h2>
                             <Form.Select value={paymentMethod} disabled={true}>
-                                <option value="pp">PayPal</option>
-                                <option value="cod">Efectivo/Contra Entrega</option>
+                                <option value="PayPal">PayPal</option>
+                                <option value="Efectivo">Efectivo/Contra Entrega</option>
                             </Form.Select>
                         </Col>
                         <Row>

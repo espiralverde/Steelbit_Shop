@@ -10,7 +10,7 @@ const AdminChatsPage = () => {
 
 
     return (
-        <Row className="m-5">
+        <Row className="mt-5">
             <Col md={2}>
                 <AdminLinksComponent />
 

@@ -34,16 +34,16 @@ const AnalyticsPageComponent = () => {
 
 
     return (
-        <Row className="m-5">
+        <Row className="mt-5">
             <Col md={2}>
                 <AdminLinksComponent />
             </Col>
             <Col md={10}>
                 <h1>Panel del Admin</h1>
-                <Button className="btn btn-primary" target="_blank" href="https://charts.mongodb.com/charts-proyectotesis-vzogd/public/dashboards/64908225-f297-4cd7-8180-e7c19b40f57e">
+                <Button className="btn btn-primary mb-3" target="_blank" href="https://charts.mongodb.com/charts-proyectotesis-vzogd/public/dashboards/64908225-f297-4cd7-8180-e7c19b40f57e">
                     Buscar
                 </Button>
-                <div  id="dashboard" style={{height: "100vh", width:"100vw" }}></div>
+                <div  id="dashboard" style={{height: "100vh" }}></div>
                 
                 {/* <div id="chart1" style={{width:640, height: 480 }}></div>
                 <br />
