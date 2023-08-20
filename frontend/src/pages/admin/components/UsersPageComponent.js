@@ -111,7 +111,7 @@ const columns = [
         text: 'Editar',
         headerAlign: 'center',
         align: 'center',
-        sort: true,
+        sort: false,
         formatter: (cell, _row) => {
             return (
                 <div>
