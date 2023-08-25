@@ -45,7 +45,7 @@ const OrderDetailsPageComponent = ({getOrder, markAsDelivered}) => {
                         <Col md={6}>
                             <h2>Dirección de Entrega</h2>
                             <b>Nombre: </b> {userInfo.name} {userInfo.lastName} <br />
-                            <b>Dirección: </b> {userInfo.adress} {userInfo.city} {userInfo.state} {userInfo.zipCode} <br />
+                            <b>Dirección: </b> {userInfo.address} {userInfo.city} {userInfo.state} {userInfo.zipCode} <br />
                             <b>Teléfono: </b> {userInfo.phoneNumber} <br />
                         </Col>
                         <Col md={6}>
