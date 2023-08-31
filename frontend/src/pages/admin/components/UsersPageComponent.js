@@ -96,7 +96,7 @@ const columns = [
             if (cellContent !== false)
                 return (
                     <p style={{justifyContent: "center", margin: "auto"}} className="bg-success text-white rounded-pill">
-                            <span style={{justifyContent: "center"}}>Adminstrador</span>
+                            <span style={{justifyContent: "center"}}>Admin</span>
                     </p>
                     );
                 return (
@@ -116,11 +116,11 @@ const columns = [
             return (
                 <div>
                         <LinkContainer to={`/admin/edit-user/${cell}`}>
-                            <Button className="btn-sm me-2">
+                            <Button className="btn-md me-2">
                                 <i className="bi bi-pencil-square"></i>
                             </Button>
                         </LinkContainer> {" "}
-                    <Button variant="danger" className="btn-sm" onClick={() => deleteHandler(cell)}>
+                    <Button variant="danger" className="btn-md" onClick={() => deleteHandler(cell)}>
                         <i className="bi bi-x-circle"></i>
                     </Button>
                 </div>
@@ -131,7 +131,7 @@ const columns = [
 
 
     return (
-        <>
+
             <Row className="mt-5">
                 <Col md={2}>
                     <AdminLinksComponent />
@@ -154,7 +154,7 @@ const columns = [
                     />
                 </Col>
             </Row>
-        </>
+
     )
 }
 
