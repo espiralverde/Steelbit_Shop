@@ -197,7 +197,7 @@ import {
                     <option value="5"> 5 (Excelente)</option>
                     <option value="4"> 4 (Muy Bueno)</option>
                     <option value="3"> 3 (Bueno)</option>
-                    <option value="3"> 2 (Malo)</option>
+                    <option value="2"> 2 (Malo)</option>
                     <option value="1"> 1 (Horrible)</option>
                   </Form.Select>
                   <Button disabled={!userInfo.name} type="submit" variant="primary" className="mb-3 mt-3">
